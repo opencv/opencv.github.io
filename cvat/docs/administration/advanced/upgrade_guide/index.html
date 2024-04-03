@@ -81,7 +81,7 @@
     <li><a class="dropdown-item" href="../../../../v2.0.0">v2.0.0</a></li>
     <li><a class="dropdown-item" href="../../../../v2.1.0">v2.1.0</a></li>
     <li><a class="dropdown-item" href="../../../../v2.10.3">v2.10.3</a></li>
-    <li><a class="dropdown-item" href="../../../../v2.11.2">v2.11.2</a></li>
+    <li><a class="dropdown-item" href="../../../../v2.11.3">v2.11.3</a></li>
     <li><a class="dropdown-item" href="../../../../v2.2.0">v2.2.0</a></li>
     <li><a class="dropdown-item" href="../../../../v2.3.0">v2.3.0</a></li>
     <li><a class="dropdown-item" href="../../../../v2.4.9">v2.4.9</a></li>
@@ -104,7 +104,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="../../../../offline-search-index.88b019e6653a72e159f7f1777ae390c8.json"
+    data-offline-search-index-json-src="../../../../offline-search-index.3371b6860e4749132e627628c8e4a7c1.json"
     data-offline-search-base-href="../../../../"
     data-offline-search-max-results="10"
   >
@@ -130,7 +130,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="../../../../offline-search-index.88b019e6653a72e159f7f1777ae390c8.json"
+    data-offline-search-index-json-src="../../../../offline-search-index.3371b6860e4749132e627628c8e4a7c1.json"
     data-offline-search-base-href="../../../../"
     data-offline-search-max-results="10"
   >
@@ -708,7 +708,8 @@ upgrading PostgreSQL base image major version. See details <a href="#how-to-upgr
 <li>
 <p>Go to the previously cloned CVAT directory and stop all CVAT containers with:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>docker compose down
-</span></span></code></pre></div><p>If you have included <a href="../../../../docs/administration/basics/installation/#additional-components">additional components</a>,
+</span></span></code></pre></div><p>If you have included
+<a href="../../../../docs/administration/basics/installation/#additional-components">additional components</a>,
 include all compose configuration files that are used, e.g.:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>docker compose -f docker-compose.yml -f components/serverless/docker-compose.serverless.yml down
 </span></span></code></pre></div></li>
@@ -800,7 +801,8 @@ Let&rsquo;s assume that you have CVAT v1.7.0 working.</p>
 <li>
 <p>Update CVAT source code by any preferable way: clone with git or download zip file from GitHub.
 Check the
-<a href="../../../../docs/administration/basics/installation/#how-to-get-cvat-source-code">installation guide</a> for details.</p>
+<a href="../../../../docs/administration/basics/installation/#how-to-get-cvat-source-code">installation guide</a>
+for details.</p>
 </li>
 <li>
 <p>Start database container only:</p>

@@ -20,7 +20,9 @@
 <title>ServerApi class reference | CVAT</title>
 <meta name="description" content=""><meta property="og:title" content="ServerApi class reference" />
 <meta property="og:description" content="All URIs are relative to http://localhost
-   Method HTTP request Description     list_share GET /api/server/share Returns all files and folders that are on the server along specified path   retrieve_about GET /api/server/about Method provides basic CVAT information   retrieve_annotation_formats GET /api/server/annotation/formats Method provides the list of supported annotations formats   retrieve_plugins GET /api/server/plugins Method provides allowed plugins    list_share  list_share( directory=None, search=None, **kwargs )" />
+   Method HTTP request Description     list_share GET /api/server/share List files/directories in the mounted share   retrieve_about GET /api/server/about Get basic CVAT information   retrieve_annotation_formats GET /api/server/annotation/formats Get supported annotation formats   retrieve_plugins GET /api/server/plugins Get enabled plugins    list_share  list_share( directory=None, search=None, **kwargs )
+ List files/directories in the mounted share
+Example from pprint import pprint from cvat_sdk." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/api_sdk/sdk/reference/apis/server-api/" /><meta property="article:section" content="docs" />
 
@@ -28,13 +30,17 @@
 
 <meta itemprop="name" content="ServerApi class reference">
 <meta itemprop="description" content="All URIs are relative to http://localhost
-   Method HTTP request Description     list_share GET /api/server/share Returns all files and folders that are on the server along specified path   retrieve_about GET /api/server/about Method provides basic CVAT information   retrieve_annotation_formats GET /api/server/annotation/formats Method provides the list of supported annotations formats   retrieve_plugins GET /api/server/plugins Method provides allowed plugins    list_share  list_share( directory=None, search=None, **kwargs )">
+   Method HTTP request Description     list_share GET /api/server/share List files/directories in the mounted share   retrieve_about GET /api/server/about Get basic CVAT information   retrieve_annotation_formats GET /api/server/annotation/formats Get supported annotation formats   retrieve_plugins GET /api/server/plugins Get enabled plugins    list_share  list_share( directory=None, search=None, **kwargs )
+ List files/directories in the mounted share
+Example from pprint import pprint from cvat_sdk.">
 
-<meta itemprop="wordCount" content="822">
+<meta itemprop="wordCount" content="796">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="ServerApi class reference"/>
 <meta name="twitter:description" content="All URIs are relative to http://localhost
-   Method HTTP request Description     list_share GET /api/server/share Returns all files and folders that are on the server along specified path   retrieve_about GET /api/server/about Method provides basic CVAT information   retrieve_annotation_formats GET /api/server/annotation/formats Method provides the list of supported annotations formats   retrieve_plugins GET /api/server/plugins Method provides allowed plugins    list_share  list_share( directory=None, search=None, **kwargs )"/>
+   Method HTTP request Description     list_share GET /api/server/share List files/directories in the mounted share   retrieve_about GET /api/server/about Get basic CVAT information   retrieve_annotation_formats GET /api/server/annotation/formats Get supported annotation formats   retrieve_plugins GET /api/server/plugins Get enabled plugins    list_share  list_share( directory=None, search=None, **kwargs )
+ List files/directories in the mounted share
+Example from pprint import pprint from cvat_sdk."/>
 
 
 
@@ -156,7 +162,7 @@
         <a class="dropdown-item" href="../../../../../../../v2.10.3/docs/api_sdk/sdk/reference/apis/server-api/">v2.10.3</a>
     
       
-        <a class="dropdown-item" href="../../../../../../../v2.11.2/docs/api_sdk/sdk/reference/apis/server-api/">v2.11.2</a>
+        <a class="dropdown-item" href="../../../../../../../v2.11.3/docs/api_sdk/sdk/reference/apis/server-api/">v2.11.3</a>
     
       
         <a class="dropdown-item" href="../../../../../../../v2.2.0/docs/api_sdk/sdk/reference/apis/server-api/">v2.2.0</a>
@@ -194,7 +200,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../../../../../offline-search-index.8c291542b0095f21be5791d9ddf21a61.json"
+  data-offline-search-index-json-src="../../../../../../offline-search-index.7ccd2209b7329836324a4bcc25c27f1f.json"
   data-offline-search-base-href="../../../../../../"
   data-offline-search-max-results="10"
 >
@@ -230,7 +236,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../../../../../offline-search-index.8c291542b0095f21be5791d9ddf21a61.json"
+  data-offline-search-index-json-src="../../../../../../offline-search-index.7ccd2209b7329836324a4bcc25c27f1f.json"
   data-offline-search-base-href="../../../../../../"
   data-offline-search-max-results="10"
 >
@@ -4536,22 +4542,22 @@
 <tr>
 <td><a href="../server-api#list_share"><strong>list_share</strong></a></td>
 <td><strong>GET</strong> /api/server/share</td>
-<td>Returns all files and folders that are on the server along specified path</td>
+<td>List files/directories in the mounted share</td>
 </tr>
 <tr>
 <td><a href="../server-api#retrieve_about"><strong>retrieve_about</strong></a></td>
 <td><strong>GET</strong> /api/server/about</td>
-<td>Method provides basic CVAT information</td>
+<td>Get basic CVAT information</td>
 </tr>
 <tr>
 <td><a href="../server-api#retrieve_annotation_formats"><strong>retrieve_annotation_formats</strong></a></td>
 <td><strong>GET</strong> /api/server/annotation/formats</td>
-<td>Method provides the list of supported annotations formats</td>
+<td>Get supported annotation formats</td>
 </tr>
 <tr>
 <td><a href="../server-api#retrieve_plugins"><strong>retrieve_plugins</strong></a></td>
 <td><strong>GET</strong> /api/server/plugins</td>
-<td>Method provides allowed plugins</td>
+<td>Get enabled plugins</td>
 </tr>
 </tbody>
 </table>
@@ -4563,7 +4569,7 @@ search=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Returns all files and folders that are on the server along specified path</p>
+<p>List files/directories in the mounted share</p>
 <h3 id="example">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -4654,7 +4660,7 @@ and returned values <a href="https://opencv.github.io/cvat/docs/api_sdk/sdk/lowl
 **kwargs
 )</p>
 </blockquote>
-<p>Method provides basic CVAT information</p>
+<p>Get basic CVAT information</p>
 <h3 id="example-1">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -4717,7 +4723,7 @@ and returned values <a href="https://opencv.github.io/cvat/docs/api_sdk/sdk/lowl
 **kwargs
 )</p>
 </blockquote>
-<p>Method provides the list of supported annotations formats</p>
+<p>Get supported annotation formats</p>
 <h3 id="example-2">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -4780,7 +4786,7 @@ and returned values <a href="https://opencv.github.io/cvat/docs/api_sdk/sdk/lowl
 **kwargs
 )</p>
 </blockquote>
-<p>Method provides allowed plugins</p>
+<p>Get enabled plugins</p>
 <h3 id="example-3">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 

@@ -81,7 +81,7 @@
     <li><a class="dropdown-item" href="../../v2.0.0">v2.0.0</a></li>
     <li><a class="dropdown-item" href="../../v2.1.0">v2.1.0</a></li>
     <li><a class="dropdown-item" href="../../v2.10.3">v2.10.3</a></li>
-    <li><a class="dropdown-item" href="../../v2.11.2">v2.11.2</a></li>
+    <li><a class="dropdown-item" href="../../v2.11.3">v2.11.3</a></li>
     <li><a class="dropdown-item" href="../../v2.2.0">v2.2.0</a></li>
     <li><a class="dropdown-item" href="../../v2.3.0">v2.3.0</a></li>
     <li><a class="dropdown-item" href="../../v2.4.9">v2.4.9</a></li>
@@ -104,7 +104,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="../../offline-search-index.88b019e6653a72e159f7f1777ae390c8.json"
+    data-offline-search-index-json-src="../../offline-search-index.3371b6860e4749132e627628c8e4a7c1.json"
     data-offline-search-base-href="../../"
     data-offline-search-max-results="10"
   >
@@ -130,7 +130,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="../../offline-search-index.88b019e6653a72e159f7f1777ae390c8.json"
+    data-offline-search-index-json-src="../../offline-search-index.3371b6860e4749132e627628c8e4a7c1.json"
     data-offline-search-base-href="../../"
     data-offline-search-max-results="10"
   >
@@ -795,12 +795,14 @@ Uploading of annotation from the Annotation view only affects the current job.</
 </span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">      </span>- <span style="color:#000">traefik.http.routers.cvat-ui.rule=Host(`example1.com`) || Host(`example2.com`)</span><span style="color:#f8f8f8;text-decoration:underline">
 </span></span></span></code></pre></div><h2 id="how-to-create-a-task-with-multiple-jobs">How to create a task with multiple jobs</h2>
 <p>Set the segment size when you create a new task, this option is available in the
-<a href="../../docs/manual/basics/creating_an_annotation_task/#advanced-configuration">Advanced configuration</a>
+<a href="../../docs/manual/basics/create_an_annotation_task/#advanced-configuration">Advanced configuration</a>
 section.</p>
 <h2 id="how-to-transfer-cvat-to-another-machine">How to transfer CVAT to another machine</h2>
-<p>Follow the <a href="../../docs/administration/advanced/backup_guide/#how-to-backup-all-cvat-data">backup/restore guide</a>.</p>
+<p>Follow the
+<a href="../../docs/administration/advanced/backup_guide/#how-to-backup-all-cvat-data">backup/restore guide</a>.</p>
 <h2 id="how-to-load-your-own-dl-model-into-cvat">How to load your own DL model into CVAT</h2>
-<p>See the information here in the <a href="../../docs/manual/advanced/serverless-tutorial/#adding-your-own-dl-models">Serverless tutorial</a>.</p>
+<p>See the information here in the
+<a href="../../docs/manual/advanced/serverless-tutorial/#adding-your-own-dl-models">Serverless tutorial</a>.</p>
 <h2 id="my-server-uses-a-custom-ssl-certificate-and-i-dont-want-to-check-it">My server uses a custom SSL certificate and I don&rsquo;t want to check it.</h2>
 <p>You can call control SSL certificate check with the <code>--insecure</code> CLI argument.
 For SDK, you can specify <code>ssl_verify = True/False</code> in the <code>cvat_sdk.core.client.Config</code> object.</p>

@@ -77,7 +77,7 @@
     <li><a class="dropdown-item" href="../../../v2.0.0">v2.0.0</a></li>
     <li><a class="dropdown-item" href="../../../v2.1.0">v2.1.0</a></li>
     <li><a class="dropdown-item" href="../../../v2.10.3">v2.10.3</a></li>
-    <li><a class="dropdown-item" href="../../../v2.11.2">v2.11.2</a></li>
+    <li><a class="dropdown-item" href="../../../v2.11.3">v2.11.3</a></li>
     <li><a class="dropdown-item" href="../../../v2.2.0">v2.2.0</a></li>
     <li><a class="dropdown-item" href="../../../v2.3.0">v2.3.0</a></li>
     <li><a class="dropdown-item" href="../../../v2.4.9">v2.4.9</a></li>
@@ -100,7 +100,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="../../../offline-search-index.88b019e6653a72e159f7f1777ae390c8.json"
+    data-offline-search-index-json-src="../../../offline-search-index.3371b6860e4749132e627628c8e4a7c1.json"
     data-offline-search-base-href="../../../"
     data-offline-search-max-results="10"
   >
@@ -1035,7 +1035,7 @@ create an account or log in to the existing account.</p>
 <p><strong>Note:</strong> By default authentication and registration with
 Google and GitHub work only for <a href="https://app.cvat.ai/">CVAT.ai Cloud</a>.
 <br>If you want to use Google and GitHub authentication on a local installation,
-see <a href="../../../docs/administration/basics/social-accounts-configuration/">Social auth configuration</a>.</p>
+see <a href="../../../docs/enterprise/social-accounts-configuration/">Social auth configuration</a>.</p>
 </blockquote>
 <h2 id="user-registration">User registration</h2>
 <p>To register, do the following:</p>
@@ -1162,7 +1162,8 @@ select <strong>Create new task</strong>.</p>
 <p>In the <strong>Label name</strong> field, enter the name of the label.</p>
 </li>
 <li>
-<p>(Optional) To limit the use of the label to a certain <a href="../../../docs/manual/basics/controls-sidebar/#shapes">shape tool</a>,
+<p>(Optional) To limit the use of the label to a certain
+<a href="../../../docs/manual/basics/controls-sidebar/#shapes">shape tool</a>,
 from the <a href="#label-shape"><strong>Label shape</strong></a> drop-down select the shape.</p>
 </li>
 <li>
@@ -1186,7 +1187,8 @@ from the <a href="#label-shape"><strong>Label shape</strong></a> drop-down selec
 </ol>
 <h3 id="label-shape">Label shape</h3>
 <p>Labels (or classes) are categories of objects that you can annotate.</p>
-<p><strong>Label shape</strong> limits the use of the label to certain <a href="../../../docs/manual/basics/controls-sidebar/#shapes">shape tool</a>.</p>
+<p><strong>Label shape</strong> limits the use of the label to certain
+<a href="../../../docs/manual/basics/controls-sidebar/#shapes">shape tool</a>.</p>
 <p><code>Any</code> is the default setting that does not limit the use of the
 label to any particular shape tool.</p>
 <p>For example, you added:</p>
@@ -1343,37 +1345,37 @@ The <strong>Done</strong> button applies the changes and the <strong>Reset</stro
 
 
 
-<ul class="nav nav-tabs" id="tabs-0" role="tablist">
+<ul class="nav nav-tabs" id="tabs-5" role="tablist">
   <li class="nav-item">
       <button class="nav-link active"
-          id="tabs-00-00-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-00" role="tab"
-          aria-controls="tabs-00-00" aria-selected="true">
+          id="tabs-05-00-tab" data-bs-toggle="tab" data-bs-target="#tabs-05-00" role="tab"
+          aria-controls="tabs-05-00" aria-selected="true">
         Velodyne
       </button>
     </li><li class="nav-item">
       <button class="nav-link"
-          id="tabs-00-01-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-01" role="tab"
-          aria-controls="tabs-00-01" aria-selected="false">
+          id="tabs-05-01-tab" data-bs-toggle="tab" data-bs-target="#tabs-05-01" role="tab"
+          aria-controls="tabs-05-01" aria-selected="false">
         3D pointcloud
       </button>
     </li><li class="nav-item">
       <button class="nav-link"
-          id="tabs-00-02-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-02" role="tab"
-          aria-controls="tabs-00-02" aria-selected="false">
+          id="tabs-05-02-tab" data-bs-toggle="tab" data-bs-target="#tabs-05-02" role="tab"
+          aria-controls="tabs-05-02" aria-selected="false">
         3D Option 1
       </button>
     </li><li class="nav-item">
       <button class="nav-link"
-          id="tabs-00-03-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-03" role="tab"
-          aria-controls="tabs-00-03" aria-selected="false">
+          id="tabs-05-03-tab" data-bs-toggle="tab" data-bs-target="#tabs-05-03" role="tab"
+          aria-controls="tabs-05-03" aria-selected="false">
         3D Option 2
       </button>
     </li>
 </ul>
 
-<div class="tab-content" id="tabs-0-content">
+<div class="tab-content" id="tabs-5-content">
     <div class="tab-pane fade show active"
-        id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab" tabindex="0">
+        id="tabs-05-00" role="tabpanel" aria-labelled-by="tabs-05-00-tab" tabindex="5">
         <pre tabindex="0"><code>  VELODYNE FORMAT
     Structure:
       velodyne_points/
@@ -1385,7 +1387,7 @@ The <strong>Done</strong> button applies the changes and the <strong>Reset</stro
         image_01.png</code></pre>
     </div>
     <div class="tab-pane fade"
-        id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab" tabindex="0">
+        id="tabs-05-01" role="tabpanel" aria-labelled-by="tabs-05-01-tab" tabindex="5">
         <pre tabindex="0"><code>   3D POINTCLOUD DATA FORMAT
     Structure:
       pointcloud/
@@ -1395,7 +1397,7 @@ The <strong>Done</strong> button applies the changes and the <strong>Reset</stro
           image_01.png # or any other image</code></pre>
     </div>
     <div class="tab-pane fade"
-        id="tabs-00-02" role="tabpanel" aria-labelled-by="tabs-00-02-tab" tabindex="0">
+        id="tabs-05-02" role="tabpanel" aria-labelled-by="tabs-05-02-tab" tabindex="5">
         <pre tabindex="0"><code>    3D, DEFAULT DATAFORMAT Option 1
     Structure:
       data/
@@ -1403,7 +1405,7 @@ The <strong>Done</strong> button applies the changes and the <strong>Reset</stro
         image.png</code></pre>
     </div>
     <div class="tab-pane fade"
-        id="tabs-00-03" role="tabpanel" aria-labelled-by="tabs-00-03-tab" tabindex="0">
+        id="tabs-05-03" role="tabpanel" aria-labelled-by="tabs-05-03-tab" tabindex="5">
         <pre tabindex="0"><code>    3D, DEFAULT DATAFORMAT Option 2
     Structure:
       data/
@@ -1553,7 +1555,8 @@ select <strong>Create multi tasks</strong>.</p>
 <p>(Optional) Select the color for the label.</p>
 </li>
 <li>
-<p>(Optional) Click <a href="../../../docs/manual/basics/create_an_annotation_task/#add-an-attribute"><strong>Add an attribute</strong></a>
+<p>(Optional) Click
+<a href="../../../docs/manual/basics/create_an_annotation_task/#add-an-attribute"><strong>Add an attribute</strong></a>
 and set up its properties.</p>
 </li>
 <li>
@@ -1696,7 +1699,7 @@ Learn more about <a href="../../../docs/manual/advanced/filter#date-and-time-sel
 <tr>
 <td><code>Dimension</code></td>
 <td><code>2D</code> or <code>3D</code></td>
-<td>Depends on the data format <br>(read more in <a href="../../../docs/manual/basics/creating_an_annotation_task">creating an annotation task</a>)</td>
+<td>Depends on the data format <br>(read more in <a href="../../../docs/manual/basics/create_an_annotation_task">creating an annotation task</a>)</td>
 </tr>
 <tr>
 <td><code>Assignee</code></td>
@@ -1758,10 +1761,10 @@ Each element contains: task name, preview, progress bar, button <code>Open</code
 Each button is responsible for a in menu <code>Actions</code> specific function:</p>
 <ul>
 <li><code>Export task dataset</code> — download annotations or annotations and images in a specific format.
-More information is available in the <a href="../../../docs/manual/advanced/export-import-datasets/">export/import datasets</a>
+More information is available in the <a href="../../../docs/manual/advanced/import-datasets/">export/import datasets</a>
 section.</li>
 <li><code>Upload annotation</code> upload annotations in a specific format.
-More information is available in the <a href="../../../docs/manual/advanced/export-import-datasets/">export/import datasets</a>
+More information is available in the <a href="../../../docs/manual/advanced/import-datasets/">export/import datasets</a>
 section.</li>
 <li><code>Automatic Annotation</code> — automatic annotation with OpenVINO toolkit.
 Presence depends on how you build the CVAT instance.</li>
@@ -1797,7 +1800,7 @@ Learn more about <a href="../../../docs/manual/advanced/filter#date-and-time-sel
 <tr>
 <td><code>Dimension</code></td>
 <td><code>2D</code> or <code>3D</code></td>
-<td>Depends on the data format <br>(read more in <a href="../../../docs/manual/basics/creating_an_annotation_task">creating an annotation task</a>)</td>
+<td>Depends on the data format <br>(read more in <a href="../../../docs/manual/basics/create_an_annotation_task/">creating an annotation task</a>)</td>
 </tr>
 <tr>
 <td><code>Status</code></td>
@@ -1807,7 +1810,7 @@ Learn more about <a href="../../../docs/manual/advanced/filter#date-and-time-sel
 <tr>
 <td><code>Data</code></td>
 <td><code>video</code>, <code>images</code></td>
-<td>Depends on the data format <br>(read more in <a href="../../../docs/manual/basics/creating_an_annotation_task">creating an annotation task</a>)</td>
+<td>Depends on the data format <br>(read more in <a href="../../../docs/manual/basics/create_an_annotation_task/">creating an annotation task</a>)</td>
 </tr>
 <tr>
 <td><code>Subset</code></td>
@@ -1885,7 +1888,8 @@ You can add new labels or add attributes for the existing labels in the Raw mode
 By clicking <code>Copy</code> you will copy the labels to the clipboard.</li>
 <li>Assigned to — is used to assign a task to a person. Start typing an assignee’s name and/or
 choose the right person out of the dropdown list.
-In the list of users, you will only see the users of the <a href="../../../docs/manual/advanced/organization/">organization</a>
+In the list of users, you will only see the users of the
+<a href="../../../docs/manual/advanced/organization/">organization</a>
 where the task is created.</li>
 </ol>
 </li>
@@ -1903,7 +1907,7 @@ There are several possible states: <code>new</code>, <code>in progress</code>, <
 <li>Assignee is the user who is working on the job.
 You can start typing an assignee’s name and/or choose the right person out of the dropdown list.</li>
 <li>Reviewer – a user assigned to carry out the review,
-read more in the <a href="../../../docs/manual/advanced/review/">review</a> section.</li>
+read more in the <a href="../../../docs/manual/advanced/analytics-and-monitoring/manual-qa/">review</a> section.</li>
 <li><code>Copy</code>. By clicking <code>Copy</code> you will copy the job list to the clipboard.
 The job list contains direct links to jobs.</li>
 </ul>
@@ -1940,13 +1944,15 @@ to annotate first images. Other frames will be loaded in background.</p>
 <p><code>Header</code> - pinned header used to navigate CVAT sections and account settings;</p>
 </li>
 <li>
-<p><a href="../../../docs/manual/basics/top-panel/"><code>Top panel</code></a> — contains navigation buttons, main functions and menu access;</p>
+<p><a href="../../../docs/manual/basics/top-panel/"><code>Top panel</code></a>
+— contains navigation buttons, main functions and menu access;</p>
 </li>
 <li>
 <p><a href="../../../docs/manual/basics/workspace/"><code>Workspace</code></a> — space where images are shown;</p>
 </li>
 <li>
-<p><a href="../../../docs/manual/basics/controls-sidebar/"><code>Controls sidebar</code></a> — contains tools for navigating the image, zoom,
+<p><a href="../../../docs/manual/basics/controls-sidebar/"><code>Controls sidebar</code></a>
+— contains tools for navigating the image, zoom,
 creating shapes and editing tracks (merge, split, group);</p>
 </li>
 <li>
@@ -1965,7 +1971,7 @@ Pop-up messages can contain useful information, links, or error messages.</p>
 <h3 id="jump-suggestion-messages">Jump Suggestion Messages</h3>
 <h4 id="open-a-task">Open a task</h4>
 <p>After creating a task, you can immediately open it by clicking <code>Open task</code>.
-<a href="../../../docs/manual/basics/creating_an_annotation_task/">Learn more about creating a task</a>.</p>
+<a href="../../../docs/manual/basics/create_an_annotation_task/">Learn more about creating a task</a>.</p>
 <h4 id="continue-to-the-frame-on-which-the-work-on-the-job-is-finished">Continue to the frame on which the work on the job is finished</h4>
 <p>When you open a job that you previously worked on, you will receive pop-up messages with a proposal
 to go to the frame that was visited before closing the tab.</p>
@@ -2044,7 +2050,8 @@ You can also use the mouse wheel to scale the image
 <p><strong>Upload Annotations</strong> — uploads annotations into a task.</p>
 </li>
 <li>
-<p><strong>Export as a dataset</strong> — download a data set from a task in one of the <a href="../../../docs/manual/advanced/formats/">supported formats</a>.
+<p><strong>Export as a dataset</strong> — download a data set from a task in one of the
+<a href="../../../docs/manual/advanced/formats/">supported formats</a>.
 You can also enter a <strong>Custom name</strong> and enable the <strong>Save images</strong>
 checkbox if you want the dataset to contain images.</p>
 </li>
@@ -2084,8 +2091,9 @@ to <code>acceptance</code> and <code>completed</code> / <code>annotation</code> 
 <h2 id="block">Block</h2>
 <p><img src="../../../images/image226.jpg" alt=""></p>
 <p>Used to pause automatic line creation when drawing a polygon with
-<a href="../../../docs/manual/advanced/opencv-tools/#intelligent-scissors">OpenCV Intelligent scissors</a>.
-Also used to postpone server requests when creating an object using <a href="../../../docs/manual/advanced/ai-tools/">AI Tools</a>.
+<a href="../../../docs/manual/advanced/ai-tools/#opencv-intelligent-scissors">OpenCV Intelligent scissors</a>.
+Also used to postpone server requests when creating an object using
+<a href="../../../docs/manual/advanced/ai-tools/">AI Tools</a>.
 When blocking is activated, the button turns blue.</p>
 <hr>
 <h2 id="player">Player</h2>
@@ -2125,7 +2133,7 @@ Shortcut: <strong>Space</strong> (change at <strong>Account Menu</strong> —&gt
 <ul>
 <li><code>Assignee</code> - the one to whom the job is assigned.</li>
 <li><code>Reviewer</code> – a user assigned to carry out the review,
-read more in the <a href="../../../docs/manual/advanced/review">review</a> section.</li>
+read more in the <a href="../../../docs/manual/advanced/analytics-and-monitoring/manual-qa/">review</a> section.</li>
 <li><code>Start Frame</code> - the number of the first frame in this job.</li>
 <li><code>End Frame</code> - the number of the last frame in this job.</li>
 <li><code>Frames</code> - the total number of all frames in the job.</li>
@@ -2218,7 +2226,7 @@ and type of annotation (shape, track). As well as the number of manual and inter
 <tr>
 <td><img src="../../../images/image201.jpg" alt=""></td>
 <td><code>OpenCV</code></td>
-<td><a href="../../../docs/manual/advanced/opencv-tools/">OpenCV</a></td>
+<td><a href="../../../docs/manual/advanced/ai-tools/">OpenCV</a></td>
 </tr>
 <tr>
 <td><img src="../../../images/image167.jpg" alt=""></td>
@@ -2253,7 +2261,7 @@ and type of annotation (shape, track). As well as the number of manual and inter
 <tr>
 <td><img src="../../../images/brushing_tools_icon.png" alt=""></td>
 <td><code>Brushing tools</code></td>
-<td><a href="../../../docs/manual/advanced/annotation-with-brushing-tools/">Annotation with brushing</a></td>
+<td><a href="../../../docs/manual/advanced/annotation-with-brush-tool/">Annotation with brushing</a></td>
 </tr>
 <tr>
 <td><img src="../../../images/image171.jpg" alt=""></td>
@@ -2263,7 +2271,7 @@ and type of annotation (shape, track). As well as the number of manual and inter
 <tr>
 <td><img src="../../../images/image195.jpg" alt=""></td>
 <td><code>Open an issue</code></td>
-<td><a href="../../../docs/manual/advanced/review/">Review</a> (available only in review mode)</td>
+<td><a href="../../../docs/manual/advanced/analytics-and-monitoring/manual-qa/">Review</a> (available only in review mode)</td>
 </tr>
 </tbody>
 </table>
@@ -2410,7 +2418,7 @@ a copy of the object on <code>N</code> <em>previous</em> frames at the same posi
 <p><img src="../../../images/image055.jpg" alt=""></p>
 <p><strong>Switch pinned property</strong> - when enabled, a shape cannot be moved by dragging or dropping.</p>
 <p><img src="../../../images/image052.jpg" alt=""></p>
-<p>**Tracker switcher **- enable/disable <a href="../../../docs/manual/advanced/ai-tools#trackers">tracking</a> for the object.</p>
+<p>**Tracker switcher **- enable/disable <a href="../../../docs/manual/advanced/ai-tools/#trackers">tracking</a> for the object.</p>
 <p><img src="../../../images/tracker_switcher.jpg" alt=""></p>
 <p>By clicking on the <strong>Details</strong> button you can collapse or expand the field with all the attributes of the object.</p>
 <p><img src="../../../images/image154.jpg" alt=""></p>
@@ -2741,10 +2749,12 @@ side panel for every interpolated object (turned off by default).</p>
 </li>
 <li>
 <p><code>Automatic bordering</code> - enable automatic bordering for polygons and polylines during drawing/editing.
-For more information To find out more, go to the section <a href="../../../docs/manual/advanced/annotation-with-polygons/">annotation with polygons</a>.</p>
+For more information To find out more, go to the section
+<a href="../../../docs/manual/advanced/annotation-with-polygons/">annotation with polygons</a>.</p>
 </li>
 <li>
-<p><code>Intelligent polygon cropping</code> - activates intelligent cropping when editing the polygon (read more in the section <a href="../../../docs/manual/advanced/annotation-with-polygons/edit-polygon/">edit polygon</a></p>
+<p><code>Intelligent polygon cropping</code> - activates intelligent cropping when editing the polygon (read more in the section
+<a href="../../../docs/manual/advanced/annotation-with-polygons/edit-polygon/">edit polygon</a></p>
 </li>
 <li>
 <p><code>Show tags on frame</code> - shows/hides frame tags on current frame</p>
@@ -2845,7 +2855,8 @@ and <code> Drawing Method</code> (by 2 points or by 4 points):</p>
 <p><img src="../../../images/image011_detrac.jpg" alt=""></p>
 </li>
 <li>
-<p>To learn more about creating a rectangle <a href="../../../docs/manual/advanced/annotation-with-rectangles/">read here</a>.</p>
+<p>To learn more about creating a rectangle
+<a href="../../../docs/manual/advanced/annotation-with-rectangles/">read here</a>.</p>
 </li>
 <li>
 <p>It is possible to adjust boundaries and location of the rectangle using a mouse.
@@ -3138,7 +3149,8 @@ attribute. In this case, after pressing <code>Down Arrow</code> you will be able
 </li>
 </ul>
 <p>To see all the hot keys available in the attribute annotation mode, press <code>F2</code>.
-Read more in the section <a href="../../../docs/manual/advanced/attribute-annotation-mode-advanced/">attribute annotation mode (advanced)</a>.</p>
+Read more in the section
+<a href="../../../docs/manual/advanced/attribute-annotation-mode-advanced/">attribute annotation mode (advanced)</a>.</p>
 
 </div>
 
@@ -3190,7 +3202,8 @@ Can be used to reduce the annotation file and to facilitate editing polygons.</p
 <hr>
 <h2 id="trackable">Trackable</h2>
 <p>Trackable object will be tracked automatically if the previous frame was
-a latest keyframe for the object. More details in the section <a href="../../../docs/manual/advanced/ai-tools/#trackers">trackers</a>.</p>
+a latest keyframe for the object. More details in the section
+<a href="../../../docs/manual/advanced/ai-tools/#trackers">trackers</a>.</p>
 <p><img src="../../../images/tracker_indication_detrac.jpg" alt=""></p>
 <hr>
 <h2 id="mode">Mode</h2>
@@ -3209,29 +3222,32 @@ Only objects on keyframes are manually annotation, and intermediate frames are l
 </ul>
 <hr>
 <h2 id="dimension">Dimension</h2>
-<p>Depends on the task data type that is defined when the <a href="../../../docs/manual/basics/creating_an_annotation_task/">task is created</a>.</p>
+<p>Depends on the task data type that is defined when the
+<a href="../../../docs/manual/basics/create_an_annotation_task/">task is created</a>.</p>
 <h3 id="2d">2D</h3>
 <p>The data format of 2d tasks are images and videos.
 Related sections:</p>
 <ul>
-<li><a href="../../../docs/manual/basics/creating_an_annotation_task/">Creating an annotation task</a></li>
+<li><a href="../../../docs/manual/basics/create_an_annotation_task/">Creating an annotation task</a></li>
 </ul>
 <h3 id="3d">3D</h3>
 <p>The data format of 3d tasks is a cloud of points.
-<a href="../../../docs/manual/basics/creating_an_annotation_task/#data-formats-for-a-3d-task">Data formats for a 3D task</a></p>
+<a href="../../../docs/manual/basics/create_an_annotation_task/#data-formats-for-a-3d-task">Data formats for a 3D task</a></p>
 <p>Related sections:</p>
 <ul>
 <li><a href="../../../docs/manual/basics/3d-task-workspace/">3D task workspace</a></li>
 <li><a href="../../../docs/manual/basics/standard-3d-mode-basics/">Standard 3D mode</a></li>
-<li><a href="../../../docs/manual/basics/3d-object-annotation-basics/">3D Object annotation</a></li>
+<li><a href="../../../docs/manual/basics/3d-object-annotation/">3D Object annotation</a></li>
 </ul>
 <hr>
 <h2 id="state">State</h2>
-<p>State of the job. The state can be changed by an assigned user in <a href="../../../docs/manual/basics/top-panel/">the menu inside the job</a>.
+<p>State of the job. The state can be changed by an assigned user in
+<a href="../../../docs/manual/basics/top-panel/">the menu inside the job</a>.
 There are several possible states: <code>new</code>, <code>in progress</code>, <code>rejected</code>, <code>completed</code>.</p>
 <hr>
 <h2 id="stage">Stage</h2>
-<p>Stage of the job. The stage is specified with the drop-down list on the <a href="../../../docs/manual/basics/tasks-page/">task page</a>.
+<p>Stage of the job. The stage is specified with the drop-down list on the
+<a href="../../../docs/manual/basics/tasks-page/">task page</a>.
 There are three stages: <code>annotation</code>, <code>validation</code> or <code>acceptance</code>. This value affects the task progress bar.</p>
 <hr>
 <h2 id="subset">Subset</h2>
@@ -3559,7 +3575,8 @@ open your bucket page.</li>
 </ol>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>aws s3 cp &lt;s3://bucket-name&gt; &lt;yourfolder&gt; --recursive
 </span></span></code></pre></div><ol start="4">
-<li>After copying the files, you can create a manifest file as described in <a href="../../../docs/manual/advanced/dataset_manifest/">preapair manifest file section</a>:</li>
+<li>After copying the files, you can create a manifest file as described in
+<a href="../../../docs/manual/advanced/dataset_manifest/">preapair manifest file section</a>:</li>
 </ol>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python &lt;cvat repository&gt;/utils/dataset_manifest/create.py --output-dir &lt;yourfolder&gt; &lt;yourfolder&gt;
 </span></span></code></pre></div><ol start="5">
@@ -3898,7 +3915,8 @@ open your bucket page.</li>
 <ol>
 <li>Download the <a href="https://www.robots.ox.ac.uk/~vgg/data/pets/data/images.tar.gz">archive with images</a>.</li>
 <li>Unpack the archive into the prepared folder.</li>
-<li>Create a manifest. For more information, see <a href="../../../docs/manual/advanced/dataset_manifest/"><strong>Dataset manifest</strong></a>:</li>
+<li>Create a manifest. For more information, see
+<a href="../../../docs/manual/advanced/dataset_manifest/"><strong>Dataset manifest</strong></a>:</li>
 </ol>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python &lt;cvat repository&gt;/utils/dataset_manifest/create.py --output-dir &lt;your_folder&gt; &lt;your_folder&gt;
 </span></span></code></pre></div>
@@ -4012,8 +4030,9 @@ Read more about <a href="../../../docs/manual/advanced/organization/">organizati
 <p>You can change: the name of the project, the list of labels
 (which will be used for tasks created as parts of this project) and a skeleton if it&rsquo;s necessary.
 In advanced configuration also you can specify: a link to the issue, source and target storages.
-Learn more about <a href="../../../docs/manual/basics/creating_an_annotation_task/#labels">creating a label list</a>,
-<a href="../../../docs/manual/advanced/skeletons/">creating the skeleton</a> and <a href="../../../docs/manual/basics/attach-cloud-storage/">attach cloud storage</a>.</p>
+Learn more about <a href="../../../docs/manual/basics/create_an_annotation_task/#labels">creating a label list</a>,
+<a href="../../../docs/manual/advanced/skeletons/">creating the skeleton</a> and
+<a href="../../../docs/manual/basics/attach-cloud-storage/">attach cloud storage</a>.</p>
 <p>To save and open project click on <code>Submit &amp; Open</code> button. Also you
 can click on <code>Submit &amp; Continue</code> button for creating several projects in sequence</p>
 <p><img src="../../../images/image191.jpg" alt=""></p>
@@ -4028,9 +4047,10 @@ can click on <code>Submit &amp; Continue</code> button for creating several proj
 <p>Open the <code>Actions</code> menu. Each button is responsible for a specific function in the <code>Actions</code> menu:</p>
 <ul>
 <li><code>Export dataset</code>/<code>Import dataset</code> - download/upload annotations or annotations and images in a specific format.
-More information is available in the <a href="../../../docs/manual/advanced/export-import-datasets/">export/import datasets</a>
+More information is available in the <a href="../../../docs/manual/advanced/import-datasets/">export/import datasets</a>
 section.</li>
-<li><code>Backup project</code> - make a backup of the project read more in the <a href="../../../docs/manual/advanced/backup/">backup</a> section.</li>
+<li><code>Backup project</code> - make a backup of the project read more in the
+<a href="../../../docs/manual/advanced/backup/">backup</a> section.</li>
 <li><code>Delete</code> - remove the project and all related tasks.</li>
 </ul>
 </li>
@@ -4247,7 +4267,8 @@ by going to <strong>Organization page</strong> &gt; <strong>Leave organization</
 <li>
 <p>Person must click the link and:</p>
 <ol>
-<li>If the invitee does not have the CVAT account, then <a href="../../../docs/manual/basics/registration/#user-registration"><strong>set up an account</strong></a>.</li>
+<li>If the invitee does not have the CVAT account, then
+<a href="../../../docs/manual/basics/registration/#user-registration"><strong>set up an account</strong></a>.</li>
 <li>If the invitee has a CVAT account, then log in to the account.</li>
 </ol>
 </li>
@@ -4335,7 +4356,8 @@ To execute enter a search string in search field.</li>
     
 	<h1 id="pg-e2b99661441784c00f94d2aa1a169963">2.4 - Shape mode (advanced)</h1>
     <div class="lead">Advanced operations available during annotation in shape mode.</div>
-	<p>Basic operations in the mode were described in section <a href="../../../docs/manual/basics/shape-mode-basics/">shape mode (basics)</a>.</p>
+	<p>Basic operations in the mode were described in section
+<a href="../../../docs/manual/basics/shape-mode-basics/">shape mode (basics)</a>.</p>
 <p><strong>Occluded</strong>
 Occlusion is an attribute used if an object is occluded by another object or
 isn&rsquo;t fully visible on the frame. Use <code>Q</code> shortcut to set the property
@@ -4561,7 +4583,8 @@ configuration file when executing the Docker Compose command.</p>
 </table>
 <!--lint enable maximum-line-length-->
 <h2 id="organization-roles-in-cvatai">Organization roles in CVAT.ai</h2>
-<p>Organization Roles are available only within the <a href="../../../docs/manual/advanced/organization/"><strong>CVAT Organization</strong></a>.</p>
+<p>Organization Roles are available only within the
+<a href="../../../docs/manual/advanced/organization/"><strong>CVAT Organization</strong></a>.</p>
 <p><img src="../../../images/user-roles.png" alt="Organization Roles"></p>
 <p>Organization roles are assigned when users are invited to the Organization.</p>
 <p><img src="../../../images/org-roles.png" alt="Organization Roles"></p>
@@ -4650,7 +4673,8 @@ functions via the annotation interface toolbar:</p>
     
 	<h1 id="pg-588e4c6ed67ac064499157f92893ddc2">2.7 - Track mode (advanced)</h1>
     <div class="lead">Advanced operations available during annotation in track mode.</div>
-	<p>Basic operations in the mode were described in section <a href="../../../docs/manual/basics/track-mode-basics/">track mode (basics)</a>.</p>
+	<p>Basic operations in the mode were described in section
+<a href="../../../docs/manual/basics/track-mode-basics/">track mode (basics)</a>.</p>
 <p>Shapes that were created in the track mode, have extra navigation buttons.</p>
 <ul>
 <li>
@@ -4682,7 +4706,8 @@ functions via the annotation interface toolbar:</p>
 	<h1 id="pg-d340565087e0f9cbfaf6ccd6219466d5">2.8 - 3D Object annotation (advanced)</h1>
     <div class="lead">Overview of advanced operations available when annotating 3D objects.</div>
 	<p>As well as 2D-task objects, 3D-task objects support the ability to change appearance, attributes,
-properties and have an action menu. Read more in <a href="../../../docs/manual/basics/objects-sidebar/">objects sidebar</a> section.</p>
+properties and have an action menu. Read more in
+<a href="../../../docs/manual/basics/objects-sidebar/">objects sidebar</a> section.</p>
 <h2 id="moving-an-object">Moving an object</h2>
 <p>If you hover the cursor over a cuboid and press <code>Shift+N</code>, the cuboid will be cut,
 so you can paste it in other place (double-click to paste the cuboid).</p>
@@ -4709,7 +4734,8 @@ but unlike 2D tasks you have to place a copied object in a 3D space (double clic
     
 	<h1 id="pg-09ca69c0dc37771f108831f0a42fb850">2.9 - Attribute annotation mode (advanced)</h1>
     <div class="lead">Advanced operations available in attribute annotation mode.</div>
-	<p>Basic operations in the mode were described in section <a href="../../../docs/manual/basics/attribute-annotation-mode-basics/">attribute annotation mode (basics)</a>.</p>
+	<p>Basic operations in the mode were described in section
+<a href="../../../docs/manual/basics/attribute-annotation-mode-basics/">attribute annotation mode (basics)</a>.</p>
 <p>It is possible to handle lots of objects on the same frame in the mode.</p>
 <p><img src="../../../images/image058_detrac.jpg" alt=""></p>
 <p>It is more convenient to annotate objects of the same type. In this case you can apply
@@ -4953,14 +4979,16 @@ In this case after closing the polygon, you can select the part of the polygon y
 	<h1 id="pg-1f4fe1a1fe6fe79b065945412ca4d774">2.11.4 - Track mode with polygons</h1>
     
 	<p>Polygons in the track mode allow you to mark moving objects more accurately other than using a rectangle
-(<a href="../../../docs/manual/basics/track-mode-basics/">Tracking mode (basic)</a>; <a href="../../../docs/manual/advanced/track-mode-advanced/">Tracking mode (advanced)</a>).</p>
+(<a href="../../../docs/manual/basics/track-mode-basics/">Tracking mode (basic)</a>;
+<a href="../../../docs/manual/advanced/track-mode-advanced/">Tracking mode (advanced)</a>).</p>
 <ol>
 <li>
 <p>To create a polygon in the track mode, click the <code>Track</code> button.</p>
 <p><img src="../../../images/image184.jpg" alt=""></p>
 </li>
 <li>
-<p>Create a polygon the same way as in the case of <a href="../../../docs/manual/advanced/annotation-with-polygons/">Annotation with polygons</a>.
+<p>Create a polygon the same way as in the case of
+<a href="../../../docs/manual/advanced/annotation-with-polygons/">Annotation with polygons</a>.
 Press <code>N</code> or click the <code>Done</code> button on the top panel to complete the polygon.</p>
 </li>
 <li>
@@ -5019,7 +5047,7 @@ internal shapes (they will be merged into the largest one and then covered by
 <li><code>CamVid</code></li>
 <li><code>MOTS</code></li>
 <li><code>ICDAR</code></li>
-<li><code>COCO</code> (RLE-encoded instance masks, <a href="../../../docs/manual/advanced/formats/format-coco">guide</a>)</li>
+<li><code>COCO</code> (RLE-encoded instance masks, <a href="../../../docs/manual/advanced/formats/format-coco/">guide</a>)</li>
 <li><code>Datumaro</code></li>
 </ul>
 <p>An example of exported masks (in the <code>Segmentation Mask</code> format):</p>
@@ -5318,7 +5346,10 @@ Note that this will also reset the perspective effects.</p>
 these faces are: the left, right and dorsal faces, relative to the gray face.
 Simply drag the faces to move them independently from the rest of the cuboid.</p>
 <p><img src="../../../images/gif020_mapillary_vistas.gif" alt=""></p>
-<p>You can also use cuboids in track mode, similar to rectangles in track mode (<a href="../../../docs/manual/basics/track-mode-basics/">basics</a> and <a href="../../../docs/manual/advanced/track-mode-advanced/">advanced</a>) or <a href="../../../docs/manual/advanced/annotation-with-polygons/track-mode-with-polygons/">Track mode with polygons</a></p>
+<p>You can also use cuboids in track mode, similar to rectangles in track mode
+(<a href="../../../docs/manual/basics/track-mode-basics/">basics</a> and
+<a href="../../../docs/manual/advanced/track-mode-advanced/">advanced</a>) or
+<a href="../../../docs/manual/advanced/annotation-with-polygons/track-mode-with-polygons/">Track mode with polygons</a></p>
 
 </div>
 
@@ -5491,7 +5522,8 @@ for more information, see <a href="#configuring-skeleton-points"><strong>Configu
 <p>(Optional) If you want to adjust labels, within the
 label, click the <strong>Update</strong> attributes icon.
 <br>The <a href="../../../docs/manual/advanced/skeletons/#skeleton-configurator"><strong>Skeleton configurator</strong></a>
-will open, where you can <a href="../../../docs/manual/advanced/skeletons/#configuring-skeleton-points"><strong>configure the skeleton</strong></a>.
+will open, where you can
+<a href="../../../docs/manual/advanced/skeletons/#configuring-skeleton-points"><strong>configure the skeleton</strong></a>.
 <br><strong>Note</strong>: Labels cannot be adjusted after the task/project is created.</p>
 </li>
 <li>
@@ -5711,7 +5743,8 @@ The brush tool has several modes, for example: erase pixels, change brush shapes
 </li>
 </ol>
 <p>To add the next object, repeat steps 1 to 5.
-All added objects will be visible on the image and the  <a href="../../../docs/manual/basics/objects-sidebar/">objects sidebar</a>.</p>
+All added objects will be visible on the image and the
+<a href="../../../docs/manual/basics/objects-sidebar/">objects sidebar</a>.</p>
 <p>To save the job with all added objects, on the top menu click <strong>Save</strong> <img src="../../../images/brushing_tools_save.png" alt="Save">.</p>
 <h2 id="annotation-with-polygon-to-mask">Annotation with polygon-to-mask</h2>
 <p>To annotate with polygon-to-mask, do the following:</p>
@@ -5741,7 +5774,8 @@ All added objects will be visible on the image and the  <a href="../../../docs/m
 </li>
 </ol>
 <p>To add the next object, repeat steps 1 to 5.</p>
-<p>All added objects will be visible on the image and the  <a href="../../../docs/manual/basics/objects-sidebar/">objects sidebar</a>.</p>
+<p>All added objects will be visible on the image and the
+<a href="../../../docs/manual/basics/objects-sidebar/">objects sidebar</a>.</p>
 <p>To save the job with all added objects, on the top menu click <strong>Save</strong> <img src="../../../images/brushing_tools_save.png" alt="Save">.</p>
 <h2 id="remove-underlying-pixels">Remove underlying pixels</h2>
 <p>Use <strong>Remove underlying pixels</strong> tool when you want to add a mask and simultaneously delete the pixels of <br>other masks that are located at the same positions. It is a highly useful feature to avoid meticulous drawing edges twice between two different objects.</p>
@@ -5757,8 +5791,8 @@ To do this, use the following <a href="../../../docs/manual/advanced/ai-tools/">
 <li>Click <strong>Annotate</strong>.</li>
 </ol>
 <h2 id="import-and-export">Import and export</h2>
-<p>For export, see <a href="../../../docs/manual/advanced/export-import-datasets/">Export dataset</a></p>
-<p>Import follows the general <a href="../../../docs/manual/advanced/export-import-datasets/">import dataset</a> procedure,
+<p>For export, see <a href="../../../docs/manual/advanced/import-datasets/">Export dataset</a></p>
+<p>Import follows the general <a href="../../../docs/manual/advanced/import-datasets/">import dataset</a> procedure,
 with the additional option of converting masks to polygons.</p>
 <blockquote>
 <p><strong>Note:</strong> This option is available for formats that work with masks only.</p>
@@ -5812,7 +5846,8 @@ checkbox, then after you add the tag the frame will automatically switch to the 
     
 	<p>To deploy the models, you will need to install the necessary components using
 <a href="../../../docs/administration/advanced/installation_automatic_annotation/">Semi-automatic and Automatic Annotation guide</a>.
-To learn how to deploy the model, read <a href="../../../docs/manual/advanced/serverless-tutorial/">Serverless tutorial</a>.</p>
+To learn how to deploy the model, read
+<a href="../../../docs/manual/advanced/serverless-tutorial/">Serverless tutorial</a>.</p>
 <p>The Models page contains a list of deep learning (DL) models deployed for semi-automatic and automatic annotation.
 To open the Models page, click the Models button on the navigation bar.
 The list of models is presented in the form of a table. The parameters indicated for each model are the following:</p>
@@ -5821,11 +5856,15 @@ The list of models is presented in the form of a table. The parameters indicated
 <li>model <code>Name</code></li>
 <li>model <code>Type</code>:
 <ul>
-<li><code>detector</code> - used for automatic annotation (available in <a href="../../../docs/manual/advanced/ai-tools/#detectors">detectors</a>
+<li><code>detector</code> - used for automatic annotation
+(available in <a href="../../../docs/manual/advanced/ai-tools/#detectors">detectors</a>
 and <a href="../../../docs/manual/advanced/automatic-annotation/">automatic annotation</a>)</li>
-<li><code>interactor</code> - used for semi-automatic shape annotation (available in <a href="../../../docs/manual/advanced/ai-tools/#interactors">interactors</a>)</li>
-<li><code>tracker</code> - used for semi-automatic track annotation (available in <a href="../../../docs/manual/advanced/ai-tools/#trackers">trackers</a>)</li>
-<li><code>reid</code> - used to combine individual objects into a track (available in <a href="../../../docs/manual/advanced/automatic-annotation/">automatic annotation</a>)</li>
+<li><code>interactor</code> - used for semi-automatic shape annotation
+(available in <a href="../../../docs/manual/advanced/ai-tools/#interactors">interactors</a>)</li>
+<li><code>tracker</code> - used for semi-automatic track annotation
+(available in <a href="../../../docs/manual/advanced/ai-tools/#trackers">trackers</a>)</li>
+<li><code>reid</code> - used to combine individual objects into a track
+(available in <a href="../../../docs/manual/advanced/automatic-annotation/">automatic annotation</a>)</li>
 </ul>
 </li>
 <li><code>Description</code> - brief description of the model</li>
@@ -6036,7 +6075,7 @@ the amount of data and labeled objects, and is <strong>not updated immediately</
 </tr>
 <tr>
 <td>Issues</td>
-<td>Number of <a href="../../../docs/manual/advanced/review/">opened issues</a>. If no issues were reported, will show 0.</td>
+<td>Number of <a href="../../../docs/manual/advanced/analytics-and-monitoring/manual-qa/">opened issues</a>. If no issues were reported, will show 0.</td>
 </tr>
 <tr>
 <td>Quality report</td>
@@ -6977,7 +7016,8 @@ papers and official documentation.</p>
 <p>Automatic annotation uses pre-installed and added models.</p>
 <blockquote>
 <p>For self-hosted solutions,
-you need to <a href="../../../docs/administration/advanced/installation_automatic_annotation/">install Automatic Annotation first</a>
+you need to
+<a href="../../../docs/administration/advanced/installation_automatic_annotation/">install Automatic Annotation first</a>
 and <a href="../../../docs/manual/advanced/models/">add models</a>.</p>
 </blockquote>
 <p>List of pre-installed models:</p>
@@ -7215,12 +7255,14 @@ This can be used to backup a task or project on your PC or to transfer to anothe
 <h2 id="create-backup">Create backup</h2>
 <p>To backup a task or project, open the action menu and select <code>Backup Task</code> or <code>Backup Project</code>.</p>
 <p><img src="../../../images/image219.jpg" alt=""></p>
-<p>You can backup a project or a task locally on your PC or using an <a href="../../../docs/manual/basics/attach-cloud-storage/">attached cloud storage</a>.</p>
+<p>You can backup a project or a task locally on your PC or using an
+<a href="../../../docs/manual/basics/attach-cloud-storage/">attached cloud storage</a>.</p>
 <p>(Optional) Specify the name in the <code>Custom name</code> text field for backup, otherwise the file of backup name
 will be given by the mask <code>project_&lt;project_name&gt;_backup_&lt;date&gt;_&lt;time&gt;.zip</code> for the projects
 and <code>task_&lt;task_name&gt;_backup_&lt;date&gt;_&lt;time&gt;.zip</code> for the tasks.</p>
 <p><img src="../../../images/image253.jpg" alt=""></p>
-<p>If you want to save a backup to a specific <a href="../../../docs/manual/basics/attach-cloud-storage/">attached cloud storage</a>,
+<p>If you want to save a backup to a specific
+<a href="../../../docs/manual/basics/attach-cloud-storage/">attached cloud storage</a>,
 you should additionally turn off the switch <code>Use default settings</code>, select the <code>Cloud storage</code> value
 in the <code>Target storage</code> and select this storage in the list of the attached cloud storages.</p>
 <h2 id="create-backup-apis">Create backup APIs</h2>
@@ -7258,25 +7300,25 @@ task or project and task specification and annotations with the following struct
 
   
   
-<ul class="nav nav-tabs" id="tabs-0" role="tablist">
+<ul class="nav nav-tabs" id="tabs-2" role="tablist">
   <li class="nav-item">
       <button class="nav-link active"
-          id="tabs-00-00-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-00" role="tab"
-          aria-controls="tabs-00-00" aria-selected="true">
+          id="tabs-02-00-tab" data-bs-toggle="tab" data-bs-target="#tabs-02-00" role="tab"
+          aria-controls="tabs-02-00" aria-selected="true">
         Task Backup Structure
       </button>
     </li><li class="nav-item">
       <button class="nav-link"
-          id="tabs-00-01-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-01" role="tab"
-          aria-controls="tabs-00-01" aria-selected="false">
+          id="tabs-02-01-tab" data-bs-toggle="tab" data-bs-target="#tabs-02-01" role="tab"
+          aria-controls="tabs-02-01" aria-selected="false">
         Project Backup Structure
       </button>
     </li>
 </ul>
 
-<div class="tab-content" id="tabs-0-content">
+<div class="tab-content" id="tabs-2-content">
     <div class="tab-pane fade show active"
-        id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab" tabindex="0">
+        id="tabs-02-00" role="tabpanel" aria-labelled-by="tabs-02-00-tab" tabindex="2">
         <pre tabindex="0"><code>    .
     ├── data
     │   └── {user uploaded data}
@@ -7285,7 +7327,7 @@ task or project and task specification and annotations with the following struct
   </code></pre>
     </div>
     <div class="tab-pane fade"
-        id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab" tabindex="0">
+        id="tabs-02-01" role="tabpanel" aria-labelled-by="tabs-02-01-tab" tabindex="2">
         <pre tabindex="0"><code>    .
     ├── task_{id}
     │   ├── data
@@ -7503,7 +7545,8 @@ choose if a task is created in annotation mode.</p>
 </ul>
 </li>
 <li>
-<p>And also in formats from the <a href="../../../docs/manual/advanced/formats/">list of annotation formats supported by CVAT</a>.</p>
+<p>And also in formats from the
+<a href="../../../docs/manual/advanced/formats/">list of annotation formats supported by CVAT</a>.</p>
 </li>
 <li>
 <p>For 3D tasks, the following formats are available:</p>
@@ -8282,7 +8325,7 @@ such as <code>instances</code>, <code>panoptic</code>, <code>image_info</code>, 
 </span></span></code></pre></div></li>
 <li>
 <p>Select <code>val2017.zip</code> as data
-(See <a href="../../../docs/manual/basics/creating_an_annotation_task/">Creating an annotation task</a>
+(See <a href="../../../docs/manual/basics/create_an_annotation_task/">Creating an annotation task</a>
 guide for details)</p>
 </li>
 <li>
@@ -8461,7 +8504,7 @@ or <code>frame_000000.jpg</code>. It should be used when task was created from v
 </span></span></code></pre></div><p>You can add <code>~checkbox=difficult:false ~checkbox=truncated:false</code>
 attributes for each label if you want to use them.</p>
 <p>Select interesting image files
-(See <a href="../../../docs/manual/basics/creating_an_annotation_task/">Creating an annotation task</a> guide for details)</p>
+(See <a href="../../../docs/manual/basics/create_an_annotation_task/">Creating an annotation task</a> guide for details)</p>
 </li>
 <li>
 <p>zip the corresponding annotation files</p>
@@ -8668,7 +8711,7 @@ and prepare the YOLO formatted annotation files.</p>
 </span></span><span style="display:flex;"><span>horse motorbike person pottedplant sheep sofa train tvmonitor
 </span></span></code></pre></div><p>Select images. zip as data. Most likely you should use <code>share</code>
 functionality because size of images. zip is more than 500Mb.
-See <a href="../../../docs/manual/basics/creating_an_annotation_task/">Creating an annotation task</a>
+See <a href="../../../docs/manual/basics/create_an_annotation_task/">Creating an annotation task</a>
 guide for details.</p>
 </li>
 <li>
@@ -10356,16 +10399,16 @@ you will go to the previous / next frame which contains any annotated objects.</
 </table>
 <ul>
 <li>
-<p><a href="../../../docs/manual/advanced/projects/#supported-properties-for-projects-list">Supported properties for projects list</a></p>
+<a href="../../../docs/manual/advanced/projects/#supported-properties-for-projects-list">Supported properties for projects list</a>
 </li>
 <li>
-<p><a href="../../../docs/manual/basics/tasks-page/#supported-properties-for-tasks-list">Supported properties for tasks list</a></p>
+<a href="../../../docs/manual/basics/tasks-page/#supported-properties-for-tasks-list">Supported properties for tasks list</a>
 </li>
 <li>
-<p><a href="../../../docs/manual/basics/jobs-page/#supported-properties-for-jobs-list">Supported properties for jobs list</a></p>
+<a href="../../../docs/manual/basics/jobs-page/#supported-properties-for-jobs-list">Supported properties for jobs list</a>
 </li>
 <li>
-<p><a href="../../../docs/manual/basics/cloud-storages/#supported-properties-for-cloud-storages-list">Supported properties for cloud storages list</a></p>
+<a href="../../../docs/manual/basics/cloud-storages/#supported-properties-for-cloud-storages-list">Supported properties for cloud storages list</a>
 </li>
 </ul>
 <h3 id="supported-operators-for-properties">Supported operators for properties</h3>
@@ -10486,37 +10529,37 @@ as the primary image to which it should be linked.</li>
 
 
 
-<ul class="nav nav-tabs" id="tabs-0" role="tablist">
+<ul class="nav nav-tabs" id="tabs-1" role="tablist">
   <li class="nav-item">
       <button class="nav-link active"
-          id="tabs-00-00-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-00" role="tab"
-          aria-controls="tabs-00-00" aria-selected="true">
+          id="tabs-01-00-tab" data-bs-toggle="tab" data-bs-target="#tabs-01-00" role="tab"
+          aria-controls="tabs-01-00" aria-selected="true">
         2D task
       </button>
     </li><li class="nav-item">
       <button class="nav-link"
-          id="tabs-00-01-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-01" role="tab"
-          aria-controls="tabs-00-01" aria-selected="false">
+          id="tabs-01-01-tab" data-bs-toggle="tab" data-bs-target="#tabs-01-01" role="tab"
+          aria-controls="tabs-01-01" aria-selected="false">
         3D option 1
       </button>
     </li><li class="nav-item">
       <button class="nav-link"
-          id="tabs-00-02-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-02" role="tab"
-          aria-controls="tabs-00-02" aria-selected="false">
+          id="tabs-01-02-tab" data-bs-toggle="tab" data-bs-target="#tabs-01-02" role="tab"
+          aria-controls="tabs-01-02" aria-selected="false">
         3D option 2
       </button>
     </li><li class="nav-item">
       <button class="nav-link"
-          id="tabs-00-03-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-03" role="tab"
-          aria-controls="tabs-00-03" aria-selected="false">
+          id="tabs-01-03-tab" data-bs-toggle="tab" data-bs-target="#tabs-01-03" role="tab"
+          aria-controls="tabs-01-03" aria-selected="false">
         3D task KITTI format
       </button>
     </li>
 </ul>
 
-<div class="tab-content" id="tabs-0-content">
+<div class="tab-content" id="tabs-1-content">
     <div class="tab-pane fade show active"
-        id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab" tabindex="0">
+        id="tabs-01-00" role="tabpanel" aria-labelled-by="tabs-01-00-tab" tabindex="1">
         <pre tabindex="0"><code>  root_directory
     image_1_to_be_annotated.jpg
     image_2_to_be_annotated.jpg
@@ -10532,7 +10575,7 @@ as the primary image to which it should be linked.</li>
              context_image_for_image_3.jpg</code></pre>
     </div>
     <div class="tab-pane fade"
-        id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab" tabindex="0">
+        id="tabs-01-01" role="tabpanel" aria-labelled-by="tabs-01-01-tab" tabindex="1">
         <pre tabindex="0"><code> root_directory
     pointcloud/
       image_1_to_be_annotated.pcd
@@ -10544,7 +10587,7 @@ as the primary image to which it should be linked.</li>
         context_image_for_image_2.jpg</code></pre>
     </div>
     <div class="tab-pane fade"
-        id="tabs-00-02" role="tabpanel" aria-labelled-by="tabs-00-02-tab" tabindex="0">
+        id="tabs-01-02" role="tabpanel" aria-labelled-by="tabs-01-02-tab" tabindex="1">
         <pre tabindex="0"><code> /any_directory
     pointcloud.pcd
     pointcloud.jpg
@@ -10554,7 +10597,7 @@ as the primary image to which it should be linked.</li>
         pointcloud.png</code></pre>
     </div>
     <div class="tab-pane fade"
-        id="tabs-00-03" role="tabpanel" aria-labelled-by="tabs-00-03-tab" tabindex="0">
+        id="tabs-01-03" role="tabpanel" aria-labelled-by="tabs-01-03-tab" tabindex="1">
         <pre tabindex="0"><code> /image_00
     /data
         /0000000000.png
@@ -10736,7 +10779,8 @@ or manually, following <a href="#file-format">the manifest file format specifica
 <li>A video file or a set of images is used as the data source and
 the caching mode is enabled. <a href="../../../docs/manual/advanced/data_on_fly/">Read more</a></li>
 <li>The data is located in a cloud storage. <a href="../../../docs/manual/basics/cloud-storages/">Read more</a></li>
-<li>The <code>predefined</code> file sorting method is specified. <a href="../../../docs/manual/basics/creating_an_annotation_task/#sorting-method">Read more</a></li>
+<li>The <code>predefined</code> file sorting method is specified.
+<a href="../../../docs/manual/basics/create_an_annotation_task/#sorting-method">Read more</a></li>
 </ul>
 <h3 id="the-predefined-sorting-method">The predefined sorting method</h3>
 <p>Independently of the file source being used, when the <code>predefined</code>
@@ -10903,7 +10947,8 @@ the task data chunks will be created with the default method, i.e. during the ta
 it cannot be retrieved.</li>
 </ul>
 <h4 id="how-to-use">How to use</h4>
-<p>To enable or disable this feature for a new task, use the <a href="../../../docs/manual/basics/creating_an_annotation_task/#use-cache"><code>Use Cache</code></a>
+<p>To enable or disable this feature for a new task, use the
+<a href="../../../docs/manual/basics/create_an_annotation_task/#use-cache"><code>Use Cache</code></a>
 toggle in the task configuration.</p>
 <h4 id="uploading-a-manifest-with-data">Uploading a manifest with data</h4>
 <p>When creating a task, you can upload a <code>manifest.jsonl</code> file along with the video or dataset with images.

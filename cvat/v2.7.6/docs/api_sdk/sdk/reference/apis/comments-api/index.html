@@ -20,7 +20,8 @@
 <title>CommentsApi class reference | CVAT</title>
 <meta name="description" content=""><meta property="og:title" content="CommentsApi class reference" />
 <meta property="og:description" content="All URIs are relative to http://localhost
-   Method HTTP request Description     create POST /api/comments Method creates a comment   destroy DELETE /api/comments/{id} Method deletes a comment   list GET /api/comments Method returns a paginated list of comments   partial_update PATCH /api/comments/{id} Methods does a partial update of chosen fields in a comment   retrieve GET /api/comments/{id} Method returns details of a comment    create  create( comment_write_request, x_organization=None, org=None, org_id=None, **kwargs )" />
+   Method HTTP request Description     create POST /api/comments Create a comment   destroy DELETE /api/comments/{id} Delete a comment   list GET /api/comments List comments   partial_update PATCH /api/comments/{id} Update a comment   retrieve GET /api/comments/{id} Get comment details    create  create( comment_write_request, x_organization=None, org=None, org_id=None, **kwargs )
+ Create a comment" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/api_sdk/sdk/reference/apis/comments-api/" /><meta property="article:section" content="docs" />
 
@@ -28,13 +29,15 @@
 
 <meta itemprop="name" content="CommentsApi class reference">
 <meta itemprop="description" content="All URIs are relative to http://localhost
-   Method HTTP request Description     create POST /api/comments Method creates a comment   destroy DELETE /api/comments/{id} Method deletes a comment   list GET /api/comments Method returns a paginated list of comments   partial_update PATCH /api/comments/{id} Methods does a partial update of chosen fields in a comment   retrieve GET /api/comments/{id} Method returns details of a comment    create  create( comment_write_request, x_organization=None, org=None, org_id=None, **kwargs )">
+   Method HTTP request Description     create POST /api/comments Create a comment   destroy DELETE /api/comments/{id} Delete a comment   list GET /api/comments List comments   partial_update PATCH /api/comments/{id} Update a comment   retrieve GET /api/comments/{id} Get comment details    create  create( comment_write_request, x_organization=None, org=None, org_id=None, **kwargs )
+ Create a comment">
 
-<meta itemprop="wordCount" content="1510">
+<meta itemprop="wordCount" content="1474">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="CommentsApi class reference"/>
 <meta name="twitter:description" content="All URIs are relative to http://localhost
-   Method HTTP request Description     create POST /api/comments Method creates a comment   destroy DELETE /api/comments/{id} Method deletes a comment   list GET /api/comments Method returns a paginated list of comments   partial_update PATCH /api/comments/{id} Methods does a partial update of chosen fields in a comment   retrieve GET /api/comments/{id} Method returns details of a comment    create  create( comment_write_request, x_organization=None, org=None, org_id=None, **kwargs )"/>
+   Method HTTP request Description     create POST /api/comments Create a comment   destroy DELETE /api/comments/{id} Delete a comment   list GET /api/comments List comments   partial_update PATCH /api/comments/{id} Update a comment   retrieve GET /api/comments/{id} Get comment details    create  create( comment_write_request, x_organization=None, org=None, org_id=None, **kwargs )
+ Create a comment"/>
 
 
 
@@ -156,7 +159,7 @@
         <a class="dropdown-item" href="../../../../../../../v2.10.3/docs/api_sdk/sdk/reference/apis/comments-api/">v2.10.3</a>
     
       
-        <a class="dropdown-item" href="../../../../../../../v2.11.2/docs/api_sdk/sdk/reference/apis/comments-api/">v2.11.2</a>
+        <a class="dropdown-item" href="../../../../../../../v2.11.3/docs/api_sdk/sdk/reference/apis/comments-api/">v2.11.3</a>
     
       
         <a class="dropdown-item" href="../../../../../../../v2.2.0/docs/api_sdk/sdk/reference/apis/comments-api/">v2.2.0</a>
@@ -194,7 +197,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../../../../../offline-search-index.3e5b97c178b19020ba201277fe0db4ee.json"
+  data-offline-search-index-json-src="../../../../../../offline-search-index.b224dcbe0102d3512ae088953ede5803.json"
   data-offline-search-base-href="../../../../../../"
   data-offline-search-max-results="10"
 >
@@ -230,7 +233,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../../../../../offline-search-index.3e5b97c178b19020ba201277fe0db4ee.json"
+  data-offline-search-index-json-src="../../../../../../offline-search-index.b224dcbe0102d3512ae088953ede5803.json"
   data-offline-search-base-href="../../../../../../"
   data-offline-search-max-results="10"
 >
@@ -6001,27 +6004,27 @@
 <tr>
 <td><a href="../comments-api#create"><strong>create</strong></a></td>
 <td><strong>POST</strong> /api/comments</td>
-<td>Method creates a comment</td>
+<td>Create a comment</td>
 </tr>
 <tr>
 <td><a href="../comments-api#destroy"><strong>destroy</strong></a></td>
 <td><strong>DELETE</strong> /api/comments/{id}</td>
-<td>Method deletes a comment</td>
+<td>Delete a comment</td>
 </tr>
 <tr>
 <td><a href="../comments-api#list"><strong>list</strong></a></td>
 <td><strong>GET</strong> /api/comments</td>
-<td>Method returns a paginated list of comments</td>
+<td>List comments</td>
 </tr>
 <tr>
 <td><a href="../comments-api#partial_update"><strong>partial_update</strong></a></td>
 <td><strong>PATCH</strong> /api/comments/{id}</td>
-<td>Methods does a partial update of chosen fields in a comment</td>
+<td>Update a comment</td>
 </tr>
 <tr>
 <td><a href="../comments-api#retrieve"><strong>retrieve</strong></a></td>
 <td><strong>GET</strong> /api/comments/{id}</td>
-<td>Method returns details of a comment</td>
+<td>Get comment details</td>
 </tr>
 </tbody>
 </table>
@@ -6035,7 +6038,7 @@ org_id=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Method creates a comment</p>
+<p>Create a comment</p>
 <h3 id="example">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -6146,7 +6149,7 @@ id,
 **kwargs
 )</p>
 </blockquote>
-<p>Method deletes a comment</p>
+<p>Delete a comment</p>
 <h3 id="example-1">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -6239,7 +6242,7 @@ sort=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Method returns a paginated list of comments</p>
+<p>List comments</p>
 <h3 id="example-2">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -6412,7 +6415,7 @@ patched_comment_write_request=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Methods does a partial update of chosen fields in a comment</p>
+<p>Update a comment</p>
 <h3 id="example-3">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -6506,7 +6509,7 @@ id,
 **kwargs
 )</p>
 </blockquote>
-<p>Method returns details of a comment</p>
+<p>Get comment details</p>
 <h3 id="example-4">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 

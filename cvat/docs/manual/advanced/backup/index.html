@@ -93,7 +93,7 @@ You can backup a project or a task locally on your PC or using an attached cloud
     <li><a class="dropdown-item" href="../../../../v2.0.0">v2.0.0</a></li>
     <li><a class="dropdown-item" href="../../../../v2.1.0">v2.1.0</a></li>
     <li><a class="dropdown-item" href="../../../../v2.10.3">v2.10.3</a></li>
-    <li><a class="dropdown-item" href="../../../../v2.11.2">v2.11.2</a></li>
+    <li><a class="dropdown-item" href="../../../../v2.11.3">v2.11.3</a></li>
     <li><a class="dropdown-item" href="../../../../v2.2.0">v2.2.0</a></li>
     <li><a class="dropdown-item" href="../../../../v2.3.0">v2.3.0</a></li>
     <li><a class="dropdown-item" href="../../../../v2.4.9">v2.4.9</a></li>
@@ -116,7 +116,7 @@ You can backup a project or a task locally on your PC or using an attached cloud
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="../../../../offline-search-index.88b019e6653a72e159f7f1777ae390c8.json"
+    data-offline-search-index-json-src="../../../../offline-search-index.3371b6860e4749132e627628c8e4a7c1.json"
     data-offline-search-base-href="../../../../"
     data-offline-search-max-results="10"
   >
@@ -142,7 +142,7 @@ You can backup a project or a task locally on your PC or using an attached cloud
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="../../../../offline-search-index.88b019e6653a72e159f7f1777ae390c8.json"
+    data-offline-search-index-json-src="../../../../offline-search-index.3371b6860e4749132e627628c8e4a7c1.json"
     data-offline-search-base-href="../../../../"
     data-offline-search-max-results="10"
   >
@@ -718,12 +718,14 @@ This can be used to backup a task or project on your PC or to transfer to anothe
 <h2 id="create-backup">Create backup</h2>
 <p>To backup a task or project, open the action menu and select <code>Backup Task</code> or <code>Backup Project</code>.</p>
 <p><img src="../../../../images/image219.jpg" alt=""></p>
-<p>You can backup a project or a task locally on your PC or using an <a href="../../../../docs/manual/basics/attach-cloud-storage/">attached cloud storage</a>.</p>
+<p>You can backup a project or a task locally on your PC or using an
+<a href="../../../../docs/manual/basics/attach-cloud-storage/">attached cloud storage</a>.</p>
 <p>(Optional) Specify the name in the <code>Custom name</code> text field for backup, otherwise the file of backup name
 will be given by the mask <code>project_&lt;project_name&gt;_backup_&lt;date&gt;_&lt;time&gt;.zip</code> for the projects
 and <code>task_&lt;task_name&gt;_backup_&lt;date&gt;_&lt;time&gt;.zip</code> for the tasks.</p>
 <p><img src="../../../../images/image253.jpg" alt=""></p>
-<p>If you want to save a backup to a specific <a href="../../../../docs/manual/basics/attach-cloud-storage/">attached cloud storage</a>,
+<p>If you want to save a backup to a specific
+<a href="../../../../docs/manual/basics/attach-cloud-storage/">attached cloud storage</a>,
 you should additionally turn off the switch <code>Use default settings</code>, select the <code>Cloud storage</code> value
 in the <code>Target storage</code> and select this storage in the list of the attached cloud storages.</p>
 <h2 id="create-backup-apis">Create backup APIs</h2>
@@ -761,25 +763,25 @@ task or project and task specification and annotations with the following struct
 
   
   
-<ul class="nav nav-tabs" id="tabs-0" role="tablist">
+<ul class="nav nav-tabs" id="tabs-2" role="tablist">
   <li class="nav-item">
       <button class="nav-link active"
-          id="tabs-00-00-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-00" role="tab"
-          aria-controls="tabs-00-00" aria-selected="true">
+          id="tabs-02-00-tab" data-bs-toggle="tab" data-bs-target="#tabs-02-00" role="tab"
+          aria-controls="tabs-02-00" aria-selected="true">
         Task Backup Structure
       </button>
     </li><li class="nav-item">
       <button class="nav-link"
-          id="tabs-00-01-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-01" role="tab"
-          aria-controls="tabs-00-01" aria-selected="false">
+          id="tabs-02-01-tab" data-bs-toggle="tab" data-bs-target="#tabs-02-01" role="tab"
+          aria-controls="tabs-02-01" aria-selected="false">
         Project Backup Structure
       </button>
     </li>
 </ul>
 
-<div class="tab-content" id="tabs-0-content">
+<div class="tab-content" id="tabs-2-content">
     <div class="tab-pane fade show active"
-        id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab" tabindex="0">
+        id="tabs-02-00" role="tabpanel" aria-labelled-by="tabs-02-00-tab" tabindex="2">
         <pre tabindex="0"><code>    .
     ├── data
     │   └── {user uploaded data}
@@ -788,7 +790,7 @@ task or project and task specification and annotations with the following struct
   </code></pre>
     </div>
     <div class="tab-pane fade"
-        id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab" tabindex="0">
+        id="tabs-02-01" role="tabpanel" aria-labelled-by="tabs-02-01-tab" tabindex="2">
         <pre tabindex="0"><code>    .
     ├── task_{id}
     │   ├── data

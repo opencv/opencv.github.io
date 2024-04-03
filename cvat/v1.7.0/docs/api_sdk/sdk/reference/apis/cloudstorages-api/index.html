@@ -20,7 +20,7 @@
 <title>CloudstoragesApi class reference | CVAT</title>
 <meta name="description" content=""><meta property="og:title" content="CloudstoragesApi class reference" />
 <meta property="og:description" content="All URIs are relative to http://localhost
-   Method HTTP request Description     create POST /api/cloudstorages Method creates a cloud storage with a specified characteristics   destroy DELETE /api/cloudstorages/{id} Method deletes a specific cloud storage   list GET /api/cloudstorages Returns a paginated list of storages   partial_update PATCH /api/cloudstorages/{id} Methods does a partial update of chosen fields in a cloud storage instance   retrieve GET /api/cloudstorages/{id} Method returns details of a specific cloud storage   retrieve_actions GET /api/cloudstorages/{id}/actions Method returns allowed actions for the cloud storage   retrieve_content_v2 GET /api/cloudstorages/{id}/content-v2 Method returns the content of the cloud storage   retrieve_preview GET /api/cloudstorages/{id}/preview Method returns a preview image from a cloud storage   retrieve_status GET /api/cloudstorages/{id}/status Method returns a cloud storage status    create  create( cloud_storage_write_request, x_organization=None, org=None, org_id=None, **kwargs )" />
+   Method HTTP request Description     create POST /api/cloudstorages Create a cloud storage   destroy DELETE /api/cloudstorages/{id} Delete a cloud storage   list GET /api/cloudstorages List cloud storages   partial_update PATCH /api/cloudstorages/{id} Update a cloud storage   retrieve GET /api/cloudstorages/{id} Get cloud storage details   retrieve_actions GET /api/cloudstorages/{id}/actions Get allowed actions for a cloud storage   retrieve_content_v2 GET /api/cloudstorages/{id}/content-v2 Get cloud storage content   retrieve_preview GET /api/cloudstorages/{id}/preview Get a preview image for a cloud storage   retrieve_status GET /api/cloudstorages/{id}/status Get the status of a cloud storage    create  create( cloud_storage_write_request, x_organization=None, org=None, org_id=None, **kwargs )" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/api_sdk/sdk/reference/apis/cloudstorages-api/" /><meta property="article:section" content="docs" />
 
@@ -28,13 +28,13 @@
 
 <meta itemprop="name" content="CloudstoragesApi class reference">
 <meta itemprop="description" content="All URIs are relative to http://localhost
-   Method HTTP request Description     create POST /api/cloudstorages Method creates a cloud storage with a specified characteristics   destroy DELETE /api/cloudstorages/{id} Method deletes a specific cloud storage   list GET /api/cloudstorages Returns a paginated list of storages   partial_update PATCH /api/cloudstorages/{id} Methods does a partial update of chosen fields in a cloud storage instance   retrieve GET /api/cloudstorages/{id} Method returns details of a specific cloud storage   retrieve_actions GET /api/cloudstorages/{id}/actions Method returns allowed actions for the cloud storage   retrieve_content_v2 GET /api/cloudstorages/{id}/content-v2 Method returns the content of the cloud storage   retrieve_preview GET /api/cloudstorages/{id}/preview Method returns a preview image from a cloud storage   retrieve_status GET /api/cloudstorages/{id}/status Method returns a cloud storage status    create  create( cloud_storage_write_request, x_organization=None, org=None, org_id=None, **kwargs )">
+   Method HTTP request Description     create POST /api/cloudstorages Create a cloud storage   destroy DELETE /api/cloudstorages/{id} Delete a cloud storage   list GET /api/cloudstorages List cloud storages   partial_update PATCH /api/cloudstorages/{id} Update a cloud storage   retrieve GET /api/cloudstorages/{id} Get cloud storage details   retrieve_actions GET /api/cloudstorages/{id}/actions Get allowed actions for a cloud storage   retrieve_content_v2 GET /api/cloudstorages/{id}/content-v2 Get cloud storage content   retrieve_preview GET /api/cloudstorages/{id}/preview Get a preview image for a cloud storage   retrieve_status GET /api/cloudstorages/{id}/status Get the status of a cloud storage    create  create( cloud_storage_write_request, x_organization=None, org=None, org_id=None, **kwargs )">
 
-<meta itemprop="wordCount" content="2624">
+<meta itemprop="wordCount" content="2568">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="CloudstoragesApi class reference"/>
 <meta name="twitter:description" content="All URIs are relative to http://localhost
-   Method HTTP request Description     create POST /api/cloudstorages Method creates a cloud storage with a specified characteristics   destroy DELETE /api/cloudstorages/{id} Method deletes a specific cloud storage   list GET /api/cloudstorages Returns a paginated list of storages   partial_update PATCH /api/cloudstorages/{id} Methods does a partial update of chosen fields in a cloud storage instance   retrieve GET /api/cloudstorages/{id} Method returns details of a specific cloud storage   retrieve_actions GET /api/cloudstorages/{id}/actions Method returns allowed actions for the cloud storage   retrieve_content_v2 GET /api/cloudstorages/{id}/content-v2 Method returns the content of the cloud storage   retrieve_preview GET /api/cloudstorages/{id}/preview Method returns a preview image from a cloud storage   retrieve_status GET /api/cloudstorages/{id}/status Method returns a cloud storage status    create  create( cloud_storage_write_request, x_organization=None, org=None, org_id=None, **kwargs )"/>
+   Method HTTP request Description     create POST /api/cloudstorages Create a cloud storage   destroy DELETE /api/cloudstorages/{id} Delete a cloud storage   list GET /api/cloudstorages List cloud storages   partial_update PATCH /api/cloudstorages/{id} Update a cloud storage   retrieve GET /api/cloudstorages/{id} Get cloud storage details   retrieve_actions GET /api/cloudstorages/{id}/actions Get allowed actions for a cloud storage   retrieve_content_v2 GET /api/cloudstorages/{id}/content-v2 Get cloud storage content   retrieve_preview GET /api/cloudstorages/{id}/preview Get a preview image for a cloud storage   retrieve_status GET /api/cloudstorages/{id}/status Get the status of a cloud storage    create  create( cloud_storage_write_request, x_organization=None, org=None, org_id=None, **kwargs )"/>
 
 
 
@@ -156,7 +156,7 @@
         <a class="dropdown-item" href="../../../../../../../v2.10.3/docs/api_sdk/sdk/reference/apis/cloudstorages-api/">v2.10.3</a>
     
       
-        <a class="dropdown-item" href="../../../../../../../v2.11.2/docs/api_sdk/sdk/reference/apis/cloudstorages-api/">v2.11.2</a>
+        <a class="dropdown-item" href="../../../../../../../v2.11.3/docs/api_sdk/sdk/reference/apis/cloudstorages-api/">v2.11.3</a>
     
       
         <a class="dropdown-item" href="../../../../../../../v2.2.0/docs/api_sdk/sdk/reference/apis/cloudstorages-api/">v2.2.0</a>
@@ -194,7 +194,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../../../../../offline-search-index.2f87b904ec5c94a3f4576f1ac7199407.json"
+  data-offline-search-index-json-src="../../../../../../offline-search-index.b00903512e874f1d982c5327fa8abf5d.json"
   data-offline-search-base-href="../../../../../../"
   data-offline-search-max-results="10"
 >
@@ -230,7 +230,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../../../../../offline-search-index.2f87b904ec5c94a3f4576f1ac7199407.json"
+  data-offline-search-index-json-src="../../../../../../offline-search-index.b00903512e874f1d982c5327fa8abf5d.json"
   data-offline-search-base-href="../../../../../../"
   data-offline-search-max-results="10"
 >
@@ -4206,47 +4206,47 @@
 <tr>
 <td><a href="../cloudstorages-api#create"><strong>create</strong></a></td>
 <td><strong>POST</strong> /api/cloudstorages</td>
-<td>Method creates a cloud storage with a specified characteristics</td>
+<td>Create a cloud storage</td>
 </tr>
 <tr>
 <td><a href="../cloudstorages-api#destroy"><strong>destroy</strong></a></td>
 <td><strong>DELETE</strong> /api/cloudstorages/{id}</td>
-<td>Method deletes a specific cloud storage</td>
+<td>Delete a cloud storage</td>
 </tr>
 <tr>
 <td><a href="../cloudstorages-api#list"><strong>list</strong></a></td>
 <td><strong>GET</strong> /api/cloudstorages</td>
-<td>Returns a paginated list of storages</td>
+<td>List cloud storages</td>
 </tr>
 <tr>
 <td><a href="../cloudstorages-api#partial_update"><strong>partial_update</strong></a></td>
 <td><strong>PATCH</strong> /api/cloudstorages/{id}</td>
-<td>Methods does a partial update of chosen fields in a cloud storage instance</td>
+<td>Update a cloud storage</td>
 </tr>
 <tr>
 <td><a href="../cloudstorages-api#retrieve"><strong>retrieve</strong></a></td>
 <td><strong>GET</strong> /api/cloudstorages/{id}</td>
-<td>Method returns details of a specific cloud storage</td>
+<td>Get cloud storage details</td>
 </tr>
 <tr>
 <td><a href="../cloudstorages-api#retrieve_actions"><strong>retrieve_actions</strong></a></td>
 <td><strong>GET</strong> /api/cloudstorages/{id}/actions</td>
-<td>Method returns allowed actions for the cloud storage</td>
+<td>Get allowed actions for a cloud storage</td>
 </tr>
 <tr>
 <td><a href="../cloudstorages-api#retrieve_content_v2"><strong>retrieve_content_v2</strong></a></td>
 <td><strong>GET</strong> /api/cloudstorages/{id}/content-v2</td>
-<td>Method returns the content of the cloud storage</td>
+<td>Get cloud storage content</td>
 </tr>
 <tr>
 <td><a href="../cloudstorages-api#retrieve_preview"><strong>retrieve_preview</strong></a></td>
 <td><strong>GET</strong> /api/cloudstorages/{id}/preview</td>
-<td>Method returns a preview image from a cloud storage</td>
+<td>Get a preview image for a cloud storage</td>
 </tr>
 <tr>
 <td><a href="../cloudstorages-api#retrieve_status"><strong>retrieve_status</strong></a></td>
 <td><strong>GET</strong> /api/cloudstorages/{id}/status</td>
-<td>Method returns a cloud storage status</td>
+<td>Get the status of a cloud storage</td>
 </tr>
 </tbody>
 </table>
@@ -4260,7 +4260,7 @@ org_id=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Method creates a cloud storage with a specified characteristics</p>
+<p>Create a cloud storage</p>
 <h3 id="example">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -4387,7 +4387,7 @@ id,
 **kwargs
 )</p>
 </blockquote>
-<p>Method deletes a specific cloud storage</p>
+<p>Delete a cloud storage</p>
 <h3 id="example-1">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -4481,7 +4481,7 @@ sort=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Returns a paginated list of storages</p>
+<p>List cloud storages</p>
 <h3 id="example-2">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -4662,7 +4662,7 @@ patched_cloud_storage_write_request=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Methods does a partial update of chosen fields in a cloud storage instance</p>
+<p>Update a cloud storage</p>
 <h3 id="example-3">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -4773,7 +4773,7 @@ id,
 **kwargs
 )</p>
 </blockquote>
-<p>Method returns details of a specific cloud storage</p>
+<p>Get cloud storage details</p>
 <h3 id="example-4">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -4856,7 +4856,7 @@ id,
 **kwargs
 )</p>
 </blockquote>
-<p>Method returns allowed actions for the cloud storage</p>
+<p>Get allowed actions for a cloud storage</p>
 <p>Method return allowed actions for cloud storage. It&rsquo;s required for reading/writing</p>
 <h3 id="example-5">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
@@ -4944,7 +4944,7 @@ prefix=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Method returns the content of the cloud storage</p>
+<p>Get cloud storage content</p>
 <h3 id="example-6">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -5060,7 +5060,7 @@ id,
 **kwargs
 )</p>
 </blockquote>
-<p>Method returns a preview image from a cloud storage</p>
+<p>Get a preview image for a cloud storage</p>
 <h3 id="example-7">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -5152,7 +5152,7 @@ id,
 **kwargs
 )</p>
 </blockquote>
-<p>Method returns a cloud storage status</p>
+<p>Get the status of a cloud storage</p>
 <h3 id="example-8">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 

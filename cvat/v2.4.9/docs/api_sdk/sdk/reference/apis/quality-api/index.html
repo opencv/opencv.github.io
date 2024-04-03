@@ -20,7 +20,7 @@
 <title>QualityApi class reference | CVAT</title>
 <meta name="description" content=""><meta property="og:title" content="QualityApi class reference" />
 <meta property="og:description" content="All URIs are relative to http://localhost
-   Method HTTP request Description     create_report POST /api/quality/reports Creates a quality report asynchronously and allows to check request status   list_conflicts GET /api/quality/conflicts Method returns a paginated list of annotation conflicts   list_reports GET /api/quality/reports Method returns a paginated list of quality reports   list_settings GET /api/quality/settings Method returns a paginated list of quality settings instances   partial_update_settings PATCH /api/quality/settings/{id} Methods does a partial update of chosen fields in the quality settings instance   retrieve_report GET /api/quality/reports/{id} Method returns details of a quality report   retrieve_report_data GET /api/quality/reports/{id}/data Retrieve full contents of the report in JSON format   retrieve_settings GET /api/quality/settings/{id} Method returns details of the quality settings instance    create_report  create_report( rq_id=None, quality_report_create_request=None, **kwargs )" />
+   Method HTTP request Description     create_report POST /api/quality/reports Create a quality report   list_conflicts GET /api/quality/conflicts List annotation conflicts in a quality report   list_reports GET /api/quality/reports List quality reports   list_settings GET /api/quality/settings List quality settings instances   partial_update_settings PATCH /api/quality/settings/{id} Update a quality settings instance   retrieve_report GET /api/quality/reports/{id} Get quality report details   retrieve_report_data GET /api/quality/reports/{id}/data Get quality report contents   retrieve_settings GET /api/quality/settings/{id} Get quality settings instance details    create_report  create_report( rq_id=None, quality_report_create_request=None, **kwargs )" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/api_sdk/sdk/reference/apis/quality-api/" /><meta property="article:section" content="docs" />
 
@@ -28,13 +28,13 @@
 
 <meta itemprop="name" content="QualityApi class reference">
 <meta itemprop="description" content="All URIs are relative to http://localhost
-   Method HTTP request Description     create_report POST /api/quality/reports Creates a quality report asynchronously and allows to check request status   list_conflicts GET /api/quality/conflicts Method returns a paginated list of annotation conflicts   list_reports GET /api/quality/reports Method returns a paginated list of quality reports   list_settings GET /api/quality/settings Method returns a paginated list of quality settings instances   partial_update_settings PATCH /api/quality/settings/{id} Methods does a partial update of chosen fields in the quality settings instance   retrieve_report GET /api/quality/reports/{id} Method returns details of a quality report   retrieve_report_data GET /api/quality/reports/{id}/data Retrieve full contents of the report in JSON format   retrieve_settings GET /api/quality/settings/{id} Method returns details of the quality settings instance    create_report  create_report( rq_id=None, quality_report_create_request=None, **kwargs )">
+   Method HTTP request Description     create_report POST /api/quality/reports Create a quality report   list_conflicts GET /api/quality/conflicts List annotation conflicts in a quality report   list_reports GET /api/quality/reports List quality reports   list_settings GET /api/quality/settings List quality settings instances   partial_update_settings PATCH /api/quality/settings/{id} Update a quality settings instance   retrieve_report GET /api/quality/reports/{id} Get quality report details   retrieve_report_data GET /api/quality/reports/{id}/data Get quality report contents   retrieve_settings GET /api/quality/settings/{id} Get quality settings instance details    create_report  create_report( rq_id=None, quality_report_create_request=None, **kwargs )">
 
-<meta itemprop="wordCount" content="2884">
+<meta itemprop="wordCount" content="2810">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="QualityApi class reference"/>
 <meta name="twitter:description" content="All URIs are relative to http://localhost
-   Method HTTP request Description     create_report POST /api/quality/reports Creates a quality report asynchronously and allows to check request status   list_conflicts GET /api/quality/conflicts Method returns a paginated list of annotation conflicts   list_reports GET /api/quality/reports Method returns a paginated list of quality reports   list_settings GET /api/quality/settings Method returns a paginated list of quality settings instances   partial_update_settings PATCH /api/quality/settings/{id} Methods does a partial update of chosen fields in the quality settings instance   retrieve_report GET /api/quality/reports/{id} Method returns details of a quality report   retrieve_report_data GET /api/quality/reports/{id}/data Retrieve full contents of the report in JSON format   retrieve_settings GET /api/quality/settings/{id} Method returns details of the quality settings instance    create_report  create_report( rq_id=None, quality_report_create_request=None, **kwargs )"/>
+   Method HTTP request Description     create_report POST /api/quality/reports Create a quality report   list_conflicts GET /api/quality/conflicts List annotation conflicts in a quality report   list_reports GET /api/quality/reports List quality reports   list_settings GET /api/quality/settings List quality settings instances   partial_update_settings PATCH /api/quality/settings/{id} Update a quality settings instance   retrieve_report GET /api/quality/reports/{id} Get quality report details   retrieve_report_data GET /api/quality/reports/{id}/data Get quality report contents   retrieve_settings GET /api/quality/settings/{id} Get quality settings instance details    create_report  create_report( rq_id=None, quality_report_create_request=None, **kwargs )"/>
 
 
 
@@ -156,7 +156,7 @@
         <a class="dropdown-item" href="../../../../../../../v2.10.3/docs/api_sdk/sdk/reference/apis/quality-api/">v2.10.3</a>
     
       
-        <a class="dropdown-item" href="../../../../../../../v2.11.2/docs/api_sdk/sdk/reference/apis/quality-api/">v2.11.2</a>
+        <a class="dropdown-item" href="../../../../../../../v2.11.3/docs/api_sdk/sdk/reference/apis/quality-api/">v2.11.3</a>
     
       
         <a class="dropdown-item" href="../../../../../../../v2.2.0/docs/api_sdk/sdk/reference/apis/quality-api/">v2.2.0</a>
@@ -194,7 +194,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../../../../../offline-search-index.588d5be159fa387126396dff65e10193.json"
+  data-offline-search-index-json-src="../../../../../../offline-search-index.44973965ba3e8fdee8b0a046a2464c5b.json"
   data-offline-search-base-href="../../../../../../"
   data-offline-search-max-results="10"
 >
@@ -230,7 +230,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../../../../../offline-search-index.588d5be159fa387126396dff65e10193.json"
+  data-offline-search-index-json-src="../../../../../../offline-search-index.44973965ba3e8fdee8b0a046a2464c5b.json"
   data-offline-search-base-href="../../../../../../"
   data-offline-search-max-results="10"
 >
@@ -5851,42 +5851,42 @@
 <tr>
 <td><a href="../quality-api#create_report"><strong>create_report</strong></a></td>
 <td><strong>POST</strong> /api/quality/reports</td>
-<td>Creates a quality report asynchronously and allows to check request status</td>
+<td>Create a quality report</td>
 </tr>
 <tr>
 <td><a href="../quality-api#list_conflicts"><strong>list_conflicts</strong></a></td>
 <td><strong>GET</strong> /api/quality/conflicts</td>
-<td>Method returns a paginated list of annotation conflicts</td>
+<td>List annotation conflicts in a quality report</td>
 </tr>
 <tr>
 <td><a href="../quality-api#list_reports"><strong>list_reports</strong></a></td>
 <td><strong>GET</strong> /api/quality/reports</td>
-<td>Method returns a paginated list of quality reports</td>
+<td>List quality reports</td>
 </tr>
 <tr>
 <td><a href="../quality-api#list_settings"><strong>list_settings</strong></a></td>
 <td><strong>GET</strong> /api/quality/settings</td>
-<td>Method returns a paginated list of quality settings instances</td>
+<td>List quality settings instances</td>
 </tr>
 <tr>
 <td><a href="../quality-api#partial_update_settings"><strong>partial_update_settings</strong></a></td>
 <td><strong>PATCH</strong> /api/quality/settings/{id}</td>
-<td>Methods does a partial update of chosen fields in the quality settings instance</td>
+<td>Update a quality settings instance</td>
 </tr>
 <tr>
 <td><a href="../quality-api#retrieve_report"><strong>retrieve_report</strong></a></td>
 <td><strong>GET</strong> /api/quality/reports/{id}</td>
-<td>Method returns details of a quality report</td>
+<td>Get quality report details</td>
 </tr>
 <tr>
 <td><a href="../quality-api#retrieve_report_data"><strong>retrieve_report_data</strong></a></td>
 <td><strong>GET</strong> /api/quality/reports/{id}/data</td>
-<td>Retrieve full contents of the report in JSON format</td>
+<td>Get quality report contents</td>
 </tr>
 <tr>
 <td><a href="../quality-api#retrieve_settings"><strong>retrieve_settings</strong></a></td>
 <td><strong>GET</strong> /api/quality/settings/{id}</td>
-<td>Method returns details of the quality settings instance</td>
+<td>Get quality settings instance details</td>
 </tr>
 </tbody>
 </table>
@@ -5898,7 +5898,7 @@ quality_report_create_request=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Creates a quality report asynchronously and allows to check request status</p>
+<p>Create a quality report</p>
 <h3 id="example">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -6014,7 +6014,7 @@ type=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Method returns a paginated list of annotation conflicts</p>
+<p>List annotation conflicts in a quality report</p>
 <h3 id="example-1">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -6204,7 +6204,7 @@ task_id=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Method returns a paginated list of quality reports</p>
+<p>List quality reports</p>
 <h3 id="example-2">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -6375,7 +6375,7 @@ task_id=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Method returns a paginated list of quality settings instances</p>
+<p>List quality settings instances</p>
 <h3 id="example-3">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -6516,7 +6516,7 @@ patched_quality_settings_request=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Methods does a partial update of chosen fields in the quality settings instance</p>
+<p>Update a quality settings instance</p>
 <h3 id="example-4">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -6621,7 +6621,7 @@ id,
 **kwargs
 )</p>
 </blockquote>
-<p>Method returns details of a quality report</p>
+<p>Get quality report details</p>
 <h3 id="example-5">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -6704,7 +6704,7 @@ id,
 **kwargs
 )</p>
 </blockquote>
-<p>Retrieve full contents of the report in JSON format</p>
+<p>Get quality report contents</p>
 <h3 id="example-6">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -6787,7 +6787,7 @@ id,
 **kwargs
 )</p>
 </blockquote>
-<p>Method returns details of the quality settings instance</p>
+<p>Get quality settings instance details</p>
 <h3 id="example-7">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 

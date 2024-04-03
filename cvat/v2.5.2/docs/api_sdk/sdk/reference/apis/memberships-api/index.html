@@ -20,7 +20,9 @@
 <title>MembershipsApi class reference | CVAT</title>
 <meta name="description" content=""><meta property="og:title" content="MembershipsApi class reference" />
 <meta property="og:description" content="All URIs are relative to http://localhost
-   Method HTTP request Description     destroy DELETE /api/memberships/{id} Method deletes a membership   list GET /api/memberships Method returns a paginated list of memberships   partial_update PATCH /api/memberships/{id} Methods does a partial update of chosen fields in a membership   retrieve GET /api/memberships/{id} Method returns details of a membership    destroy  destroy( id, **kwargs )" />
+   Method HTTP request Description     destroy DELETE /api/memberships/{id} Delete a membership   list GET /api/memberships List memberships   partial_update PATCH /api/memberships/{id} Update a membership   retrieve GET /api/memberships/{id} Get membership details    destroy  destroy( id, **kwargs )
+ Delete a membership
+Example from pprint import pprint from cvat_sdk.api_client import Configuration, ApiClient, exceptions from cvat_sdk." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/api_sdk/sdk/reference/apis/memberships-api/" /><meta property="article:section" content="docs" />
 
@@ -28,13 +30,17 @@
 
 <meta itemprop="name" content="MembershipsApi class reference">
 <meta itemprop="description" content="All URIs are relative to http://localhost
-   Method HTTP request Description     destroy DELETE /api/memberships/{id} Method deletes a membership   list GET /api/memberships Method returns a paginated list of memberships   partial_update PATCH /api/memberships/{id} Methods does a partial update of chosen fields in a membership   retrieve GET /api/memberships/{id} Method returns details of a membership    destroy  destroy( id, **kwargs )">
+   Method HTTP request Description     destroy DELETE /api/memberships/{id} Delete a membership   list GET /api/memberships List memberships   partial_update PATCH /api/memberships/{id} Update a membership   retrieve GET /api/memberships/{id} Get membership details    destroy  destroy( id, **kwargs )
+ Delete a membership
+Example from pprint import pprint from cvat_sdk.api_client import Configuration, ApiClient, exceptions from cvat_sdk.">
 
-<meta itemprop="wordCount" content="1199">
+<meta itemprop="wordCount" content="1165">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="MembershipsApi class reference"/>
 <meta name="twitter:description" content="All URIs are relative to http://localhost
-   Method HTTP request Description     destroy DELETE /api/memberships/{id} Method deletes a membership   list GET /api/memberships Method returns a paginated list of memberships   partial_update PATCH /api/memberships/{id} Methods does a partial update of chosen fields in a membership   retrieve GET /api/memberships/{id} Method returns details of a membership    destroy  destroy( id, **kwargs )"/>
+   Method HTTP request Description     destroy DELETE /api/memberships/{id} Delete a membership   list GET /api/memberships List memberships   partial_update PATCH /api/memberships/{id} Update a membership   retrieve GET /api/memberships/{id} Get membership details    destroy  destroy( id, **kwargs )
+ Delete a membership
+Example from pprint import pprint from cvat_sdk.api_client import Configuration, ApiClient, exceptions from cvat_sdk."/>
 
 
 
@@ -156,7 +162,7 @@
         <a class="dropdown-item" href="../../../../../../../v2.10.3/docs/api_sdk/sdk/reference/apis/memberships-api/">v2.10.3</a>
     
       
-        <a class="dropdown-item" href="../../../../../../../v2.11.2/docs/api_sdk/sdk/reference/apis/memberships-api/">v2.11.2</a>
+        <a class="dropdown-item" href="../../../../../../../v2.11.3/docs/api_sdk/sdk/reference/apis/memberships-api/">v2.11.3</a>
     
       
         <a class="dropdown-item" href="../../../../../../../v2.2.0/docs/api_sdk/sdk/reference/apis/memberships-api/">v2.2.0</a>
@@ -194,7 +200,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../../../../../offline-search-index.d9ed53b3331b3d71f2133e9dc21655f3.json"
+  data-offline-search-index-json-src="../../../../../../offline-search-index.a183ccbcb9e3c01ecab1d8706024bade.json"
   data-offline-search-base-href="../../../../../../"
   data-offline-search-max-results="10"
 >
@@ -230,7 +236,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../../../../../offline-search-index.d9ed53b3331b3d71f2133e9dc21655f3.json"
+  data-offline-search-index-json-src="../../../../../../offline-search-index.a183ccbcb9e3c01ecab1d8706024bade.json"
   data-offline-search-base-href="../../../../../../"
   data-offline-search-max-results="10"
 >
@@ -5861,22 +5867,22 @@
 <tr>
 <td><a href="../memberships-api#destroy"><strong>destroy</strong></a></td>
 <td><strong>DELETE</strong> /api/memberships/{id}</td>
-<td>Method deletes a membership</td>
+<td>Delete a membership</td>
 </tr>
 <tr>
 <td><a href="../memberships-api#list"><strong>list</strong></a></td>
 <td><strong>GET</strong> /api/memberships</td>
-<td>Method returns a paginated list of memberships</td>
+<td>List memberships</td>
 </tr>
 <tr>
 <td><a href="../memberships-api#partial_update"><strong>partial_update</strong></a></td>
 <td><strong>PATCH</strong> /api/memberships/{id}</td>
-<td>Methods does a partial update of chosen fields in a membership</td>
+<td>Update a membership</td>
 </tr>
 <tr>
 <td><a href="../memberships-api#retrieve"><strong>retrieve</strong></a></td>
 <td><strong>GET</strong> /api/memberships/{id}</td>
-<td>Method returns details of a membership</td>
+<td>Get membership details</td>
 </tr>
 </tbody>
 </table>
@@ -5887,7 +5893,7 @@ id,
 **kwargs
 )</p>
 </blockquote>
-<p>Method deletes a membership</p>
+<p>Delete a membership</p>
 <h3 id="example">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -5978,7 +5984,7 @@ user=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Method returns a paginated list of memberships</p>
+<p>List memberships</p>
 <h3 id="example-1">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -6135,7 +6141,7 @@ patched_membership_write_request=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Methods does a partial update of chosen fields in a membership</p>
+<p>Update a membership</p>
 <h3 id="example-2">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -6229,7 +6235,7 @@ id,
 **kwargs
 )</p>
 </blockquote>
-<p>Method returns details of a membership</p>
+<p>Get membership details</p>
 <h3 id="example-3">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 

@@ -20,9 +20,9 @@
 <title>AnalyticsApi class reference | CVAT</title>
 <meta name="description" content=""><meta property="og:title" content="AnalyticsApi class reference" />
 <meta property="og:description" content="All URIs are relative to http://localhost
-   Method HTTP request Description     create_report POST /api/analytics/reports Creates a analytics report asynchronously and allows to check request status   get_reports GET /api/analytics/reports Method returns analytics report    create_report  create_report( rq_id=None, analytics_report_create_request=None, **kwargs )
- Creates a analytics report asynchronously and allows to check request status
-Example from pprint import pprint from cvat_sdk.api_client import Configuration, ApiClient, exceptions from cvat_sdk." />
+   Method HTTP request Description     create_report POST /api/analytics/reports Create an analytics report   get_reports GET /api/analytics/reports Get an analytics report    create_report  create_report( rq_id=None, analytics_report_create_request=None, **kwargs )
+ Create an analytics report
+Example from pprint import pprint from cvat_sdk.api_client import Configuration, ApiClient, exceptions from cvat_sdk.api_client.models import * # Set up an API client # Read Configuration class docs for more info about parameters and authentication methods configuration = Configuration( host = &#34;http://localhost&#34;, username = &#39;YOUR_USERNAME&#39;, password = &#39;YOUR_PASSWORD&#39;, ) with ApiClient(configuration) as api_client: rq_id = &#34;rq_id_example&#34; # str | The report creation request id." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/api_sdk/sdk/reference/apis/analytics-api/" /><meta property="article:section" content="docs" />
 
@@ -30,17 +30,17 @@ Example from pprint import pprint from cvat_sdk.api_client import Configuration,
 
 <meta itemprop="name" content="AnalyticsApi class reference">
 <meta itemprop="description" content="All URIs are relative to http://localhost
-   Method HTTP request Description     create_report POST /api/analytics/reports Creates a analytics report asynchronously and allows to check request status   get_reports GET /api/analytics/reports Method returns analytics report    create_report  create_report( rq_id=None, analytics_report_create_request=None, **kwargs )
- Creates a analytics report asynchronously and allows to check request status
-Example from pprint import pprint from cvat_sdk.api_client import Configuration, ApiClient, exceptions from cvat_sdk.">
+   Method HTTP request Description     create_report POST /api/analytics/reports Create an analytics report   get_reports GET /api/analytics/reports Get an analytics report    create_report  create_report( rq_id=None, analytics_report_create_request=None, **kwargs )
+ Create an analytics report
+Example from pprint import pprint from cvat_sdk.api_client import Configuration, ApiClient, exceptions from cvat_sdk.api_client.models import * # Set up an API client # Read Configuration class docs for more info about parameters and authentication methods configuration = Configuration( host = &#34;http://localhost&#34;, username = &#39;YOUR_USERNAME&#39;, password = &#39;YOUR_PASSWORD&#39;, ) with ApiClient(configuration) as api_client: rq_id = &#34;rq_id_example&#34; # str | The report creation request id.">
 
-<meta itemprop="wordCount" content="637">
+<meta itemprop="wordCount" content="623">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="AnalyticsApi class reference"/>
 <meta name="twitter:description" content="All URIs are relative to http://localhost
-   Method HTTP request Description     create_report POST /api/analytics/reports Creates a analytics report asynchronously and allows to check request status   get_reports GET /api/analytics/reports Method returns analytics report    create_report  create_report( rq_id=None, analytics_report_create_request=None, **kwargs )
- Creates a analytics report asynchronously and allows to check request status
-Example from pprint import pprint from cvat_sdk.api_client import Configuration, ApiClient, exceptions from cvat_sdk."/>
+   Method HTTP request Description     create_report POST /api/analytics/reports Create an analytics report   get_reports GET /api/analytics/reports Get an analytics report    create_report  create_report( rq_id=None, analytics_report_create_request=None, **kwargs )
+ Create an analytics report
+Example from pprint import pprint from cvat_sdk.api_client import Configuration, ApiClient, exceptions from cvat_sdk.api_client.models import * # Set up an API client # Read Configuration class docs for more info about parameters and authentication methods configuration = Configuration( host = &#34;http://localhost&#34;, username = &#39;YOUR_USERNAME&#39;, password = &#39;YOUR_PASSWORD&#39;, ) with ApiClient(configuration) as api_client: rq_id = &#34;rq_id_example&#34; # str | The report creation request id."/>
 
 
 
@@ -162,7 +162,7 @@ Example from pprint import pprint from cvat_sdk.api_client import Configuration,
         <a class="dropdown-item" href="../../../../../../../v2.10.3/docs/api_sdk/sdk/reference/apis/analytics-api/">v2.10.3</a>
     
       
-        <a class="dropdown-item" href="../../../../../../../v2.11.2/docs/api_sdk/sdk/reference/apis/analytics-api/">v2.11.2</a>
+        <a class="dropdown-item" href="../../../../../../../v2.11.3/docs/api_sdk/sdk/reference/apis/analytics-api/">v2.11.3</a>
     
       
         <a class="dropdown-item" href="../../../../../../../v2.2.0/docs/api_sdk/sdk/reference/apis/analytics-api/">v2.2.0</a>
@@ -200,7 +200,7 @@ Example from pprint import pprint from cvat_sdk.api_client import Configuration,
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../../../../../offline-search-index.c870e302ae7e190a07c2d862963a9cf2.json"
+  data-offline-search-index-json-src="../../../../../../offline-search-index.98c71808206c2ff6026a036828c3f901.json"
   data-offline-search-base-href="../../../../../../"
   data-offline-search-max-results="10"
 >
@@ -236,7 +236,7 @@ Example from pprint import pprint from cvat_sdk.api_client import Configuration,
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../../../../../offline-search-index.c870e302ae7e190a07c2d862963a9cf2.json"
+  data-offline-search-index-json-src="../../../../../../offline-search-index.98c71808206c2ff6026a036828c3f901.json"
   data-offline-search-base-href="../../../../../../"
   data-offline-search-max-results="10"
 >
@@ -5952,12 +5952,12 @@ Example from pprint import pprint from cvat_sdk.api_client import Configuration,
 <tr>
 <td><a href="../analytics-api#create_report"><strong>create_report</strong></a></td>
 <td><strong>POST</strong> /api/analytics/reports</td>
-<td>Creates a analytics report asynchronously and allows to check request status</td>
+<td>Create an analytics report</td>
 </tr>
 <tr>
 <td><a href="../analytics-api#get_reports"><strong>get_reports</strong></a></td>
 <td><strong>GET</strong> /api/analytics/reports</td>
-<td>Method returns analytics report</td>
+<td>Get an analytics report</td>
 </tr>
 </tbody>
 </table>
@@ -5969,7 +5969,7 @@ analytics_report_create_request=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Creates a analytics report asynchronously and allows to check request status</p>
+<p>Create an analytics report</p>
 <h3 id="example">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -6078,7 +6078,7 @@ task_id=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Method returns analytics report</p>
+<p>Get an analytics report</p>
 <p>Receive analytics report</p>
 <h3 id="example-1">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>

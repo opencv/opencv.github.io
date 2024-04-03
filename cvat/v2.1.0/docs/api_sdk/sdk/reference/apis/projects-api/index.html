@@ -20,7 +20,7 @@
 <title>ProjectsApi class reference | CVAT</title>
 <meta name="description" content=""><meta property="og:title" content="ProjectsApi class reference" />
 <meta property="og:description" content="All URIs are relative to http://localhost
-   Method HTTP request Description     create POST /api/projects Method creates a new project   create_backup POST /api/projects/backup/ Methods create a project from a backup   create_dataset POST /api/projects/{id}/dataset/ Import dataset in specific format as a project or check status of dataset import process   destroy DELETE /api/projects/{id} Method deletes a specific project   list GET /api/projects Returns a paginated list of projects   partial_update PATCH /api/projects/{id} Methods does a partial update of chosen fields in a project   retrieve GET /api/projects/{id} Method returns details of a specific project   retrieve_annotations GET /api/projects/{id}/annotations Method allows to download project annotations   retrieve_backup GET /api/projects/{id}/backup Methods creates a backup copy of a project   retrieve_dataset GET /api/projects/{id}/dataset/ Export project as a dataset in a specific format   retrieve_preview GET /api/projects/{id}/preview Method returns a preview image for the project    create  create( project_write_request, x_organization=None, org=None, org_id=None, **kwargs )" />
+   Method HTTP request Description     create POST /api/projects Create a project   create_backup POST /api/projects/backup/ Recreate a project from a backup   create_dataset POST /api/projects/{id}/dataset/ Import a dataset into a project   destroy DELETE /api/projects/{id} Delete a project   list GET /api/projects List projects   partial_update PATCH /api/projects/{id} Update a project   retrieve GET /api/projects/{id} Get project details   retrieve_annotations GET /api/projects/{id}/annotations Get project annotations   retrieve_backup GET /api/projects/{id}/backup Back up a project   retrieve_dataset GET /api/projects/{id}/dataset/ Export a project as a dataset / Check dataset import status   retrieve_preview GET /api/projects/{id}/preview Get a preview image for a project    create  create( project_write_request, x_organization=None, org=None, org_id=None, **kwargs )" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/api_sdk/sdk/reference/apis/projects-api/" /><meta property="article:section" content="docs" />
 
@@ -28,13 +28,13 @@
 
 <meta itemprop="name" content="ProjectsApi class reference">
 <meta itemprop="description" content="All URIs are relative to http://localhost
-   Method HTTP request Description     create POST /api/projects Method creates a new project   create_backup POST /api/projects/backup/ Methods create a project from a backup   create_dataset POST /api/projects/{id}/dataset/ Import dataset in specific format as a project or check status of dataset import process   destroy DELETE /api/projects/{id} Method deletes a specific project   list GET /api/projects Returns a paginated list of projects   partial_update PATCH /api/projects/{id} Methods does a partial update of chosen fields in a project   retrieve GET /api/projects/{id} Method returns details of a specific project   retrieve_annotations GET /api/projects/{id}/annotations Method allows to download project annotations   retrieve_backup GET /api/projects/{id}/backup Methods creates a backup copy of a project   retrieve_dataset GET /api/projects/{id}/dataset/ Export project as a dataset in a specific format   retrieve_preview GET /api/projects/{id}/preview Method returns a preview image for the project    create  create( project_write_request, x_organization=None, org=None, org_id=None, **kwargs )">
+   Method HTTP request Description     create POST /api/projects Create a project   create_backup POST /api/projects/backup/ Recreate a project from a backup   create_dataset POST /api/projects/{id}/dataset/ Import a dataset into a project   destroy DELETE /api/projects/{id} Delete a project   list GET /api/projects List projects   partial_update PATCH /api/projects/{id} Update a project   retrieve GET /api/projects/{id} Get project details   retrieve_annotations GET /api/projects/{id}/annotations Get project annotations   retrieve_backup GET /api/projects/{id}/backup Back up a project   retrieve_dataset GET /api/projects/{id}/dataset/ Export a project as a dataset / Check dataset import status   retrieve_preview GET /api/projects/{id}/preview Get a preview image for a project    create  create( project_write_request, x_organization=None, org=None, org_id=None, **kwargs )">
 
-<meta itemprop="wordCount" content="4146">
+<meta itemprop="wordCount" content="4074">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="ProjectsApi class reference"/>
 <meta name="twitter:description" content="All URIs are relative to http://localhost
-   Method HTTP request Description     create POST /api/projects Method creates a new project   create_backup POST /api/projects/backup/ Methods create a project from a backup   create_dataset POST /api/projects/{id}/dataset/ Import dataset in specific format as a project or check status of dataset import process   destroy DELETE /api/projects/{id} Method deletes a specific project   list GET /api/projects Returns a paginated list of projects   partial_update PATCH /api/projects/{id} Methods does a partial update of chosen fields in a project   retrieve GET /api/projects/{id} Method returns details of a specific project   retrieve_annotations GET /api/projects/{id}/annotations Method allows to download project annotations   retrieve_backup GET /api/projects/{id}/backup Methods creates a backup copy of a project   retrieve_dataset GET /api/projects/{id}/dataset/ Export project as a dataset in a specific format   retrieve_preview GET /api/projects/{id}/preview Method returns a preview image for the project    create  create( project_write_request, x_organization=None, org=None, org_id=None, **kwargs )"/>
+   Method HTTP request Description     create POST /api/projects Create a project   create_backup POST /api/projects/backup/ Recreate a project from a backup   create_dataset POST /api/projects/{id}/dataset/ Import a dataset into a project   destroy DELETE /api/projects/{id} Delete a project   list GET /api/projects List projects   partial_update PATCH /api/projects/{id} Update a project   retrieve GET /api/projects/{id} Get project details   retrieve_annotations GET /api/projects/{id}/annotations Get project annotations   retrieve_backup GET /api/projects/{id}/backup Back up a project   retrieve_dataset GET /api/projects/{id}/dataset/ Export a project as a dataset / Check dataset import status   retrieve_preview GET /api/projects/{id}/preview Get a preview image for a project    create  create( project_write_request, x_organization=None, org=None, org_id=None, **kwargs )"/>
 
 
 
@@ -156,7 +156,7 @@
         <a class="dropdown-item" href="../../../../../../../v2.10.3/docs/api_sdk/sdk/reference/apis/projects-api/">v2.10.3</a>
     
       
-        <a class="dropdown-item" href="../../../../../../../v2.11.2/docs/api_sdk/sdk/reference/apis/projects-api/">v2.11.2</a>
+        <a class="dropdown-item" href="../../../../../../../v2.11.3/docs/api_sdk/sdk/reference/apis/projects-api/">v2.11.3</a>
     
       
         <a class="dropdown-item" href="../../../../../../../v2.2.0/docs/api_sdk/sdk/reference/apis/projects-api/">v2.2.0</a>
@@ -194,7 +194,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../../../../../offline-search-index.6f46bbcd3326d2f261c855b82f736189.json"
+  data-offline-search-index-json-src="../../../../../../offline-search-index.ac6de620182cfd1582bbe189822a9c70.json"
   data-offline-search-base-href="../../../../../../"
   data-offline-search-max-results="10"
 >
@@ -230,7 +230,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../../../../../offline-search-index.6f46bbcd3326d2f261c855b82f736189.json"
+  data-offline-search-index-json-src="../../../../../../offline-search-index.ac6de620182cfd1582bbe189822a9c70.json"
   data-offline-search-base-href="../../../../../../"
   data-offline-search-max-results="10"
 >
@@ -4426,57 +4426,57 @@
 <tr>
 <td><a href="../projects-api#create"><strong>create</strong></a></td>
 <td><strong>POST</strong> /api/projects</td>
-<td>Method creates a new project</td>
+<td>Create a project</td>
 </tr>
 <tr>
 <td><a href="../projects-api#create_backup"><strong>create_backup</strong></a></td>
 <td><strong>POST</strong> /api/projects/backup/</td>
-<td>Methods create a project from a backup</td>
+<td>Recreate a project from a backup</td>
 </tr>
 <tr>
 <td><a href="../projects-api#create_dataset"><strong>create_dataset</strong></a></td>
 <td><strong>POST</strong> /api/projects/{id}/dataset/</td>
-<td>Import dataset in specific format as a project or check status of dataset import process</td>
+<td>Import a dataset into a project</td>
 </tr>
 <tr>
 <td><a href="../projects-api#destroy"><strong>destroy</strong></a></td>
 <td><strong>DELETE</strong> /api/projects/{id}</td>
-<td>Method deletes a specific project</td>
+<td>Delete a project</td>
 </tr>
 <tr>
 <td><a href="../projects-api#list"><strong>list</strong></a></td>
 <td><strong>GET</strong> /api/projects</td>
-<td>Returns a paginated list of projects</td>
+<td>List projects</td>
 </tr>
 <tr>
 <td><a href="../projects-api#partial_update"><strong>partial_update</strong></a></td>
 <td><strong>PATCH</strong> /api/projects/{id}</td>
-<td>Methods does a partial update of chosen fields in a project</td>
+<td>Update a project</td>
 </tr>
 <tr>
 <td><a href="../projects-api#retrieve"><strong>retrieve</strong></a></td>
 <td><strong>GET</strong> /api/projects/{id}</td>
-<td>Method returns details of a specific project</td>
+<td>Get project details</td>
 </tr>
 <tr>
 <td><a href="../projects-api#retrieve_annotations"><strong>retrieve_annotations</strong></a></td>
 <td><strong>GET</strong> /api/projects/{id}/annotations</td>
-<td>Method allows to download project annotations</td>
+<td>Get project annotations</td>
 </tr>
 <tr>
 <td><a href="../projects-api#retrieve_backup"><strong>retrieve_backup</strong></a></td>
 <td><strong>GET</strong> /api/projects/{id}/backup</td>
-<td>Methods creates a backup copy of a project</td>
+<td>Back up a project</td>
 </tr>
 <tr>
 <td><a href="../projects-api#retrieve_dataset"><strong>retrieve_dataset</strong></a></td>
 <td><strong>GET</strong> /api/projects/{id}/dataset/</td>
-<td>Export project as a dataset in a specific format</td>
+<td>Export a project as a dataset / Check dataset import status</td>
 </tr>
 <tr>
 <td><a href="../projects-api#retrieve_preview"><strong>retrieve_preview</strong></a></td>
 <td><strong>GET</strong> /api/projects/{id}/preview</td>
-<td>Method returns a preview image for the project</td>
+<td>Get a preview image for a project</td>
 </tr>
 </tbody>
 </table>
@@ -4490,7 +4490,7 @@ org_id=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Method creates a new project</p>
+<p>Create a project</p>
 <h3 id="example">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -4656,7 +4656,7 @@ backup_write_request=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Methods create a project from a backup</p>
+<p>Recreate a project from a backup</p>
 <p>The backup import process is as follows:  The first request POST /api/projects/backup will initiate file upload and will create the rq job on the server in which the process of a project creating from an uploaded backup will be carried out.  After initiating the backup upload, you will receive an rq_id parameter. Make sure to include this parameter as a query parameter in your subsequent requests to track the status of the project creation. Once the project has been successfully created, the server will return the id of the newly created project.</p>
 <h3 id="example-1">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
@@ -4807,7 +4807,7 @@ dataset_write_request=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Import dataset in specific format as a project or check status of dataset import process</p>
+<p>Import a dataset into a project</p>
 <p>The request POST /api/projects/id/dataset will initiate file upload and will create the rq job on the server in which the process of dataset import from a file will be carried out. Please, use the GET /api/projects/id/dataset endpoint for checking status of the process.</p>
 <h3 id="example-2">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
@@ -4950,7 +4950,7 @@ id,
 **kwargs
 )</p>
 </blockquote>
-<p>Method deletes a specific project</p>
+<p>Delete a project</p>
 <h3 id="example-3">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -5043,7 +5043,7 @@ status=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Returns a paginated list of projects</p>
+<p>List projects</p>
 <h3 id="example-4">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -5216,7 +5216,7 @@ patched_project_write_request=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Methods does a partial update of chosen fields in a project</p>
+<p>Update a project</p>
 <h3 id="example-5">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -5359,7 +5359,7 @@ id,
 **kwargs
 )</p>
 </blockquote>
-<p>Method returns details of a specific project</p>
+<p>Get project details</p>
 <h3 id="example-6">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -5448,7 +5448,7 @@ use_default_location=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Method allows to download project annotations</p>
+<p>Get project annotations</p>
 <h3 id="example-7">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -5605,7 +5605,7 @@ use_default_location=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Methods creates a backup copy of a project</p>
+<p>Back up a project</p>
 <h3 id="example-8">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -5745,7 +5745,7 @@ use_default_location=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Export project as a dataset in a specific format</p>
+<p>Export a project as a dataset / Check dataset import status</p>
 <p>To check the status of the process of importing a project dataset from a file:  After initiating the dataset upload, you will receive an rq_id parameter. Make sure to include this parameter as a query parameter in your subsequent GET /api/projects/id/dataset requests to track the status of the dataset import. Also you should specify action parameter: action=import_status.</p>
 <h3 id="example-9">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
@@ -5901,7 +5901,7 @@ id,
 **kwargs
 )</p>
 </blockquote>
-<p>Method returns a preview image for the project</p>
+<p>Get a preview image for a project</p>
 <h3 id="example-10">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 

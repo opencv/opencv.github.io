@@ -20,14 +20,14 @@
 
 <title>EventsApi class reference | CVAT</title>
 <meta name="description" content="All URIs are relative to http://localhost
-Method HTTP request Description create POST /api/events Method saves logs from a client on the server list GET /api/events Method returns csv log file create create( client_events_request, x_organization=None, org=None, org_id=None, **kwargs )
-Method saves logs from a client on the server
+Method HTTP request Description create POST /api/events Log client events list GET /api/events Get an event log create create( client_events_request, x_organization=None, org=None, org_id=None, **kwargs )
+Log client events
 Sends logs to the Clickhouse if it is connected
 Example from pprint import pprint from cvat_sdk.api_client import Configuration, ApiClient, exceptions from cvat_sdk.api_client.models import * # Set up an API client # Read Configuration class docs for more info about parameters and authentication methods configuration = Configuration( host = &amp;#34;http://localhost&amp;#34;, username = &amp;#39;YOUR_USERNAME&amp;#39;, password = &amp;#39;YOUR_PASSWORD&amp;#39;, ) with ApiClient(configuration) as api_client: client_events_request = ClientEventsRequest( events=[ EventRequest( scope=&amp;#34;scope_example&amp;#34;, obj_name=&amp;#34;obj_name_example&amp;#34;, obj_id=1, obj_val=&amp;#34;obj_val_example&amp;#34;, source=&amp;#34;source_example&amp;#34;, timestamp=dateutil_parser(&amp;#39;1970-01-01T00:00:00.">
 <meta property="og:title" content="EventsApi class reference" />
 <meta property="og:description" content="All URIs are relative to http://localhost
-Method HTTP request Description create POST /api/events Method saves logs from a client on the server list GET /api/events Method returns csv log file create create( client_events_request, x_organization=None, org=None, org_id=None, **kwargs )
-Method saves logs from a client on the server
+Method HTTP request Description create POST /api/events Log client events list GET /api/events Get an event log create create( client_events_request, x_organization=None, org=None, org_id=None, **kwargs )
+Log client events
 Sends logs to the Clickhouse if it is connected
 Example from pprint import pprint from cvat_sdk.api_client import Configuration, ApiClient, exceptions from cvat_sdk.api_client.models import * # Set up an API client # Read Configuration class docs for more info about parameters and authentication methods configuration = Configuration( host = &#34;http://localhost&#34;, username = &#39;YOUR_USERNAME&#39;, password = &#39;YOUR_PASSWORD&#39;, ) with ApiClient(configuration) as api_client: client_events_request = ClientEventsRequest( events=[ EventRequest( scope=&#34;scope_example&#34;, obj_name=&#34;obj_name_example&#34;, obj_id=1, obj_val=&#34;obj_val_example&#34;, source=&#34;source_example&#34;, timestamp=dateutil_parser(&#39;1970-01-01T00:00:00." />
 <meta property="og:type" content="article" />
@@ -36,17 +36,17 @@ Example from pprint import pprint from cvat_sdk.api_client import Configuration,
 <meta property="og:site_name" content="CVAT" />
 <meta itemprop="name" content="EventsApi class reference">
 <meta itemprop="description" content="All URIs are relative to http://localhost
-Method HTTP request Description create POST /api/events Method saves logs from a client on the server list GET /api/events Method returns csv log file create create( client_events_request, x_organization=None, org=None, org_id=None, **kwargs )
-Method saves logs from a client on the server
+Method HTTP request Description create POST /api/events Log client events list GET /api/events Get an event log create create( client_events_request, x_organization=None, org=None, org_id=None, **kwargs )
+Log client events
 Sends logs to the Clickhouse if it is connected
 Example from pprint import pprint from cvat_sdk.api_client import Configuration, ApiClient, exceptions from cvat_sdk.api_client.models import * # Set up an API client # Read Configuration class docs for more info about parameters and authentication methods configuration = Configuration( host = &#34;http://localhost&#34;, username = &#39;YOUR_USERNAME&#39;, password = &#39;YOUR_PASSWORD&#39;, ) with ApiClient(configuration) as api_client: client_events_request = ClientEventsRequest( events=[ EventRequest( scope=&#34;scope_example&#34;, obj_name=&#34;obj_name_example&#34;, obj_id=1, obj_val=&#34;obj_val_example&#34;, source=&#34;source_example&#34;, timestamp=dateutil_parser(&#39;1970-01-01T00:00:00.">
 
-<meta itemprop="wordCount" content="839">
+<meta itemprop="wordCount" content="828">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="EventsApi class reference"/>
 <meta name="twitter:description" content="All URIs are relative to http://localhost
-Method HTTP request Description create POST /api/events Method saves logs from a client on the server list GET /api/events Method returns csv log file create create( client_events_request, x_organization=None, org=None, org_id=None, **kwargs )
-Method saves logs from a client on the server
+Method HTTP request Description create POST /api/events Log client events list GET /api/events Get an event log create create( client_events_request, x_organization=None, org=None, org_id=None, **kwargs )
+Log client events
 Sends logs to the Clickhouse if it is connected
 Example from pprint import pprint from cvat_sdk.api_client import Configuration, ApiClient, exceptions from cvat_sdk.api_client.models import * # Set up an API client # Read Configuration class docs for more info about parameters and authentication methods configuration = Configuration( host = &#34;http://localhost&#34;, username = &#39;YOUR_USERNAME&#39;, password = &#39;YOUR_PASSWORD&#39;, ) with ApiClient(configuration) as api_client: client_events_request = ClientEventsRequest( events=[ EventRequest( scope=&#34;scope_example&#34;, obj_name=&#34;obj_name_example&#34;, obj_id=1, obj_val=&#34;obj_val_example&#34;, source=&#34;source_example&#34;, timestamp=dateutil_parser(&#39;1970-01-01T00:00:00."/>
 
@@ -97,7 +97,7 @@ Example from pprint import pprint from cvat_sdk.api_client import Configuration,
     <li><a class="dropdown-item" href="../../../../../../../v2.0.0">v2.0.0</a></li>
     <li><a class="dropdown-item" href="../../../../../../../v2.1.0">v2.1.0</a></li>
     <li><a class="dropdown-item" href="../../../../../../../v2.10.3">v2.10.3</a></li>
-    <li><a class="dropdown-item" href="../../../../../../../v2.11.2">v2.11.2</a></li>
+    <li><a class="dropdown-item" href="../../../../../../../v2.11.3">v2.11.3</a></li>
     <li><a class="dropdown-item" href="../../../../../../../v2.2.0">v2.2.0</a></li>
     <li><a class="dropdown-item" href="../../../../../../../v2.3.0">v2.3.0</a></li>
     <li><a class="dropdown-item" href="../../../../../../../v2.4.9">v2.4.9</a></li>
@@ -120,7 +120,7 @@ Example from pprint import pprint from cvat_sdk.api_client import Configuration,
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="../../../../../../offline-search-index.83ae989a720cf44f1c9e3349aa94ecfe.json"
+    data-offline-search-index-json-src="../../../../../../offline-search-index.4555a529ac2f61a0a4a994c67524f030.json"
     data-offline-search-base-href="../../../../../../"
     data-offline-search-max-results="10"
   >
@@ -146,7 +146,7 @@ Example from pprint import pprint from cvat_sdk.api_client import Configuration,
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="../../../../../../offline-search-index.83ae989a720cf44f1c9e3349aa94ecfe.json"
+    data-offline-search-index-json-src="../../../../../../offline-search-index.4555a529ac2f61a0a4a994c67524f030.json"
     data-offline-search-base-href="../../../../../../"
     data-offline-search-max-results="10"
   >
@@ -744,12 +744,12 @@ Example from pprint import pprint from cvat_sdk.api_client import Configuration,
 <tr>
 <td><a href="../events-api#create"><strong>create</strong></a></td>
 <td><strong>POST</strong> /api/events</td>
-<td>Method saves logs from a client on the server</td>
+<td>Log client events</td>
 </tr>
 <tr>
 <td><a href="../events-api#list"><strong>list</strong></a></td>
 <td><strong>GET</strong> /api/events</td>
-<td>Method returns csv log file</td>
+<td>Get an event log</td>
 </tr>
 </tbody>
 </table>
@@ -763,7 +763,7 @@ org_id=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Method saves logs from a client on the server</p>
+<p>Log client events</p>
 <p>Sends logs to the Clickhouse if it is connected</p>
 <h3 id="example">Example</h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
@@ -905,8 +905,8 @@ user_id=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Method returns csv log file</p>
-<p>Receive logs from the server</p>
+<p>Get an event log</p>
+<p>The log is returned in the CSV format.</p>
 <h3 id="example-1">Example</h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 </span></span><span style="display:flex;"><span>

@@ -20,7 +20,7 @@
 <title>DataRequest class reference | CVAT</title>
 <meta name="description" content=""><meta property="og:title" content="DataRequest class reference" />
 <meta property="og:description" content="Read more about parameters here: https://opencv.github.io/cvat/docs/manual/basics/create_an_annotation_task/#advanced-configuration
-Properties    Name Type Description Notes     image_quality int Image quality to use during annotation    chunk_size int, none_type Maximum number of frames per chunk [optional]   size int The number of frames [optional]   start_frame int First frame index [optional]   stop_frame int Last frame index [optional]   frame_filter str Frame filter. The only supported syntax is: &lsquo;step=N&rsquo; [optional]   compressed_chunk_type ChunkType  [optional]   original_chunk_type ChunkType  [optional]   client_files [file_type] Uploaded files." />
+Properties    Name Type Description Notes     image_quality int Image quality to use during annotation    chunk_size int, none_type Maximum number of frames per chunk [optional]   start_frame int First frame index [optional]   stop_frame int Last frame index [optional]   frame_filter str Frame filter. The only supported syntax is: &lsquo;step=N&rsquo; [optional]   client_files [file_type] Uploaded files." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/api_sdk/sdk/reference/models/data-request/" /><meta property="article:section" content="docs" />
 
@@ -28,13 +28,13 @@ Properties    Name Type Description Notes     image_quality int Image quality to
 
 <meta itemprop="name" content="DataRequest class reference">
 <meta itemprop="description" content="Read more about parameters here: https://opencv.github.io/cvat/docs/manual/basics/create_an_annotation_task/#advanced-configuration
-Properties    Name Type Description Notes     image_quality int Image quality to use during annotation    chunk_size int, none_type Maximum number of frames per chunk [optional]   size int The number of frames [optional]   start_frame int First frame index [optional]   stop_frame int Last frame index [optional]   frame_filter str Frame filter. The only supported syntax is: &lsquo;step=N&rsquo; [optional]   compressed_chunk_type ChunkType  [optional]   original_chunk_type ChunkType  [optional]   client_files [file_type] Uploaded files.">
+Properties    Name Type Description Notes     image_quality int Image quality to use during annotation    chunk_size int, none_type Maximum number of frames per chunk [optional]   start_frame int First frame index [optional]   stop_frame int Last frame index [optional]   frame_filter str Frame filter. The only supported syntax is: &lsquo;step=N&rsquo; [optional]   client_files [file_type] Uploaded files.">
 
-<meta itemprop="wordCount" content="629">
+<meta itemprop="wordCount" content="616">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="DataRequest class reference"/>
 <meta name="twitter:description" content="Read more about parameters here: https://opencv.github.io/cvat/docs/manual/basics/create_an_annotation_task/#advanced-configuration
-Properties    Name Type Description Notes     image_quality int Image quality to use during annotation    chunk_size int, none_type Maximum number of frames per chunk [optional]   size int The number of frames [optional]   start_frame int First frame index [optional]   stop_frame int Last frame index [optional]   frame_filter str Frame filter. The only supported syntax is: &lsquo;step=N&rsquo; [optional]   compressed_chunk_type ChunkType  [optional]   original_chunk_type ChunkType  [optional]   client_files [file_type] Uploaded files."/>
+Properties    Name Type Description Notes     image_quality int Image quality to use during annotation    chunk_size int, none_type Maximum number of frames per chunk [optional]   start_frame int First frame index [optional]   stop_frame int Last frame index [optional]   frame_filter str Frame filter. The only supported syntax is: &lsquo;step=N&rsquo; [optional]   client_files [file_type] Uploaded files."/>
 
 
 
@@ -156,7 +156,7 @@ Properties    Name Type Description Notes     image_quality int Image quality to
         <a class="dropdown-item" href="../../../../../../../v2.10.3/docs/api_sdk/sdk/reference/models/data-request/">v2.10.3</a>
     
       
-        <a class="dropdown-item" href="../../../../../../../v2.11.2/docs/api_sdk/sdk/reference/models/data-request/">v2.11.2</a>
+        <a class="dropdown-item" href="../../../../../../../v2.11.3/docs/api_sdk/sdk/reference/models/data-request/">v2.11.3</a>
     
       
         <a class="dropdown-item" href="../../../../../../../v2.2.0/docs/api_sdk/sdk/reference/models/data-request/">v2.2.0</a>
@@ -194,7 +194,7 @@ Properties    Name Type Description Notes     image_quality int Image quality to
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../../../../../offline-search-index.6f46bbcd3326d2f261c855b82f736189.json"
+  data-offline-search-index-json-src="../../../../../../offline-search-index.ac6de620182cfd1582bbe189822a9c70.json"
   data-offline-search-base-href="../../../../../../"
   data-offline-search-max-results="10"
 >
@@ -230,7 +230,7 @@ Properties    Name Type Description Notes     image_quality int Image quality to
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../../../../../offline-search-index.6f46bbcd3326d2f261c855b82f736189.json"
+  data-offline-search-index-json-src="../../../../../../offline-search-index.ac6de620182cfd1582bbe189822a9c70.json"
   data-offline-search-base-href="../../../../../../"
   data-offline-search-max-results="10"
 >
@@ -4313,12 +4313,6 @@ Properties    Name Type Description Notes     image_quality int Image quality to
 <td>[optional]</td>
 </tr>
 <tr>
-<td><strong>size</strong></td>
-<td><strong>int</strong></td>
-<td>The number of frames</td>
-<td>[optional]</td>
-</tr>
-<tr>
 <td><strong>start_frame</strong></td>
 <td><strong>int</strong></td>
 <td>First frame index</td>
@@ -4334,18 +4328,6 @@ Properties    Name Type Description Notes     image_quality int Image quality to
 <td><strong>frame_filter</strong></td>
 <td><strong>str</strong></td>
 <td>Frame filter. The only supported syntax is: &lsquo;step=N&rsquo;</td>
-<td>[optional]</td>
-</tr>
-<tr>
-<td><strong>compressed_chunk_type</strong></td>
-<td><a href="../chunk-type"><strong>ChunkType</strong></a></td>
-<td></td>
-<td>[optional]</td>
-</tr>
-<tr>
-<td><strong>original_chunk_type</strong></td>
-<td><a href="../chunk-type"><strong>ChunkType</strong></a></td>
-<td></td>
 <td>[optional]</td>
 </tr>
 <tr>

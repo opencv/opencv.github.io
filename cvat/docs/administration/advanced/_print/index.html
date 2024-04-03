@@ -77,7 +77,7 @@
     <li><a class="dropdown-item" href="../../../../v2.0.0">v2.0.0</a></li>
     <li><a class="dropdown-item" href="../../../../v2.1.0">v2.1.0</a></li>
     <li><a class="dropdown-item" href="../../../../v2.10.3">v2.10.3</a></li>
-    <li><a class="dropdown-item" href="../../../../v2.11.2">v2.11.2</a></li>
+    <li><a class="dropdown-item" href="../../../../v2.11.3">v2.11.3</a></li>
     <li><a class="dropdown-item" href="../../../../v2.2.0">v2.2.0</a></li>
     <li><a class="dropdown-item" href="../../../../v2.3.0">v2.3.0</a></li>
     <li><a class="dropdown-item" href="../../../../v2.4.9">v2.4.9</a></li>
@@ -100,7 +100,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="../../../../offline-search-index.88b019e6653a72e159f7f1777ae390c8.json"
+    data-offline-search-index-json-src="../../../../offline-search-index.3371b6860e4749132e627628c8e4a7c1.json"
     data-offline-search-base-href="../../../../"
     data-offline-search-max-results="10"
   >
@@ -606,7 +606,7 @@ As an example, below will run on the GPU:</p>
 <li>The number of GPU deployed functions will be limited to your GPU memory.</li>
 <li>See <a href="https://github.com/cvat-ai/cvat/blob/develop/serverless/deploy_gpu.sh">deploy_gpu.sh</a>
 script for more examples.</li>
-<li>For some models (namely <a href="../../../../docs/manual/advanced/ai-tools#trackers">SiamMask</a>) you need an <a href="https://www.nvidia.com/en-us/drivers/unix/">Nvidia driver</a>
+<li>For some models (namely <a href="../../../../docs/manual/advanced/ai-tools/#trackers">SiamMask</a>) you need an <a href="https://www.nvidia.com/en-us/drivers/unix/">Nvidia driver</a>
 version greater than or equal to 450.80.02.</li>
 </ul>
 <p><strong>Note for Windows users:</strong></p>
@@ -729,7 +729,8 @@ and enhance user satisfaction.</p>
 <p>CVAT and its analytics module can be set up locally, for
 self-hosted solution analytics are enabled by default.</p>
 <blockquote>
-<p>For detailed instructions for CVAT installation, see <a href="https://opencv.github.io/cvat/docs/administration/basics/installation/">Installation Guide</a>
+<p>For detailed CVAT installation instructions, see
+<a href="../../../../docs/administration/basics/installation/">Installation Guide</a>
 or refer to the <a href="https://www.youtube.com/playlist?list=PL0to7Ng4PuuYQT4eXlHb_oIlq_RPeuasN">CVAT Course</a>
 for installation videos.</p>
 </blockquote>
@@ -1793,7 +1794,8 @@ Mounted into <code>cvat</code> container by <code>/home/django/keys</code> path.
 Mounted into <code>cvat</code> container by <code>/home/django/logs</code> path.</p>
 </li>
 <li>
-<p><code>cvat_events</code>: this is an optional volume that is used only when <a href="../../../../docs/administration/advanced/analytics/">Analytics component</a>
+<p><code>cvat_events</code>: this is an optional volume that is used only when
+<a href="../../../../docs/administration/advanced/analytics/">Analytics component</a>
 is enabled and is used to store Elasticsearch database files.
 Mounted into <code>cvat_elasticsearch</code> container by <code>/usr/share/elasticsearch/data</code> path.</p>
 </li>
@@ -1817,7 +1819,8 @@ using the <code>-f</code> parameter.</p>
 it will not work because between CVAT releases the layout of DB can be
 changed. You always can upgrade CVAT later. It will take care to migrate
 your data properly internally.</strong></p>
-<p>Note: CVAT containers must exist (if no, please follow the <a href="../../../../docs/administration/basics/installation/#quick-installation-guide">installation guide</a>).
+<p>Note: CVAT containers must exist (if no, please follow the
+<a href="../../../../docs/administration/basics/installation/#quick-installation-guide">installation guide</a>).
 Stop all CVAT containers:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>docker compose stop
 </span></span></code></pre></div><p>Restore data:</p>
@@ -1860,7 +1863,8 @@ upgrading PostgreSQL base image major version. See details <a href="#how-to-upgr
 <li>
 <p>Go to the previously cloned CVAT directory and stop all CVAT containers with:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>docker compose down
-</span></span></code></pre></div><p>If you have included <a href="../../../../docs/administration/basics/installation/#additional-components">additional components</a>,
+</span></span></code></pre></div><p>If you have included
+<a href="../../../../docs/administration/basics/installation/#additional-components">additional components</a>,
 include all compose configuration files that are used, e.g.:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>docker compose -f docker-compose.yml -f components/serverless/docker-compose.serverless.yml down
 </span></span></code></pre></div></li>
@@ -1952,7 +1956,8 @@ Let&rsquo;s assume that you have CVAT v1.7.0 working.</p>
 <li>
 <p>Update CVAT source code by any preferable way: clone with git or download zip file from GitHub.
 Check the
-<a href="../../../../docs/administration/basics/installation/#how-to-get-cvat-source-code">installation guide</a> for details.</p>
+<a href="../../../../docs/administration/basics/installation/#how-to-get-cvat-source-code">installation guide</a>
+for details.</p>
 </li>
 <li>
 <p>Start database container only:</p>

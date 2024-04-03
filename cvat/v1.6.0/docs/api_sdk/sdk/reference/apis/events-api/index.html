@@ -20,9 +20,10 @@
 <title>EventsApi class reference | CVAT</title>
 <meta name="description" content=""><meta property="og:title" content="EventsApi class reference" />
 <meta property="og:description" content="All URIs are relative to http://localhost
-   Method HTTP request Description     create POST /api/events Method saves logs from a client on the server   list GET /api/events Method returns csv log file    create  create( client_events_request, x_organization=None, org=None, org_id=None, **kwargs )
- Method saves logs from a client on the server
-Sends logs to the Clickhouse if it is connected" />
+   Method HTTP request Description     create POST /api/events Log client events   list GET /api/events Get an event log    create  create( client_events_request, x_organization=None, org=None, org_id=None, **kwargs )
+ Log client events
+Sends logs to the Clickhouse if it is connected
+Example from pprint import pprint from cvat_sdk.api_client import Configuration, ApiClient, exceptions from cvat_sdk.api_client.models import * # Set up an API client # Read Configuration class docs for more info about parameters and authentication methods configuration = Configuration( host = &#34;http://localhost&#34;, username = &#39;YOUR_USERNAME&#39;, password = &#39;YOUR_PASSWORD&#39;, ) with ApiClient(configuration) as api_client: client_events_request = ClientEventsRequest( events=[ EventRequest( scope=&#34;scope_example&#34;, obj_name=&#34;obj_name_example&#34;, obj_id=1, obj_val=&#34;obj_val_example&#34;, source=&#34;source_example&#34;, timestamp=dateutil_parser(&#39;1970-01-01T00:00:00." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/api_sdk/sdk/reference/apis/events-api/" /><meta property="article:section" content="docs" />
 
@@ -30,17 +31,19 @@ Sends logs to the Clickhouse if it is connected" />
 
 <meta itemprop="name" content="EventsApi class reference">
 <meta itemprop="description" content="All URIs are relative to http://localhost
-   Method HTTP request Description     create POST /api/events Method saves logs from a client on the server   list GET /api/events Method returns csv log file    create  create( client_events_request, x_organization=None, org=None, org_id=None, **kwargs )
- Method saves logs from a client on the server
-Sends logs to the Clickhouse if it is connected">
+   Method HTTP request Description     create POST /api/events Log client events   list GET /api/events Get an event log    create  create( client_events_request, x_organization=None, org=None, org_id=None, **kwargs )
+ Log client events
+Sends logs to the Clickhouse if it is connected
+Example from pprint import pprint from cvat_sdk.api_client import Configuration, ApiClient, exceptions from cvat_sdk.api_client.models import * # Set up an API client # Read Configuration class docs for more info about parameters and authentication methods configuration = Configuration( host = &#34;http://localhost&#34;, username = &#39;YOUR_USERNAME&#39;, password = &#39;YOUR_PASSWORD&#39;, ) with ApiClient(configuration) as api_client: client_events_request = ClientEventsRequest( events=[ EventRequest( scope=&#34;scope_example&#34;, obj_name=&#34;obj_name_example&#34;, obj_id=1, obj_val=&#34;obj_val_example&#34;, source=&#34;source_example&#34;, timestamp=dateutil_parser(&#39;1970-01-01T00:00:00.">
 
-<meta itemprop="wordCount" content="839">
+<meta itemprop="wordCount" content="828">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="EventsApi class reference"/>
 <meta name="twitter:description" content="All URIs are relative to http://localhost
-   Method HTTP request Description     create POST /api/events Method saves logs from a client on the server   list GET /api/events Method returns csv log file    create  create( client_events_request, x_organization=None, org=None, org_id=None, **kwargs )
- Method saves logs from a client on the server
-Sends logs to the Clickhouse if it is connected"/>
+   Method HTTP request Description     create POST /api/events Log client events   list GET /api/events Get an event log    create  create( client_events_request, x_organization=None, org=None, org_id=None, **kwargs )
+ Log client events
+Sends logs to the Clickhouse if it is connected
+Example from pprint import pprint from cvat_sdk.api_client import Configuration, ApiClient, exceptions from cvat_sdk.api_client.models import * # Set up an API client # Read Configuration class docs for more info about parameters and authentication methods configuration = Configuration( host = &#34;http://localhost&#34;, username = &#39;YOUR_USERNAME&#39;, password = &#39;YOUR_PASSWORD&#39;, ) with ApiClient(configuration) as api_client: client_events_request = ClientEventsRequest( events=[ EventRequest( scope=&#34;scope_example&#34;, obj_name=&#34;obj_name_example&#34;, obj_id=1, obj_val=&#34;obj_val_example&#34;, source=&#34;source_example&#34;, timestamp=dateutil_parser(&#39;1970-01-01T00:00:00."/>
 
 
 
@@ -155,7 +158,7 @@ Sends logs to the Clickhouse if it is connected"/>
       <a class="dropdown-item" href="../../../../../../../v2.10.3/docs/api_sdk/sdk/reference/apis/events-api/">v2.10.3</a>
   
     
-      <a class="dropdown-item" href="../../../../../../../v2.11.2/docs/api_sdk/sdk/reference/apis/events-api/">v2.11.2</a>
+      <a class="dropdown-item" href="../../../../../../../v2.11.3/docs/api_sdk/sdk/reference/apis/events-api/">v2.11.3</a>
   
     
       <a class="dropdown-item" href="../../../../../../../v2.2.0/docs/api_sdk/sdk/reference/apis/events-api/">v2.2.0</a>
@@ -199,7 +202,7 @@ Sends logs to the Clickhouse if it is connected"/>
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../../../../../offline-search-index.6a6a852956055636b6d119455d6618c6.json"
+  data-offline-search-index-json-src="../../../../../../offline-search-index.c487b36f590e03800ebce2f6a8830532.json"
   data-offline-search-base-href="../../../../../../"
   data-offline-search-max-results="10"
 >
@@ -235,7 +238,7 @@ Sends logs to the Clickhouse if it is connected"/>
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../../../../../offline-search-index.6a6a852956055636b6d119455d6618c6.json"
+  data-offline-search-index-json-src="../../../../../../offline-search-index.c487b36f590e03800ebce2f6a8830532.json"
   data-offline-search-base-href="../../../../../../"
   data-offline-search-max-results="10"
 >
@@ -4091,12 +4094,12 @@ Sends logs to the Clickhouse if it is connected"/>
 <tr>
 <td><a href="../events-api#create"><strong>create</strong></a></td>
 <td><strong>POST</strong> /api/events</td>
-<td>Method saves logs from a client on the server</td>
+<td>Log client events</td>
 </tr>
 <tr>
 <td><a href="../events-api#list"><strong>list</strong></a></td>
 <td><strong>GET</strong> /api/events</td>
-<td>Method returns csv log file</td>
+<td>Get an event log</td>
 </tr>
 </tbody>
 </table>
@@ -4110,7 +4113,7 @@ org_id=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Method saves logs from a client on the server</p>
+<p>Log client events</p>
 <p>Sends logs to the Clickhouse if it is connected</p>
 <h3 id="example">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
@@ -4252,8 +4255,8 @@ user_id=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Method returns csv log file</p>
-<p>Receive logs from the server</p>
+<p>Get an event log</p>
+<p>The log is returned in the CSV format.</p>
 <h3 id="example-1">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 

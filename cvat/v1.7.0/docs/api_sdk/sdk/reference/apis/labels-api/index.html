@@ -20,7 +20,9 @@
 <title>LabelsApi class reference | CVAT</title>
 <meta name="description" content=""><meta property="og:title" content="LabelsApi class reference" />
 <meta property="og:description" content="All URIs are relative to http://localhost
-   Method HTTP request Description     destroy DELETE /api/labels/{id} Method deletes a label. To delete a sublabel, please use the PATCH method of the parent label   list GET /api/labels Method returns a paginated list of labels   partial_update PATCH /api/labels/{id} Methods does a partial update of chosen fields in a labelTo modify a sublabel, please use the PATCH method of the parent label   retrieve GET /api/labels/{id} Method returns details of a label    destroy  destroy( id, **kwargs )" />
+   Method HTTP request Description     destroy DELETE /api/labels/{id} Delete a label   list GET /api/labels List labels   partial_update PATCH /api/labels/{id} Update a label   retrieve GET /api/labels/{id} Get label details    destroy  destroy( id, **kwargs )
+ Delete a label
+To delete a sublabel, please use the PATCH method of the parent label." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/api_sdk/sdk/reference/apis/labels-api/" /><meta property="article:section" content="docs" />
 
@@ -28,13 +30,17 @@
 
 <meta itemprop="name" content="LabelsApi class reference">
 <meta itemprop="description" content="All URIs are relative to http://localhost
-   Method HTTP request Description     destroy DELETE /api/labels/{id} Method deletes a label. To delete a sublabel, please use the PATCH method of the parent label   list GET /api/labels Method returns a paginated list of labels   partial_update PATCH /api/labels/{id} Methods does a partial update of chosen fields in a labelTo modify a sublabel, please use the PATCH method of the parent label   retrieve GET /api/labels/{id} Method returns details of a label    destroy  destroy( id, **kwargs )">
+   Method HTTP request Description     destroy DELETE /api/labels/{id} Delete a label   list GET /api/labels List labels   partial_update PATCH /api/labels/{id} Update a label   retrieve GET /api/labels/{id} Get label details    destroy  destroy( id, **kwargs )
+ Delete a label
+To delete a sublabel, please use the PATCH method of the parent label.">
 
-<meta itemprop="wordCount" content="1459">
+<meta itemprop="wordCount" content="1401">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="LabelsApi class reference"/>
 <meta name="twitter:description" content="All URIs are relative to http://localhost
-   Method HTTP request Description     destroy DELETE /api/labels/{id} Method deletes a label. To delete a sublabel, please use the PATCH method of the parent label   list GET /api/labels Method returns a paginated list of labels   partial_update PATCH /api/labels/{id} Methods does a partial update of chosen fields in a labelTo modify a sublabel, please use the PATCH method of the parent label   retrieve GET /api/labels/{id} Method returns details of a label    destroy  destroy( id, **kwargs )"/>
+   Method HTTP request Description     destroy DELETE /api/labels/{id} Delete a label   list GET /api/labels List labels   partial_update PATCH /api/labels/{id} Update a label   retrieve GET /api/labels/{id} Get label details    destroy  destroy( id, **kwargs )
+ Delete a label
+To delete a sublabel, please use the PATCH method of the parent label."/>
 
 
 
@@ -156,7 +162,7 @@
         <a class="dropdown-item" href="../../../../../../../v2.10.3/docs/api_sdk/sdk/reference/apis/labels-api/">v2.10.3</a>
     
       
-        <a class="dropdown-item" href="../../../../../../../v2.11.2/docs/api_sdk/sdk/reference/apis/labels-api/">v2.11.2</a>
+        <a class="dropdown-item" href="../../../../../../../v2.11.3/docs/api_sdk/sdk/reference/apis/labels-api/">v2.11.3</a>
     
       
         <a class="dropdown-item" href="../../../../../../../v2.2.0/docs/api_sdk/sdk/reference/apis/labels-api/">v2.2.0</a>
@@ -194,7 +200,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../../../../../offline-search-index.2f87b904ec5c94a3f4576f1ac7199407.json"
+  data-offline-search-index-json-src="../../../../../../offline-search-index.b00903512e874f1d982c5327fa8abf5d.json"
   data-offline-search-base-href="../../../../../../"
   data-offline-search-max-results="10"
 >
@@ -230,7 +236,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../../../../../offline-search-index.2f87b904ec5c94a3f4576f1ac7199407.json"
+  data-offline-search-index-json-src="../../../../../../offline-search-index.b00903512e874f1d982c5327fa8abf5d.json"
   data-offline-search-base-href="../../../../../../"
   data-offline-search-max-results="10"
 >
@@ -4156,22 +4162,22 @@
 <tr>
 <td><a href="../labels-api#destroy"><strong>destroy</strong></a></td>
 <td><strong>DELETE</strong> /api/labels/{id}</td>
-<td>Method deletes a label. To delete a sublabel, please use the PATCH method of the parent label</td>
+<td>Delete a label</td>
 </tr>
 <tr>
 <td><a href="../labels-api#list"><strong>list</strong></a></td>
 <td><strong>GET</strong> /api/labels</td>
-<td>Method returns a paginated list of labels</td>
+<td>List labels</td>
 </tr>
 <tr>
 <td><a href="../labels-api#partial_update"><strong>partial_update</strong></a></td>
 <td><strong>PATCH</strong> /api/labels/{id}</td>
-<td>Methods does a partial update of chosen fields in a labelTo modify a sublabel, please use the PATCH method of the parent label</td>
+<td>Update a label</td>
 </tr>
 <tr>
 <td><a href="../labels-api#retrieve"><strong>retrieve</strong></a></td>
 <td><strong>GET</strong> /api/labels/{id}</td>
-<td>Method returns details of a label</td>
+<td>Get label details</td>
 </tr>
 </tbody>
 </table>
@@ -4182,7 +4188,8 @@ id,
 **kwargs
 )</p>
 </blockquote>
-<p>Method deletes a label. To delete a sublabel, please use the PATCH method of the parent label</p>
+<p>Delete a label</p>
+<p>To delete a sublabel, please use the PATCH method of the parent label.</p>
 <h3 id="example">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -4279,7 +4286,7 @@ type=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Method returns a paginated list of labels</p>
+<p>List labels</p>
 <h3 id="example-1">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -4484,7 +4491,8 @@ patched_label_request=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Methods does a partial update of chosen fields in a labelTo modify a sublabel, please use the PATCH method of the parent label</p>
+<p>Update a label</p>
+<p>To modify a sublabel, please use the PATCH method of the parent label.</p>
 <h3 id="example-2">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -4614,7 +4622,7 @@ id,
 **kwargs
 )</p>
 </blockquote>
-<p>Method returns details of a label</p>
+<p>Get label details</p>
 <h3 id="example-3">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 

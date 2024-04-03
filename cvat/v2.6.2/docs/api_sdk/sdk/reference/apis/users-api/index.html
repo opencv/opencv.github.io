@@ -20,7 +20,8 @@
 <title>UsersApi class reference | CVAT</title>
 <meta name="description" content=""><meta property="og:title" content="UsersApi class reference" />
 <meta property="og:description" content="All URIs are relative to http://localhost
-   Method HTTP request Description     destroy DELETE /api/users/{id} Method deletes a specific user from the server   list GET /api/users Method returns a paginated list of users   partial_update PATCH /api/users/{id} Method updates chosen fields of a user   retrieve GET /api/users/{id} Method provides information of a specific user   retrieve_self GET /api/users/self Method returns an instance of a user who is currently authorized    destroy  destroy( id, **kwargs )" />
+   Method HTTP request Description     destroy DELETE /api/users/{id} Delete a user   list GET /api/users List users   partial_update PATCH /api/users/{id} Update a user   retrieve GET /api/users/{id} Get user details   retrieve_self GET /api/users/self Get details of the current user    destroy  destroy( id, **kwargs )
+ Delete a user" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/api_sdk/sdk/reference/apis/users-api/" /><meta property="article:section" content="docs" />
 
@@ -28,13 +29,15 @@
 
 <meta itemprop="name" content="UsersApi class reference">
 <meta itemprop="description" content="All URIs are relative to http://localhost
-   Method HTTP request Description     destroy DELETE /api/users/{id} Method deletes a specific user from the server   list GET /api/users Method returns a paginated list of users   partial_update PATCH /api/users/{id} Method updates chosen fields of a user   retrieve GET /api/users/{id} Method provides information of a specific user   retrieve_self GET /api/users/self Method returns an instance of a user who is currently authorized    destroy  destroy( id, **kwargs )">
+   Method HTTP request Description     destroy DELETE /api/users/{id} Delete a user   list GET /api/users List users   partial_update PATCH /api/users/{id} Update a user   retrieve GET /api/users/{id} Get user details   retrieve_self GET /api/users/self Get details of the current user    destroy  destroy( id, **kwargs )
+ Delete a user">
 
-<meta itemprop="wordCount" content="1488">
+<meta itemprop="wordCount" content="1442">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="UsersApi class reference"/>
 <meta name="twitter:description" content="All URIs are relative to http://localhost
-   Method HTTP request Description     destroy DELETE /api/users/{id} Method deletes a specific user from the server   list GET /api/users Method returns a paginated list of users   partial_update PATCH /api/users/{id} Method updates chosen fields of a user   retrieve GET /api/users/{id} Method provides information of a specific user   retrieve_self GET /api/users/self Method returns an instance of a user who is currently authorized    destroy  destroy( id, **kwargs )"/>
+   Method HTTP request Description     destroy DELETE /api/users/{id} Delete a user   list GET /api/users List users   partial_update PATCH /api/users/{id} Update a user   retrieve GET /api/users/{id} Get user details   retrieve_self GET /api/users/self Get details of the current user    destroy  destroy( id, **kwargs )
+ Delete a user"/>
 
 
 
@@ -156,7 +159,7 @@
         <a class="dropdown-item" href="../../../../../../../v2.10.3/docs/api_sdk/sdk/reference/apis/users-api/">v2.10.3</a>
     
       
-        <a class="dropdown-item" href="../../../../../../../v2.11.2/docs/api_sdk/sdk/reference/apis/users-api/">v2.11.2</a>
+        <a class="dropdown-item" href="../../../../../../../v2.11.3/docs/api_sdk/sdk/reference/apis/users-api/">v2.11.3</a>
     
       
         <a class="dropdown-item" href="../../../../../../../v2.2.0/docs/api_sdk/sdk/reference/apis/users-api/">v2.2.0</a>
@@ -194,7 +197,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../../../../../offline-search-index.c870e302ae7e190a07c2d862963a9cf2.json"
+  data-offline-search-index-json-src="../../../../../../offline-search-index.98c71808206c2ff6026a036828c3f901.json"
   data-offline-search-base-href="../../../../../../"
   data-offline-search-max-results="10"
 >
@@ -230,7 +233,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../../../../../offline-search-index.c870e302ae7e190a07c2d862963a9cf2.json"
+  data-offline-search-index-json-src="../../../../../../offline-search-index.98c71808206c2ff6026a036828c3f901.json"
   data-offline-search-base-href="../../../../../../"
   data-offline-search-max-results="10"
 >
@@ -5976,27 +5979,27 @@
 <tr>
 <td><a href="../users-api#destroy"><strong>destroy</strong></a></td>
 <td><strong>DELETE</strong> /api/users/{id}</td>
-<td>Method deletes a specific user from the server</td>
+<td>Delete a user</td>
 </tr>
 <tr>
 <td><a href="../users-api#list"><strong>list</strong></a></td>
 <td><strong>GET</strong> /api/users</td>
-<td>Method returns a paginated list of users</td>
+<td>List users</td>
 </tr>
 <tr>
 <td><a href="../users-api#partial_update"><strong>partial_update</strong></a></td>
 <td><strong>PATCH</strong> /api/users/{id}</td>
-<td>Method updates chosen fields of a user</td>
+<td>Update a user</td>
 </tr>
 <tr>
 <td><a href="../users-api#retrieve"><strong>retrieve</strong></a></td>
 <td><strong>GET</strong> /api/users/{id}</td>
-<td>Method provides information of a specific user</td>
+<td>Get user details</td>
 </tr>
 <tr>
 <td><a href="../users-api#retrieve_self"><strong>retrieve_self</strong></a></td>
 <td><strong>GET</strong> /api/users/self</td>
-<td>Method returns an instance of a user who is currently authorized</td>
+<td>Get details of the current user</td>
 </tr>
 </tbody>
 </table>
@@ -6007,7 +6010,7 @@ id,
 **kwargs
 )</p>
 </blockquote>
-<p>Method deletes a specific user from the server</p>
+<p>Delete a user</p>
 <h3 id="example">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -6100,7 +6103,7 @@ username=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Method returns a paginated list of users</p>
+<p>List users</p>
 <h3 id="example-1">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -6273,7 +6276,7 @@ patched_user_request=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Method updates chosen fields of a user</p>
+<p>Update a user</p>
 <h3 id="example-2">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -6376,7 +6379,7 @@ id,
 **kwargs
 )</p>
 </blockquote>
-<p>Method provides information of a specific user</p>
+<p>Get user details</p>
 <h3 id="example-3">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -6458,7 +6461,7 @@ and returned values <a href="https://opencv.github.io/cvat/docs/api_sdk/sdk/lowl
 **kwargs
 )</p>
 </blockquote>
-<p>Method returns an instance of a user who is currently authorized</p>
+<p>Get details of the current user</p>
 <p>Method returns an instance of a user who is currently authorized</p>
 <h3 id="example-4">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>

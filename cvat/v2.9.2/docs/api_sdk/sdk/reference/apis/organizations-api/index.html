@@ -20,31 +20,31 @@
 
 <title>OrganizationsApi class reference | CVAT</title>
 <meta name="description" content="All URIs are relative to http://localhost
-Method HTTP request Description create POST /api/organizations Method creates an organization destroy DELETE /api/organizations/{id} Method deletes an organization list GET /api/organizations Method returns a paginated list of organizations partial_update PATCH /api/organizations/{id} Methods does a partial update of chosen fields in an organization retrieve GET /api/organizations/{id} Method returns details of an organization create create( organization_write_request, **kwargs )
-Method creates an organization
-Example from pprint import pprint from cvat_sdk.">
+Method HTTP request Description create POST /api/organizations Create an organization destroy DELETE /api/organizations/{id} Delete an organization list GET /api/organizations List organizations partial_update PATCH /api/organizations/{id} Update an organization retrieve GET /api/organizations/{id} Get organization details create create( organization_write_request, **kwargs )
+Create an organization
+Example from pprint import pprint from cvat_sdk.api_client import Configuration, ApiClient, exceptions from cvat_sdk.api_client.models import * # Set up an API client # Read Configuration class docs for more info about parameters and authentication methods configuration = Configuration( host = &amp;#34;http://localhost&amp;#34;, username = &amp;#39;YOUR_USERNAME&amp;#39;, password = &amp;#39;YOUR_PASSWORD&amp;#39;, ) with ApiClient(configuration) as api_client: organization_write_request = OrganizationWriteRequest( slug=&amp;#34;z&amp;#34;, name=&amp;#34;name_example&amp;#34;, description=&amp;#34;description_example&amp;#34;, contact={}, ) # OrganizationWriteRequest | try: (data, response) = api_client.">
 <meta property="og:title" content="OrganizationsApi class reference" />
 <meta property="og:description" content="All URIs are relative to http://localhost
-Method HTTP request Description create POST /api/organizations Method creates an organization destroy DELETE /api/organizations/{id} Method deletes an organization list GET /api/organizations Method returns a paginated list of organizations partial_update PATCH /api/organizations/{id} Methods does a partial update of chosen fields in an organization retrieve GET /api/organizations/{id} Method returns details of an organization create create( organization_write_request, **kwargs )
-Method creates an organization
-Example from pprint import pprint from cvat_sdk." />
+Method HTTP request Description create POST /api/organizations Create an organization destroy DELETE /api/organizations/{id} Delete an organization list GET /api/organizations List organizations partial_update PATCH /api/organizations/{id} Update an organization retrieve GET /api/organizations/{id} Get organization details create create( organization_write_request, **kwargs )
+Create an organization
+Example from pprint import pprint from cvat_sdk.api_client import Configuration, ApiClient, exceptions from cvat_sdk.api_client.models import * # Set up an API client # Read Configuration class docs for more info about parameters and authentication methods configuration = Configuration( host = &#34;http://localhost&#34;, username = &#39;YOUR_USERNAME&#39;, password = &#39;YOUR_PASSWORD&#39;, ) with ApiClient(configuration) as api_client: organization_write_request = OrganizationWriteRequest( slug=&#34;z&#34;, name=&#34;name_example&#34;, description=&#34;description_example&#34;, contact={}, ) # OrganizationWriteRequest | try: (data, response) = api_client." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/api_sdk/sdk/reference/apis/organizations-api/" /><meta property="article:section" content="docs" />
 
 <meta property="og:site_name" content="CVAT" />
 <meta itemprop="name" content="OrganizationsApi class reference">
 <meta itemprop="description" content="All URIs are relative to http://localhost
-Method HTTP request Description create POST /api/organizations Method creates an organization destroy DELETE /api/organizations/{id} Method deletes an organization list GET /api/organizations Method returns a paginated list of organizations partial_update PATCH /api/organizations/{id} Methods does a partial update of chosen fields in an organization retrieve GET /api/organizations/{id} Method returns details of an organization create create( organization_write_request, **kwargs )
-Method creates an organization
-Example from pprint import pprint from cvat_sdk.">
+Method HTTP request Description create POST /api/organizations Create an organization destroy DELETE /api/organizations/{id} Delete an organization list GET /api/organizations List organizations partial_update PATCH /api/organizations/{id} Update an organization retrieve GET /api/organizations/{id} Get organization details create create( organization_write_request, **kwargs )
+Create an organization
+Example from pprint import pprint from cvat_sdk.api_client import Configuration, ApiClient, exceptions from cvat_sdk.api_client.models import * # Set up an API client # Read Configuration class docs for more info about parameters and authentication methods configuration = Configuration( host = &#34;http://localhost&#34;, username = &#39;YOUR_USERNAME&#39;, password = &#39;YOUR_PASSWORD&#39;, ) with ApiClient(configuration) as api_client: organization_write_request = OrganizationWriteRequest( slug=&#34;z&#34;, name=&#34;name_example&#34;, description=&#34;description_example&#34;, contact={}, ) # OrganizationWriteRequest | try: (data, response) = api_client.">
 
-<meta itemprop="wordCount" content="1382">
+<meta itemprop="wordCount" content="1346">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="OrganizationsApi class reference"/>
 <meta name="twitter:description" content="All URIs are relative to http://localhost
-Method HTTP request Description create POST /api/organizations Method creates an organization destroy DELETE /api/organizations/{id} Method deletes an organization list GET /api/organizations Method returns a paginated list of organizations partial_update PATCH /api/organizations/{id} Methods does a partial update of chosen fields in an organization retrieve GET /api/organizations/{id} Method returns details of an organization create create( organization_write_request, **kwargs )
-Method creates an organization
-Example from pprint import pprint from cvat_sdk."/>
+Method HTTP request Description create POST /api/organizations Create an organization destroy DELETE /api/organizations/{id} Delete an organization list GET /api/organizations List organizations partial_update PATCH /api/organizations/{id} Update an organization retrieve GET /api/organizations/{id} Get organization details create create( organization_write_request, **kwargs )
+Create an organization
+Example from pprint import pprint from cvat_sdk.api_client import Configuration, ApiClient, exceptions from cvat_sdk.api_client.models import * # Set up an API client # Read Configuration class docs for more info about parameters and authentication methods configuration = Configuration( host = &#34;http://localhost&#34;, username = &#39;YOUR_USERNAME&#39;, password = &#39;YOUR_PASSWORD&#39;, ) with ApiClient(configuration) as api_client: organization_write_request = OrganizationWriteRequest( slug=&#34;z&#34;, name=&#34;name_example&#34;, description=&#34;description_example&#34;, contact={}, ) # OrganizationWriteRequest | try: (data, response) = api_client."/>
 
 
 
@@ -93,7 +93,7 @@ Example from pprint import pprint from cvat_sdk."/>
     <li><a class="dropdown-item" href="../../../../../../../v2.0.0">v2.0.0</a></li>
     <li><a class="dropdown-item" href="../../../../../../../v2.1.0">v2.1.0</a></li>
     <li><a class="dropdown-item" href="../../../../../../../v2.10.3">v2.10.3</a></li>
-    <li><a class="dropdown-item" href="../../../../../../../v2.11.2">v2.11.2</a></li>
+    <li><a class="dropdown-item" href="../../../../../../../v2.11.3">v2.11.3</a></li>
     <li><a class="dropdown-item" href="../../../../../../../v2.2.0">v2.2.0</a></li>
     <li><a class="dropdown-item" href="../../../../../../../v2.3.0">v2.3.0</a></li>
     <li><a class="dropdown-item" href="../../../../../../../v2.4.9">v2.4.9</a></li>
@@ -116,7 +116,7 @@ Example from pprint import pprint from cvat_sdk."/>
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="../../../../../../offline-search-index.1db590f6e89296c0a6feea214bcd49d3.json"
+    data-offline-search-index-json-src="../../../../../../offline-search-index.6eaad6f4b8084a301e95f8a8fe35c156.json"
     data-offline-search-base-href="../../../../../../"
     data-offline-search-max-results="10"
   >
@@ -142,7 +142,7 @@ Example from pprint import pprint from cvat_sdk."/>
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="../../../../../../offline-search-index.1db590f6e89296c0a6feea214bcd49d3.json"
+    data-offline-search-index-json-src="../../../../../../offline-search-index.6eaad6f4b8084a301e95f8a8fe35c156.json"
     data-offline-search-base-href="../../../../../../"
     data-offline-search-max-results="10"
   >
@@ -768,27 +768,27 @@ Example from pprint import pprint from cvat_sdk."/>
 <tr>
 <td><a href="../organizations-api#create"><strong>create</strong></a></td>
 <td><strong>POST</strong> /api/organizations</td>
-<td>Method creates an organization</td>
+<td>Create an organization</td>
 </tr>
 <tr>
 <td><a href="../organizations-api#destroy"><strong>destroy</strong></a></td>
 <td><strong>DELETE</strong> /api/organizations/{id}</td>
-<td>Method deletes an organization</td>
+<td>Delete an organization</td>
 </tr>
 <tr>
 <td><a href="../organizations-api#list"><strong>list</strong></a></td>
 <td><strong>GET</strong> /api/organizations</td>
-<td>Method returns a paginated list of organizations</td>
+<td>List organizations</td>
 </tr>
 <tr>
 <td><a href="../organizations-api#partial_update"><strong>partial_update</strong></a></td>
 <td><strong>PATCH</strong> /api/organizations/{id}</td>
-<td>Methods does a partial update of chosen fields in an organization</td>
+<td>Update an organization</td>
 </tr>
 <tr>
 <td><a href="../organizations-api#retrieve"><strong>retrieve</strong></a></td>
 <td><strong>GET</strong> /api/organizations/{id}</td>
-<td>Method returns details of an organization</td>
+<td>Get organization details</td>
 </tr>
 </tbody>
 </table>
@@ -799,7 +799,7 @@ organization_write_request,
 **kwargs
 )</p>
 </blockquote>
-<p>Method creates an organization</p>
+<p>Create an organization</p>
 <h3 id="example">Example</h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 </span></span><span style="display:flex;"><span>
@@ -887,7 +887,7 @@ id,
 **kwargs
 )</p>
 </blockquote>
-<p>Method deletes an organization</p>
+<p>Delete an organization</p>
 <h3 id="example-1">Example</h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 </span></span><span style="display:flex;"><span>
@@ -976,7 +976,7 @@ sort=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Method returns a paginated list of organizations</p>
+<p>List organizations</p>
 <h3 id="example-2">Example</h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 </span></span><span style="display:flex;"><span>
@@ -1117,7 +1117,7 @@ patched_organization_write_request=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Methods does a partial update of chosen fields in an organization</p>
+<p>Update an organization</p>
 <h3 id="example-3">Example</h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 </span></span><span style="display:flex;"><span>
@@ -1214,7 +1214,7 @@ id,
 **kwargs
 )</p>
 </blockquote>
-<p>Method returns details of an organization</p>
+<p>Get organization details</p>
 <h3 id="example-4">Example</h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 </span></span><span style="display:flex;"><span>

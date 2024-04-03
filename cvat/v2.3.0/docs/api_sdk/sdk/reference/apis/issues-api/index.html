@@ -20,7 +20,8 @@
 <title>IssuesApi class reference | CVAT</title>
 <meta name="description" content=""><meta property="og:title" content="IssuesApi class reference" />
 <meta property="og:description" content="All URIs are relative to http://localhost
-   Method HTTP request Description     create POST /api/issues Method creates an issue   destroy DELETE /api/issues/{id} Method deletes an issue   list GET /api/issues Method returns a paginated list of issues   partial_update PATCH /api/issues/{id} Methods does a partial update of chosen fields in an issue   retrieve GET /api/issues/{id} Method returns details of an issue    create  create( issue_write_request, x_organization=None, org=None, org_id=None, **kwargs )" />
+   Method HTTP request Description     create POST /api/issues Create an issue   destroy DELETE /api/issues/{id} Delete an issue   list GET /api/issues List issues   partial_update PATCH /api/issues/{id} Update an issue   retrieve GET /api/issues/{id} Get issue details    create  create( issue_write_request, x_organization=None, org=None, org_id=None, **kwargs )
+ Create an issue" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/api_sdk/sdk/reference/apis/issues-api/" /><meta property="article:section" content="docs" />
 
@@ -28,13 +29,15 @@
 
 <meta itemprop="name" content="IssuesApi class reference">
 <meta itemprop="description" content="All URIs are relative to http://localhost
-   Method HTTP request Description     create POST /api/issues Method creates an issue   destroy DELETE /api/issues/{id} Method deletes an issue   list GET /api/issues Method returns a paginated list of issues   partial_update PATCH /api/issues/{id} Methods does a partial update of chosen fields in an issue   retrieve GET /api/issues/{id} Method returns details of an issue    create  create( issue_write_request, x_organization=None, org=None, org_id=None, **kwargs )">
+   Method HTTP request Description     create POST /api/issues Create an issue   destroy DELETE /api/issues/{id} Delete an issue   list GET /api/issues List issues   partial_update PATCH /api/issues/{id} Update an issue   retrieve GET /api/issues/{id} Get issue details    create  create( issue_write_request, x_organization=None, org=None, org_id=None, **kwargs )
+ Create an issue">
 
-<meta itemprop="wordCount" content="1586">
+<meta itemprop="wordCount" content="1550">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="IssuesApi class reference"/>
 <meta name="twitter:description" content="All URIs are relative to http://localhost
-   Method HTTP request Description     create POST /api/issues Method creates an issue   destroy DELETE /api/issues/{id} Method deletes an issue   list GET /api/issues Method returns a paginated list of issues   partial_update PATCH /api/issues/{id} Methods does a partial update of chosen fields in an issue   retrieve GET /api/issues/{id} Method returns details of an issue    create  create( issue_write_request, x_organization=None, org=None, org_id=None, **kwargs )"/>
+   Method HTTP request Description     create POST /api/issues Create an issue   destroy DELETE /api/issues/{id} Delete an issue   list GET /api/issues List issues   partial_update PATCH /api/issues/{id} Update an issue   retrieve GET /api/issues/{id} Get issue details    create  create( issue_write_request, x_organization=None, org=None, org_id=None, **kwargs )
+ Create an issue"/>
 
 
 
@@ -156,7 +159,7 @@
         <a class="dropdown-item" href="../../../../../../../v2.10.3/docs/api_sdk/sdk/reference/apis/issues-api/">v2.10.3</a>
     
       
-        <a class="dropdown-item" href="../../../../../../../v2.11.2/docs/api_sdk/sdk/reference/apis/issues-api/">v2.11.2</a>
+        <a class="dropdown-item" href="../../../../../../../v2.11.3/docs/api_sdk/sdk/reference/apis/issues-api/">v2.11.3</a>
     
       
         <a class="dropdown-item" href="../../../../../../../v2.2.0/docs/api_sdk/sdk/reference/apis/issues-api/">v2.2.0</a>
@@ -194,7 +197,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../../../../../offline-search-index.c1c447ab63dd6cf868c2e448c45363fa.json"
+  data-offline-search-index-json-src="../../../../../../offline-search-index.2e2547e5dbeb03bad33b3ca170932915.json"
   data-offline-search-base-href="../../../../../../"
   data-offline-search-max-results="10"
 >
@@ -230,7 +233,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../../../../../offline-search-index.c1c447ab63dd6cf868c2e448c45363fa.json"
+  data-offline-search-index-json-src="../../../../../../offline-search-index.2e2547e5dbeb03bad33b3ca170932915.json"
   data-offline-search-base-href="../../../../../../"
   data-offline-search-max-results="10"
 >
@@ -5741,27 +5744,27 @@
 <tr>
 <td><a href="../issues-api#create"><strong>create</strong></a></td>
 <td><strong>POST</strong> /api/issues</td>
-<td>Method creates an issue</td>
+<td>Create an issue</td>
 </tr>
 <tr>
 <td><a href="../issues-api#destroy"><strong>destroy</strong></a></td>
 <td><strong>DELETE</strong> /api/issues/{id}</td>
-<td>Method deletes an issue</td>
+<td>Delete an issue</td>
 </tr>
 <tr>
 <td><a href="../issues-api#list"><strong>list</strong></a></td>
 <td><strong>GET</strong> /api/issues</td>
-<td>Method returns a paginated list of issues</td>
+<td>List issues</td>
 </tr>
 <tr>
 <td><a href="../issues-api#partial_update"><strong>partial_update</strong></a></td>
 <td><strong>PATCH</strong> /api/issues/{id}</td>
-<td>Methods does a partial update of chosen fields in an issue</td>
+<td>Update an issue</td>
 </tr>
 <tr>
 <td><a href="../issues-api#retrieve"><strong>retrieve</strong></a></td>
 <td><strong>GET</strong> /api/issues/{id}</td>
-<td>Method returns details of an issue</td>
+<td>Get issue details</td>
 </tr>
 </tbody>
 </table>
@@ -5775,7 +5778,7 @@ org_id=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Method creates an issue</p>
+<p>Create an issue</p>
 <h3 id="example">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -5892,7 +5895,7 @@ id,
 **kwargs
 )</p>
 </blockquote>
-<p>Method deletes an issue</p>
+<p>Delete an issue</p>
 <h3 id="example-1">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -5987,7 +5990,7 @@ task_id=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Method returns a paginated list of issues</p>
+<p>List issues</p>
 <h3 id="example-2">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -6176,7 +6179,7 @@ patched_issue_write_request=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Methods does a partial update of chosen fields in an issue</p>
+<p>Update an issue</p>
 <h3 id="example-3">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -6274,7 +6277,7 @@ id,
 **kwargs
 )</p>
 </blockquote>
-<p>Method returns details of an issue</p>
+<p>Get issue details</p>
 <h3 id="example-4">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 

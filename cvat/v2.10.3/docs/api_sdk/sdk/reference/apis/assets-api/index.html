@@ -20,31 +20,31 @@
 
 <title>AssetsApi class reference | CVAT</title>
 <meta name="description" content="All URIs are relative to http://localhost
-Method HTTP request Description create POST /api/assets Method saves new asset on the server and attaches it to a corresponding guide destroy DELETE /api/assets/{uuid} Method deletes a specific asset from the server retrieve GET /api/assets/{uuid} Method returns an asset file create create( file=None, **kwargs )
-Method saves new asset on the server and attaches it to a corresponding guide
-Example from pprint import pprint from cvat_sdk.">
+Method HTTP request Description create POST /api/assets Create an asset destroy DELETE /api/assets/{uuid} Delete an asset retrieve GET /api/assets/{uuid} Get an asset create create( file=None, **kwargs )
+Create an asset
+Example from pprint import pprint from cvat_sdk.api_client import Configuration, ApiClient, exceptions from cvat_sdk.api_client.models import * # Set up an API client # Read Configuration class docs for more info about parameters and authentication methods configuration = Configuration( host = &amp;#34;http://localhost&amp;#34;, username = &amp;#39;YOUR_USERNAME&amp;#39;, password = &amp;#39;YOUR_PASSWORD&amp;#39;, ) with ApiClient(configuration) as api_client: file = open(&amp;#39;/path/to/file&amp;#39;, &amp;#39;rb&amp;#39;) # file_type | (optional) try: (data, response) = api_client.">
 <meta property="og:title" content="AssetsApi class reference" />
 <meta property="og:description" content="All URIs are relative to http://localhost
-Method HTTP request Description create POST /api/assets Method saves new asset on the server and attaches it to a corresponding guide destroy DELETE /api/assets/{uuid} Method deletes a specific asset from the server retrieve GET /api/assets/{uuid} Method returns an asset file create create( file=None, **kwargs )
-Method saves new asset on the server and attaches it to a corresponding guide
-Example from pprint import pprint from cvat_sdk." />
+Method HTTP request Description create POST /api/assets Create an asset destroy DELETE /api/assets/{uuid} Delete an asset retrieve GET /api/assets/{uuid} Get an asset create create( file=None, **kwargs )
+Create an asset
+Example from pprint import pprint from cvat_sdk.api_client import Configuration, ApiClient, exceptions from cvat_sdk.api_client.models import * # Set up an API client # Read Configuration class docs for more info about parameters and authentication methods configuration = Configuration( host = &#34;http://localhost&#34;, username = &#39;YOUR_USERNAME&#39;, password = &#39;YOUR_PASSWORD&#39;, ) with ApiClient(configuration) as api_client: file = open(&#39;/path/to/file&#39;, &#39;rb&#39;) # file_type | (optional) try: (data, response) = api_client." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/api_sdk/sdk/reference/apis/assets-api/" /><meta property="article:section" content="docs" />
 
 <meta property="og:site_name" content="CVAT" />
 <meta itemprop="name" content="AssetsApi class reference">
 <meta itemprop="description" content="All URIs are relative to http://localhost
-Method HTTP request Description create POST /api/assets Method saves new asset on the server and attaches it to a corresponding guide destroy DELETE /api/assets/{uuid} Method deletes a specific asset from the server retrieve GET /api/assets/{uuid} Method returns an asset file create create( file=None, **kwargs )
-Method saves new asset on the server and attaches it to a corresponding guide
-Example from pprint import pprint from cvat_sdk.">
+Method HTTP request Description create POST /api/assets Create an asset destroy DELETE /api/assets/{uuid} Delete an asset retrieve GET /api/assets/{uuid} Get an asset create create( file=None, **kwargs )
+Create an asset
+Example from pprint import pprint from cvat_sdk.api_client import Configuration, ApiClient, exceptions from cvat_sdk.api_client.models import * # Set up an API client # Read Configuration class docs for more info about parameters and authentication methods configuration = Configuration( host = &#34;http://localhost&#34;, username = &#39;YOUR_USERNAME&#39;, password = &#39;YOUR_PASSWORD&#39;, ) with ApiClient(configuration) as api_client: file = open(&#39;/path/to/file&#39;, &#39;rb&#39;) # file_type | (optional) try: (data, response) = api_client.">
 
-<meta itemprop="wordCount" content="662">
+<meta itemprop="wordCount" content="626">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="AssetsApi class reference"/>
 <meta name="twitter:description" content="All URIs are relative to http://localhost
-Method HTTP request Description create POST /api/assets Method saves new asset on the server and attaches it to a corresponding guide destroy DELETE /api/assets/{uuid} Method deletes a specific asset from the server retrieve GET /api/assets/{uuid} Method returns an asset file create create( file=None, **kwargs )
-Method saves new asset on the server and attaches it to a corresponding guide
-Example from pprint import pprint from cvat_sdk."/>
+Method HTTP request Description create POST /api/assets Create an asset destroy DELETE /api/assets/{uuid} Delete an asset retrieve GET /api/assets/{uuid} Get an asset create create( file=None, **kwargs )
+Create an asset
+Example from pprint import pprint from cvat_sdk.api_client import Configuration, ApiClient, exceptions from cvat_sdk.api_client.models import * # Set up an API client # Read Configuration class docs for more info about parameters and authentication methods configuration = Configuration( host = &#34;http://localhost&#34;, username = &#39;YOUR_USERNAME&#39;, password = &#39;YOUR_PASSWORD&#39;, ) with ApiClient(configuration) as api_client: file = open(&#39;/path/to/file&#39;, &#39;rb&#39;) # file_type | (optional) try: (data, response) = api_client."/>
 
 
 
@@ -93,7 +93,7 @@ Example from pprint import pprint from cvat_sdk."/>
     <li><a class="dropdown-item" href="../../../../../../../v2.0.0">v2.0.0</a></li>
     <li><a class="dropdown-item" href="../../../../../../../v2.1.0">v2.1.0</a></li>
     <li><a class="dropdown-item" href="../../../../../../../v2.10.3">v2.10.3</a></li>
-    <li><a class="dropdown-item" href="../../../../../../../v2.11.2">v2.11.2</a></li>
+    <li><a class="dropdown-item" href="../../../../../../../v2.11.3">v2.11.3</a></li>
     <li><a class="dropdown-item" href="../../../../../../../v2.2.0">v2.2.0</a></li>
     <li><a class="dropdown-item" href="../../../../../../../v2.3.0">v2.3.0</a></li>
     <li><a class="dropdown-item" href="../../../../../../../v2.4.9">v2.4.9</a></li>
@@ -116,7 +116,7 @@ Example from pprint import pprint from cvat_sdk."/>
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="../../../../../../offline-search-index.83ae989a720cf44f1c9e3349aa94ecfe.json"
+    data-offline-search-index-json-src="../../../../../../offline-search-index.4555a529ac2f61a0a4a994c67524f030.json"
     data-offline-search-base-href="../../../../../../"
     data-offline-search-max-results="10"
   >
@@ -142,7 +142,7 @@ Example from pprint import pprint from cvat_sdk."/>
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="../../../../../../offline-search-index.83ae989a720cf44f1c9e3349aa94ecfe.json"
+    data-offline-search-index-json-src="../../../../../../offline-search-index.4555a529ac2f61a0a4a994c67524f030.json"
     data-offline-search-base-href="../../../../../../"
     data-offline-search-max-results="10"
   >
@@ -750,17 +750,17 @@ Example from pprint import pprint from cvat_sdk."/>
 <tr>
 <td><a href="../assets-api#create"><strong>create</strong></a></td>
 <td><strong>POST</strong> /api/assets</td>
-<td>Method saves new asset on the server and attaches it to a corresponding guide</td>
+<td>Create an asset</td>
 </tr>
 <tr>
 <td><a href="../assets-api#destroy"><strong>destroy</strong></a></td>
 <td><strong>DELETE</strong> /api/assets/{uuid}</td>
-<td>Method deletes a specific asset from the server</td>
+<td>Delete an asset</td>
 </tr>
 <tr>
 <td><a href="../assets-api#retrieve"><strong>retrieve</strong></a></td>
 <td><strong>GET</strong> /api/assets/{uuid}</td>
-<td>Method returns an asset file</td>
+<td>Get an asset</td>
 </tr>
 </tbody>
 </table>
@@ -771,7 +771,7 @@ file=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Method saves new asset on the server and attaches it to a corresponding guide</p>
+<p>Create an asset</p>
 <h3 id="example">Example</h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 </span></span><span style="display:flex;"><span>
@@ -855,7 +855,7 @@ uuid,
 **kwargs
 )</p>
 </blockquote>
-<p>Method deletes a specific asset from the server</p>
+<p>Delete an asset</p>
 <h3 id="example-1">Example</h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 </span></span><span style="display:flex;"><span>
@@ -937,7 +937,7 @@ uuid,
 **kwargs
 )</p>
 </blockquote>
-<p>Method returns an asset file</p>
+<p>Get an asset</p>
 <h3 id="example-2">Example</h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 </span></span><span style="display:flex;"><span>

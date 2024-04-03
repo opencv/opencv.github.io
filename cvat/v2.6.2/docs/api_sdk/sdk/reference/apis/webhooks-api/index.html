@@ -20,7 +20,7 @@
 <title>WebhooksApi class reference | CVAT</title>
 <meta name="description" content=""><meta property="og:title" content="WebhooksApi class reference" />
 <meta property="og:description" content="All URIs are relative to http://localhost
-   Method HTTP request Description     create POST /api/webhooks Method creates a webhook   create_deliveries_redelivery POST /api/webhooks/{id}/deliveries/{delivery_id}/redelivery Method redeliver a specific webhook delivery   create_ping POST /api/webhooks/{id}/ping Method send ping webhook   destroy DELETE /api/webhooks/{id} Method deletes a webhook   list GET /api/webhooks Method returns a paginated list of webhook according to query parameters   list_deliveries GET /api/webhooks/{id}/deliveries Method return a list of deliveries for a specific webhook   partial_update PATCH /api/webhooks/{id} Methods does a partial update of chosen fields in a webhook   retrieve GET /api/webhooks/{id} Method returns details of a webhook   retrieve_deliveries GET /api/webhooks/{id}/deliveries/{delivery_id} Method return a specific delivery for a specific webhook   retrieve_events GET /api/webhooks/events Method return a list of available webhook events   update PUT /api/webhooks/{id} Method updates a webhook by id    create  create( webhook_write_request, x_organization=None, org=None, org_id=None, **kwargs )" />
+   Method HTTP request Description     create POST /api/webhooks Create a webhook   create_deliveries_redelivery POST /api/webhooks/{id}/deliveries/{delivery_id}/redelivery Redeliver a webhook delivery   create_ping POST /api/webhooks/{id}/ping Send a ping webhook   destroy DELETE /api/webhooks/{id} Delete a webhook   list GET /api/webhooks List webhooks   list_deliveries GET /api/webhooks/{id}/deliveries List deliveries for a webhook   partial_update PATCH /api/webhooks/{id} Update a webhook   retrieve GET /api/webhooks/{id} Get webhook details   retrieve_deliveries GET /api/webhooks/{id}/deliveries/{delivery_id} Get details of a webhook delivery   retrieve_events GET /api/webhooks/events List available webhook events   update PUT /api/webhooks/{id} Replace a webhook    create  create( webhook_write_request, x_organization=None, org=None, org_id=None, **kwargs )" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/api_sdk/sdk/reference/apis/webhooks-api/" /><meta property="article:section" content="docs" />
 
@@ -28,13 +28,13 @@
 
 <meta itemprop="name" content="WebhooksApi class reference">
 <meta itemprop="description" content="All URIs are relative to http://localhost
-   Method HTTP request Description     create POST /api/webhooks Method creates a webhook   create_deliveries_redelivery POST /api/webhooks/{id}/deliveries/{delivery_id}/redelivery Method redeliver a specific webhook delivery   create_ping POST /api/webhooks/{id}/ping Method send ping webhook   destroy DELETE /api/webhooks/{id} Method deletes a webhook   list GET /api/webhooks Method returns a paginated list of webhook according to query parameters   list_deliveries GET /api/webhooks/{id}/deliveries Method return a list of deliveries for a specific webhook   partial_update PATCH /api/webhooks/{id} Methods does a partial update of chosen fields in a webhook   retrieve GET /api/webhooks/{id} Method returns details of a webhook   retrieve_deliveries GET /api/webhooks/{id}/deliveries/{delivery_id} Method return a specific delivery for a specific webhook   retrieve_events GET /api/webhooks/events Method return a list of available webhook events   update PUT /api/webhooks/{id} Method updates a webhook by id    create  create( webhook_write_request, x_organization=None, org=None, org_id=None, **kwargs )">
+   Method HTTP request Description     create POST /api/webhooks Create a webhook   create_deliveries_redelivery POST /api/webhooks/{id}/deliveries/{delivery_id}/redelivery Redeliver a webhook delivery   create_ping POST /api/webhooks/{id}/ping Send a ping webhook   destroy DELETE /api/webhooks/{id} Delete a webhook   list GET /api/webhooks List webhooks   list_deliveries GET /api/webhooks/{id}/deliveries List deliveries for a webhook   partial_update PATCH /api/webhooks/{id} Update a webhook   retrieve GET /api/webhooks/{id} Get webhook details   retrieve_deliveries GET /api/webhooks/{id}/deliveries/{delivery_id} Get details of a webhook delivery   retrieve_events GET /api/webhooks/events List available webhook events   update PUT /api/webhooks/{id} Replace a webhook    create  create( webhook_write_request, x_organization=None, org=None, org_id=None, **kwargs )">
 
-<meta itemprop="wordCount" content="2932">
+<meta itemprop="wordCount" content="2854">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="WebhooksApi class reference"/>
 <meta name="twitter:description" content="All URIs are relative to http://localhost
-   Method HTTP request Description     create POST /api/webhooks Method creates a webhook   create_deliveries_redelivery POST /api/webhooks/{id}/deliveries/{delivery_id}/redelivery Method redeliver a specific webhook delivery   create_ping POST /api/webhooks/{id}/ping Method send ping webhook   destroy DELETE /api/webhooks/{id} Method deletes a webhook   list GET /api/webhooks Method returns a paginated list of webhook according to query parameters   list_deliveries GET /api/webhooks/{id}/deliveries Method return a list of deliveries for a specific webhook   partial_update PATCH /api/webhooks/{id} Methods does a partial update of chosen fields in a webhook   retrieve GET /api/webhooks/{id} Method returns details of a webhook   retrieve_deliveries GET /api/webhooks/{id}/deliveries/{delivery_id} Method return a specific delivery for a specific webhook   retrieve_events GET /api/webhooks/events Method return a list of available webhook events   update PUT /api/webhooks/{id} Method updates a webhook by id    create  create( webhook_write_request, x_organization=None, org=None, org_id=None, **kwargs )"/>
+   Method HTTP request Description     create POST /api/webhooks Create a webhook   create_deliveries_redelivery POST /api/webhooks/{id}/deliveries/{delivery_id}/redelivery Redeliver a webhook delivery   create_ping POST /api/webhooks/{id}/ping Send a ping webhook   destroy DELETE /api/webhooks/{id} Delete a webhook   list GET /api/webhooks List webhooks   list_deliveries GET /api/webhooks/{id}/deliveries List deliveries for a webhook   partial_update PATCH /api/webhooks/{id} Update a webhook   retrieve GET /api/webhooks/{id} Get webhook details   retrieve_deliveries GET /api/webhooks/{id}/deliveries/{delivery_id} Get details of a webhook delivery   retrieve_events GET /api/webhooks/events List available webhook events   update PUT /api/webhooks/{id} Replace a webhook    create  create( webhook_write_request, x_organization=None, org=None, org_id=None, **kwargs )"/>
 
 
 
@@ -156,7 +156,7 @@
         <a class="dropdown-item" href="../../../../../../../v2.10.3/docs/api_sdk/sdk/reference/apis/webhooks-api/">v2.10.3</a>
     
       
-        <a class="dropdown-item" href="../../../../../../../v2.11.2/docs/api_sdk/sdk/reference/apis/webhooks-api/">v2.11.2</a>
+        <a class="dropdown-item" href="../../../../../../../v2.11.3/docs/api_sdk/sdk/reference/apis/webhooks-api/">v2.11.3</a>
     
       
         <a class="dropdown-item" href="../../../../../../../v2.2.0/docs/api_sdk/sdk/reference/apis/webhooks-api/">v2.2.0</a>
@@ -194,7 +194,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../../../../../offline-search-index.c870e302ae7e190a07c2d862963a9cf2.json"
+  data-offline-search-index-json-src="../../../../../../offline-search-index.98c71808206c2ff6026a036828c3f901.json"
   data-offline-search-base-href="../../../../../../"
   data-offline-search-max-results="10"
 >
@@ -230,7 +230,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../../../../../offline-search-index.c870e302ae7e190a07c2d862963a9cf2.json"
+  data-offline-search-index-json-src="../../../../../../offline-search-index.98c71808206c2ff6026a036828c3f901.json"
   data-offline-search-base-href="../../../../../../"
   data-offline-search-max-results="10"
 >
@@ -6036,57 +6036,57 @@
 <tr>
 <td><a href="../webhooks-api#create"><strong>create</strong></a></td>
 <td><strong>POST</strong> /api/webhooks</td>
-<td>Method creates a webhook</td>
+<td>Create a webhook</td>
 </tr>
 <tr>
 <td><a href="../webhooks-api#create_deliveries_redelivery"><strong>create_deliveries_redelivery</strong></a></td>
 <td><strong>POST</strong> /api/webhooks/{id}/deliveries/{delivery_id}/redelivery</td>
-<td>Method redeliver a specific webhook delivery</td>
+<td>Redeliver a webhook delivery</td>
 </tr>
 <tr>
 <td><a href="../webhooks-api#create_ping"><strong>create_ping</strong></a></td>
 <td><strong>POST</strong> /api/webhooks/{id}/ping</td>
-<td>Method send ping webhook</td>
+<td>Send a ping webhook</td>
 </tr>
 <tr>
 <td><a href="../webhooks-api#destroy"><strong>destroy</strong></a></td>
 <td><strong>DELETE</strong> /api/webhooks/{id}</td>
-<td>Method deletes a webhook</td>
+<td>Delete a webhook</td>
 </tr>
 <tr>
 <td><a href="../webhooks-api#list"><strong>list</strong></a></td>
 <td><strong>GET</strong> /api/webhooks</td>
-<td>Method returns a paginated list of webhook according to query parameters</td>
+<td>List webhooks</td>
 </tr>
 <tr>
 <td><a href="../webhooks-api#list_deliveries"><strong>list_deliveries</strong></a></td>
 <td><strong>GET</strong> /api/webhooks/{id}/deliveries</td>
-<td>Method return a list of deliveries for a specific webhook</td>
+<td>List deliveries for a webhook</td>
 </tr>
 <tr>
 <td><a href="../webhooks-api#partial_update"><strong>partial_update</strong></a></td>
 <td><strong>PATCH</strong> /api/webhooks/{id}</td>
-<td>Methods does a partial update of chosen fields in a webhook</td>
+<td>Update a webhook</td>
 </tr>
 <tr>
 <td><a href="../webhooks-api#retrieve"><strong>retrieve</strong></a></td>
 <td><strong>GET</strong> /api/webhooks/{id}</td>
-<td>Method returns details of a webhook</td>
+<td>Get webhook details</td>
 </tr>
 <tr>
 <td><a href="../webhooks-api#retrieve_deliveries"><strong>retrieve_deliveries</strong></a></td>
 <td><strong>GET</strong> /api/webhooks/{id}/deliveries/{delivery_id}</td>
-<td>Method return a specific delivery for a specific webhook</td>
+<td>Get details of a webhook delivery</td>
 </tr>
 <tr>
 <td><a href="../webhooks-api#retrieve_events"><strong>retrieve_events</strong></a></td>
 <td><strong>GET</strong> /api/webhooks/events</td>
-<td>Method return a list of available webhook events</td>
+<td>List available webhook events</td>
 </tr>
 <tr>
 <td><a href="../webhooks-api#update"><strong>update</strong></a></td>
 <td><strong>PUT</strong> /api/webhooks/{id}</td>
-<td>Method updates a webhook by id</td>
+<td>Replace a webhook</td>
 </tr>
 </tbody>
 </table>
@@ -6100,7 +6100,7 @@ org_id=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Method creates a webhook</p>
+<p>Create a webhook</p>
 <h3 id="example">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -6221,7 +6221,7 @@ id,
 **kwargs
 )</p>
 </blockquote>
-<p>Method redeliver a specific webhook delivery</p>
+<p>Redeliver a webhook delivery</p>
 <h3 id="example-1">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -6311,7 +6311,7 @@ id,
 **kwargs
 )</p>
 </blockquote>
-<p>Method send ping webhook</p>
+<p>Send a ping webhook</p>
 <h3 id="example-2">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -6394,7 +6394,7 @@ id,
 **kwargs
 )</p>
 </blockquote>
-<p>Method deletes a webhook</p>
+<p>Delete a webhook</p>
 <h3 id="example-3">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -6487,7 +6487,7 @@ type=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Method returns a paginated list of webhook according to query parameters</p>
+<p>List webhooks</p>
 <h3 id="example-4">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -6661,7 +6661,7 @@ page_size=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Method return a list of deliveries for a specific webhook</p>
+<p>List deliveries for a webhook</p>
 <h3 id="example-5">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -6762,7 +6762,7 @@ patched_webhook_write_request=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Methods does a partial update of chosen fields in a webhook</p>
+<p>Update a webhook</p>
 <h3 id="example-6">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -6864,7 +6864,7 @@ id,
 **kwargs
 )</p>
 </blockquote>
-<p>Method returns details of a webhook</p>
+<p>Get webhook details</p>
 <h3 id="example-7">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -6948,7 +6948,7 @@ id,
 **kwargs
 )</p>
 </blockquote>
-<p>Method return a specific delivery for a specific webhook</p>
+<p>Get details of a webhook delivery</p>
 <h3 id="example-8">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -7039,7 +7039,7 @@ type=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Method return a list of available webhook events</p>
+<p>List available webhook events</p>
 <h3 id="example-9">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -7124,7 +7124,7 @@ webhook_write_request,
 **kwargs
 )</p>
 </blockquote>
-<p>Method updates a webhook by id</p>
+<p>Replace a webhook</p>
 <h3 id="example-10">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 

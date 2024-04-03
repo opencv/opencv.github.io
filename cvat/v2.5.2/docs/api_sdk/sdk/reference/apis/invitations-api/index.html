@@ -20,7 +20,7 @@
 <title>InvitationsApi class reference | CVAT</title>
 <meta name="description" content=""><meta property="og:title" content="InvitationsApi class reference" />
 <meta property="og:description" content="All URIs are relative to http://localhost
-   Method HTTP request Description     accept POST /api/invitations/{key}/accept Method registers user and accepts invitation to organization   create POST /api/invitations Method creates an invitation   decline POST /api/invitations/{key}/decline Method declines the invitation to organization   destroy DELETE /api/invitations/{key} Method deletes an invitation   list GET /api/invitations Method returns a paginated list of invitations   partial_update PATCH /api/invitations/{key} Methods does a partial update of chosen fields in an invitation   resend POST /api/invitations/{key}/resend Method resends the invitation to organization   retrieve GET /api/invitations/{key} Method returns details of an invitation    accept  accept( key, **kwargs )" />
+   Method HTTP request Description     accept POST /api/invitations/{key}/accept Accept an invitation   create POST /api/invitations Create an invitation   decline POST /api/invitations/{key}/decline Decline an invitation   destroy DELETE /api/invitations/{key} Delete an invitation   list GET /api/invitations List invitations   partial_update PATCH /api/invitations/{key} Update an invitation   resend POST /api/invitations/{key}/resend Resend an invitation   retrieve GET /api/invitations/{key} Get invitation details    accept  accept( key, **kwargs )" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/api_sdk/sdk/reference/apis/invitations-api/" /><meta property="article:section" content="docs" />
 
@@ -28,13 +28,13 @@
 
 <meta itemprop="name" content="InvitationsApi class reference">
 <meta itemprop="description" content="All URIs are relative to http://localhost
-   Method HTTP request Description     accept POST /api/invitations/{key}/accept Method registers user and accepts invitation to organization   create POST /api/invitations Method creates an invitation   decline POST /api/invitations/{key}/decline Method declines the invitation to organization   destroy DELETE /api/invitations/{key} Method deletes an invitation   list GET /api/invitations Method returns a paginated list of invitations   partial_update PATCH /api/invitations/{key} Methods does a partial update of chosen fields in an invitation   resend POST /api/invitations/{key}/resend Method resends the invitation to organization   retrieve GET /api/invitations/{key} Method returns details of an invitation    accept  accept( key, **kwargs )">
+   Method HTTP request Description     accept POST /api/invitations/{key}/accept Accept an invitation   create POST /api/invitations Create an invitation   decline POST /api/invitations/{key}/decline Decline an invitation   destroy DELETE /api/invitations/{key} Delete an invitation   list GET /api/invitations List invitations   partial_update PATCH /api/invitations/{key} Update an invitation   resend POST /api/invitations/{key}/resend Resend an invitation   retrieve GET /api/invitations/{key} Get invitation details    accept  accept( key, **kwargs )">
 
-<meta itemprop="wordCount" content="2080">
+<meta itemprop="wordCount" content="2022">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="InvitationsApi class reference"/>
 <meta name="twitter:description" content="All URIs are relative to http://localhost
-   Method HTTP request Description     accept POST /api/invitations/{key}/accept Method registers user and accepts invitation to organization   create POST /api/invitations Method creates an invitation   decline POST /api/invitations/{key}/decline Method declines the invitation to organization   destroy DELETE /api/invitations/{key} Method deletes an invitation   list GET /api/invitations Method returns a paginated list of invitations   partial_update PATCH /api/invitations/{key} Methods does a partial update of chosen fields in an invitation   resend POST /api/invitations/{key}/resend Method resends the invitation to organization   retrieve GET /api/invitations/{key} Method returns details of an invitation    accept  accept( key, **kwargs )"/>
+   Method HTTP request Description     accept POST /api/invitations/{key}/accept Accept an invitation   create POST /api/invitations Create an invitation   decline POST /api/invitations/{key}/decline Decline an invitation   destroy DELETE /api/invitations/{key} Delete an invitation   list GET /api/invitations List invitations   partial_update PATCH /api/invitations/{key} Update an invitation   resend POST /api/invitations/{key}/resend Resend an invitation   retrieve GET /api/invitations/{key} Get invitation details    accept  accept( key, **kwargs )"/>
 
 
 
@@ -156,7 +156,7 @@
         <a class="dropdown-item" href="../../../../../../../v2.10.3/docs/api_sdk/sdk/reference/apis/invitations-api/">v2.10.3</a>
     
       
-        <a class="dropdown-item" href="../../../../../../../v2.11.2/docs/api_sdk/sdk/reference/apis/invitations-api/">v2.11.2</a>
+        <a class="dropdown-item" href="../../../../../../../v2.11.3/docs/api_sdk/sdk/reference/apis/invitations-api/">v2.11.3</a>
     
       
         <a class="dropdown-item" href="../../../../../../../v2.2.0/docs/api_sdk/sdk/reference/apis/invitations-api/">v2.2.0</a>
@@ -194,7 +194,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../../../../../offline-search-index.d9ed53b3331b3d71f2133e9dc21655f3.json"
+  data-offline-search-index-json-src="../../../../../../offline-search-index.a183ccbcb9e3c01ecab1d8706024bade.json"
   data-offline-search-base-href="../../../../../../"
   data-offline-search-max-results="10"
 >
@@ -230,7 +230,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../../../../../offline-search-index.d9ed53b3331b3d71f2133e9dc21655f3.json"
+  data-offline-search-index-json-src="../../../../../../offline-search-index.a183ccbcb9e3c01ecab1d8706024bade.json"
   data-offline-search-base-href="../../../../../../"
   data-offline-search-max-results="10"
 >
@@ -5901,42 +5901,42 @@
 <tr>
 <td><a href="../invitations-api#accept"><strong>accept</strong></a></td>
 <td><strong>POST</strong> /api/invitations/{key}/accept</td>
-<td>Method registers user and accepts invitation to organization</td>
+<td>Accept an invitation</td>
 </tr>
 <tr>
 <td><a href="../invitations-api#create"><strong>create</strong></a></td>
 <td><strong>POST</strong> /api/invitations</td>
-<td>Method creates an invitation</td>
+<td>Create an invitation</td>
 </tr>
 <tr>
 <td><a href="../invitations-api#decline"><strong>decline</strong></a></td>
 <td><strong>POST</strong> /api/invitations/{key}/decline</td>
-<td>Method declines the invitation to organization</td>
+<td>Decline an invitation</td>
 </tr>
 <tr>
 <td><a href="../invitations-api#destroy"><strong>destroy</strong></a></td>
 <td><strong>DELETE</strong> /api/invitations/{key}</td>
-<td>Method deletes an invitation</td>
+<td>Delete an invitation</td>
 </tr>
 <tr>
 <td><a href="../invitations-api#list"><strong>list</strong></a></td>
 <td><strong>GET</strong> /api/invitations</td>
-<td>Method returns a paginated list of invitations</td>
+<td>List invitations</td>
 </tr>
 <tr>
 <td><a href="../invitations-api#partial_update"><strong>partial_update</strong></a></td>
 <td><strong>PATCH</strong> /api/invitations/{key}</td>
-<td>Methods does a partial update of chosen fields in an invitation</td>
+<td>Update an invitation</td>
 </tr>
 <tr>
 <td><a href="../invitations-api#resend"><strong>resend</strong></a></td>
 <td><strong>POST</strong> /api/invitations/{key}/resend</td>
-<td>Method resends the invitation to organization</td>
+<td>Resend an invitation</td>
 </tr>
 <tr>
 <td><a href="../invitations-api#retrieve"><strong>retrieve</strong></a></td>
 <td><strong>GET</strong> /api/invitations/{key}</td>
-<td>Method returns details of an invitation</td>
+<td>Get invitation details</td>
 </tr>
 </tbody>
 </table>
@@ -5947,7 +5947,7 @@ key,
 **kwargs
 )</p>
 </blockquote>
-<p>Method registers user and accepts invitation to organization</p>
+<p>Accept an invitation</p>
 <h3 id="example">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -6038,7 +6038,7 @@ org_id=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Method creates an invitation</p>
+<p>Create an invitation</p>
 <h3 id="example-1">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -6149,7 +6149,7 @@ key,
 **kwargs
 )</p>
 </blockquote>
-<p>Method declines the invitation to organization</p>
+<p>Decline an invitation</p>
 <h3 id="example-2">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -6231,7 +6231,7 @@ key,
 **kwargs
 )</p>
 </blockquote>
-<p>Method deletes an invitation</p>
+<p>Delete an invitation</p>
 <h3 id="example-3">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -6321,7 +6321,7 @@ sort=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Method returns a paginated list of invitations</p>
+<p>List invitations</p>
 <h3 id="example-4">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -6470,7 +6470,7 @@ patched_invitation_write_request=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Methods does a partial update of chosen fields in an invitation</p>
+<p>Update an invitation</p>
 <h3 id="example-5">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -6565,7 +6565,7 @@ key,
 **kwargs
 )</p>
 </blockquote>
-<p>Method resends the invitation to organization</p>
+<p>Resend an invitation</p>
 <h3 id="example-6">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -6652,7 +6652,7 @@ key,
 **kwargs
 )</p>
 </blockquote>
-<p>Method returns details of an invitation</p>
+<p>Get invitation details</p>
 <h3 id="example-7">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 

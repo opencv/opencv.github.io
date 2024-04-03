@@ -81,7 +81,7 @@
     <li><a class="dropdown-item" href="../../../../v2.0.0">v2.0.0</a></li>
     <li><a class="dropdown-item" href="../../../../v2.1.0">v2.1.0</a></li>
     <li><a class="dropdown-item" href="../../../../v2.10.3">v2.10.3</a></li>
-    <li><a class="dropdown-item" href="../../../../v2.11.2">v2.11.2</a></li>
+    <li><a class="dropdown-item" href="../../../../v2.11.3">v2.11.3</a></li>
     <li><a class="dropdown-item" href="../../../../v2.2.0">v2.2.0</a></li>
     <li><a class="dropdown-item" href="../../../../v2.3.0">v2.3.0</a></li>
     <li><a class="dropdown-item" href="../../../../v2.4.9">v2.4.9</a></li>
@@ -104,7 +104,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="../../../../offline-search-index.88b019e6653a72e159f7f1777ae390c8.json"
+    data-offline-search-index-json-src="../../../../offline-search-index.3371b6860e4749132e627628c8e4a7c1.json"
     data-offline-search-base-href="../../../../"
     data-offline-search-max-results="10"
   >
@@ -130,7 +130,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="../../../../offline-search-index.88b019e6653a72e159f7f1777ae390c8.json"
+    data-offline-search-index-json-src="../../../../offline-search-index.3371b6860e4749132e627628c8e4a7c1.json"
     data-offline-search-base-href="../../../../"
     data-offline-search-max-results="10"
   >
@@ -924,7 +924,8 @@ open your bucket page.</li>
 </ol>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>aws s3 cp &lt;s3://bucket-name&gt; &lt;yourfolder&gt; --recursive
 </span></span></code></pre></div><ol start="4">
-<li>After copying the files, you can create a manifest file as described in <a href="../../../../docs/manual/advanced/dataset_manifest/">preapair manifest file section</a>:</li>
+<li>After copying the files, you can create a manifest file as described in
+<a href="../../../../docs/manual/advanced/dataset_manifest/">preapair manifest file section</a>:</li>
 </ol>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python &lt;cvat repository&gt;/utils/dataset_manifest/create.py --output-dir &lt;yourfolder&gt; &lt;yourfolder&gt;
 </span></span></code></pre></div><ol start="5">
@@ -1263,7 +1264,8 @@ open your bucket page.</li>
 <ol>
 <li>Download the <a href="https://www.robots.ox.ac.uk/~vgg/data/pets/data/images.tar.gz">archive with images</a>.</li>
 <li>Unpack the archive into the prepared folder.</li>
-<li>Create a manifest. For more information, see <a href="../../../../docs/manual/advanced/dataset_manifest/"><strong>Dataset manifest</strong></a>:</li>
+<li>Create a manifest. For more information, see
+<a href="../../../../docs/manual/advanced/dataset_manifest/"><strong>Dataset manifest</strong></a>:</li>
 </ol>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python &lt;cvat repository&gt;/utils/dataset_manifest/create.py --output-dir &lt;your_folder&gt; &lt;your_folder&gt;
 </span></span></code></pre></div>

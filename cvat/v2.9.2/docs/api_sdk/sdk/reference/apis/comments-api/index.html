@@ -20,31 +20,31 @@
 
 <title>CommentsApi class reference | CVAT</title>
 <meta name="description" content="All URIs are relative to http://localhost
-Method HTTP request Description create POST /api/comments Method creates a comment destroy DELETE /api/comments/{id} Method deletes a comment list GET /api/comments Method returns a paginated list of comments partial_update PATCH /api/comments/{id} Methods does a partial update of chosen fields in a comment retrieve GET /api/comments/{id} Method returns details of a comment create create( comment_write_request, x_organization=None, org=None, org_id=None, **kwargs )
-Method creates a comment
-Example from pprint import pprint from cvat_sdk.">
+Method HTTP request Description create POST /api/comments Create a comment destroy DELETE /api/comments/{id} Delete a comment list GET /api/comments List comments partial_update PATCH /api/comments/{id} Update a comment retrieve GET /api/comments/{id} Get comment details create create( comment_write_request, x_organization=None, org=None, org_id=None, **kwargs )
+Create a comment
+Example from pprint import pprint from cvat_sdk.api_client import Configuration, ApiClient, exceptions from cvat_sdk.api_client.models import * # Set up an API client # Read Configuration class docs for more info about parameters and authentication methods configuration = Configuration( host = &amp;#34;http://localhost&amp;#34;, username = &amp;#39;YOUR_USERNAME&amp;#39;, password = &amp;#39;YOUR_PASSWORD&amp;#39;, ) with ApiClient(configuration) as api_client: comment_write_request = CommentWriteRequest( issue=1, message=&amp;#34;message_example&amp;#34;, ) # CommentWriteRequest | x_organization = &amp;#34;X-Organization_example&amp;#34; # str | Organization unique slug (optional) org = &amp;#34;org_example&amp;#34; # str | Organization unique slug (optional) org_id = 1 # int | Organization identifier (optional) try: (data, response) = api_client.">
 <meta property="og:title" content="CommentsApi class reference" />
 <meta property="og:description" content="All URIs are relative to http://localhost
-Method HTTP request Description create POST /api/comments Method creates a comment destroy DELETE /api/comments/{id} Method deletes a comment list GET /api/comments Method returns a paginated list of comments partial_update PATCH /api/comments/{id} Methods does a partial update of chosen fields in a comment retrieve GET /api/comments/{id} Method returns details of a comment create create( comment_write_request, x_organization=None, org=None, org_id=None, **kwargs )
-Method creates a comment
-Example from pprint import pprint from cvat_sdk." />
+Method HTTP request Description create POST /api/comments Create a comment destroy DELETE /api/comments/{id} Delete a comment list GET /api/comments List comments partial_update PATCH /api/comments/{id} Update a comment retrieve GET /api/comments/{id} Get comment details create create( comment_write_request, x_organization=None, org=None, org_id=None, **kwargs )
+Create a comment
+Example from pprint import pprint from cvat_sdk.api_client import Configuration, ApiClient, exceptions from cvat_sdk.api_client.models import * # Set up an API client # Read Configuration class docs for more info about parameters and authentication methods configuration = Configuration( host = &#34;http://localhost&#34;, username = &#39;YOUR_USERNAME&#39;, password = &#39;YOUR_PASSWORD&#39;, ) with ApiClient(configuration) as api_client: comment_write_request = CommentWriteRequest( issue=1, message=&#34;message_example&#34;, ) # CommentWriteRequest | x_organization = &#34;X-Organization_example&#34; # str | Organization unique slug (optional) org = &#34;org_example&#34; # str | Organization unique slug (optional) org_id = 1 # int | Organization identifier (optional) try: (data, response) = api_client." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/api_sdk/sdk/reference/apis/comments-api/" /><meta property="article:section" content="docs" />
 
 <meta property="og:site_name" content="CVAT" />
 <meta itemprop="name" content="CommentsApi class reference">
 <meta itemprop="description" content="All URIs are relative to http://localhost
-Method HTTP request Description create POST /api/comments Method creates a comment destroy DELETE /api/comments/{id} Method deletes a comment list GET /api/comments Method returns a paginated list of comments partial_update PATCH /api/comments/{id} Methods does a partial update of chosen fields in a comment retrieve GET /api/comments/{id} Method returns details of a comment create create( comment_write_request, x_organization=None, org=None, org_id=None, **kwargs )
-Method creates a comment
-Example from pprint import pprint from cvat_sdk.">
+Method HTTP request Description create POST /api/comments Create a comment destroy DELETE /api/comments/{id} Delete a comment list GET /api/comments List comments partial_update PATCH /api/comments/{id} Update a comment retrieve GET /api/comments/{id} Get comment details create create( comment_write_request, x_organization=None, org=None, org_id=None, **kwargs )
+Create a comment
+Example from pprint import pprint from cvat_sdk.api_client import Configuration, ApiClient, exceptions from cvat_sdk.api_client.models import * # Set up an API client # Read Configuration class docs for more info about parameters and authentication methods configuration = Configuration( host = &#34;http://localhost&#34;, username = &#39;YOUR_USERNAME&#39;, password = &#39;YOUR_PASSWORD&#39;, ) with ApiClient(configuration) as api_client: comment_write_request = CommentWriteRequest( issue=1, message=&#34;message_example&#34;, ) # CommentWriteRequest | x_organization = &#34;X-Organization_example&#34; # str | Organization unique slug (optional) org = &#34;org_example&#34; # str | Organization unique slug (optional) org_id = 1 # int | Organization identifier (optional) try: (data, response) = api_client.">
 
-<meta itemprop="wordCount" content="1510">
+<meta itemprop="wordCount" content="1474">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="CommentsApi class reference"/>
 <meta name="twitter:description" content="All URIs are relative to http://localhost
-Method HTTP request Description create POST /api/comments Method creates a comment destroy DELETE /api/comments/{id} Method deletes a comment list GET /api/comments Method returns a paginated list of comments partial_update PATCH /api/comments/{id} Methods does a partial update of chosen fields in a comment retrieve GET /api/comments/{id} Method returns details of a comment create create( comment_write_request, x_organization=None, org=None, org_id=None, **kwargs )
-Method creates a comment
-Example from pprint import pprint from cvat_sdk."/>
+Method HTTP request Description create POST /api/comments Create a comment destroy DELETE /api/comments/{id} Delete a comment list GET /api/comments List comments partial_update PATCH /api/comments/{id} Update a comment retrieve GET /api/comments/{id} Get comment details create create( comment_write_request, x_organization=None, org=None, org_id=None, **kwargs )
+Create a comment
+Example from pprint import pprint from cvat_sdk.api_client import Configuration, ApiClient, exceptions from cvat_sdk.api_client.models import * # Set up an API client # Read Configuration class docs for more info about parameters and authentication methods configuration = Configuration( host = &#34;http://localhost&#34;, username = &#39;YOUR_USERNAME&#39;, password = &#39;YOUR_PASSWORD&#39;, ) with ApiClient(configuration) as api_client: comment_write_request = CommentWriteRequest( issue=1, message=&#34;message_example&#34;, ) # CommentWriteRequest | x_organization = &#34;X-Organization_example&#34; # str | Organization unique slug (optional) org = &#34;org_example&#34; # str | Organization unique slug (optional) org_id = 1 # int | Organization identifier (optional) try: (data, response) = api_client."/>
 
 
 
@@ -93,7 +93,7 @@ Example from pprint import pprint from cvat_sdk."/>
     <li><a class="dropdown-item" href="../../../../../../../v2.0.0">v2.0.0</a></li>
     <li><a class="dropdown-item" href="../../../../../../../v2.1.0">v2.1.0</a></li>
     <li><a class="dropdown-item" href="../../../../../../../v2.10.3">v2.10.3</a></li>
-    <li><a class="dropdown-item" href="../../../../../../../v2.11.2">v2.11.2</a></li>
+    <li><a class="dropdown-item" href="../../../../../../../v2.11.3">v2.11.3</a></li>
     <li><a class="dropdown-item" href="../../../../../../../v2.2.0">v2.2.0</a></li>
     <li><a class="dropdown-item" href="../../../../../../../v2.3.0">v2.3.0</a></li>
     <li><a class="dropdown-item" href="../../../../../../../v2.4.9">v2.4.9</a></li>
@@ -116,7 +116,7 @@ Example from pprint import pprint from cvat_sdk."/>
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="../../../../../../offline-search-index.1db590f6e89296c0a6feea214bcd49d3.json"
+    data-offline-search-index-json-src="../../../../../../offline-search-index.6eaad6f4b8084a301e95f8a8fe35c156.json"
     data-offline-search-base-href="../../../../../../"
     data-offline-search-max-results="10"
   >
@@ -142,7 +142,7 @@ Example from pprint import pprint from cvat_sdk."/>
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="../../../../../../offline-search-index.1db590f6e89296c0a6feea214bcd49d3.json"
+    data-offline-search-index-json-src="../../../../../../offline-search-index.6eaad6f4b8084a301e95f8a8fe35c156.json"
     data-offline-search-base-href="../../../../../../"
     data-offline-search-max-results="10"
   >
@@ -768,27 +768,27 @@ Example from pprint import pprint from cvat_sdk."/>
 <tr>
 <td><a href="../comments-api#create"><strong>create</strong></a></td>
 <td><strong>POST</strong> /api/comments</td>
-<td>Method creates a comment</td>
+<td>Create a comment</td>
 </tr>
 <tr>
 <td><a href="../comments-api#destroy"><strong>destroy</strong></a></td>
 <td><strong>DELETE</strong> /api/comments/{id}</td>
-<td>Method deletes a comment</td>
+<td>Delete a comment</td>
 </tr>
 <tr>
 <td><a href="../comments-api#list"><strong>list</strong></a></td>
 <td><strong>GET</strong> /api/comments</td>
-<td>Method returns a paginated list of comments</td>
+<td>List comments</td>
 </tr>
 <tr>
 <td><a href="../comments-api#partial_update"><strong>partial_update</strong></a></td>
 <td><strong>PATCH</strong> /api/comments/{id}</td>
-<td>Methods does a partial update of chosen fields in a comment</td>
+<td>Update a comment</td>
 </tr>
 <tr>
 <td><a href="../comments-api#retrieve"><strong>retrieve</strong></a></td>
 <td><strong>GET</strong> /api/comments/{id}</td>
-<td>Method returns details of a comment</td>
+<td>Get comment details</td>
 </tr>
 </tbody>
 </table>
@@ -802,7 +802,7 @@ org_id=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Method creates a comment</p>
+<p>Create a comment</p>
 <h3 id="example">Example</h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 </span></span><span style="display:flex;"><span>
@@ -913,7 +913,7 @@ id,
 **kwargs
 )</p>
 </blockquote>
-<p>Method deletes a comment</p>
+<p>Delete a comment</p>
 <h3 id="example-1">Example</h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 </span></span><span style="display:flex;"><span>
@@ -1006,7 +1006,7 @@ sort=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Method returns a paginated list of comments</p>
+<p>List comments</p>
 <h3 id="example-2">Example</h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 </span></span><span style="display:flex;"><span>
@@ -1179,7 +1179,7 @@ patched_comment_write_request=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Methods does a partial update of chosen fields in a comment</p>
+<p>Update a comment</p>
 <h3 id="example-3">Example</h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 </span></span><span style="display:flex;"><span>
@@ -1273,7 +1273,7 @@ id,
 **kwargs
 )</p>
 </blockquote>
-<p>Method returns details of a comment</p>
+<p>Get comment details</p>
 <h3 id="example-4">Example</h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 </span></span><span style="display:flex;"><span>

@@ -20,7 +20,7 @@
 <title>TasksApi class reference | CVAT</title>
 <meta name="description" content=""><meta property="og:title" content="TasksApi class reference" />
 <meta property="og:description" content="All URIs are relative to http://localhost
-   Method HTTP request Description     jobs_partial_update_data_meta PATCH /api/jobs/{id}/data/meta Method provides a meta information about media files which are related with the job   create POST /api/tasks Method creates a new task in a database without any attached images and videos   create_annotations POST /api/tasks/{id}/annotations/ Method allows to initialize the process of upload task annotations from a local or a cloud storage file   create_backup POST /api/tasks/backup/ Method recreates a task from an attached task backup file   create_data POST /api/tasks/{id}/data/ Method permanently attaches data (images, video, etc." />
+   Method HTTP request Description     jobs_partial_update_data_meta PATCH /api/jobs/{id}/data/meta Update metainformation for media files in a job   create POST /api/tasks Create a task   create_annotations POST /api/tasks/{id}/annotations/ Import annotations into a task   create_backup POST /api/tasks/backup/ Recreate a task from a backup   create_data POST /api/tasks/{id}/data/ Attach data to a task   destroy DELETE /api/tasks/{id} Delete a task   destroy_annotations DELETE /api/tasks/{id}/annotations/ Delete task annotations   list GET /api/tasks List tasks   partial_update PATCH /api/tasks/{id} Update a task   partial_update_annotations PATCH /api/tasks/{id}/annotations/ Update task annotations   partial_update_data_meta PATCH /api/tasks/{id}/data/meta Update metainformation for media files in a task   retrieve GET /api/tasks/{id} Get task details   retrieve_annotations GET /api/tasks/{id}/annotations/ Get task annotations   retrieve_backup GET /api/tasks/{id}/backup Back up a task   retrieve_data GET /api/tasks/{id}/data/ Get data of a task   retrieve_data_meta GET /api/tasks/{id}/data/meta Get metainformation for media files in a task   retrieve_dataset GET /api/tasks/{id}/dataset Export task as a dataset in a specific format   retrieve_preview GET /api/tasks/{id}/preview Get a preview image for a task   retrieve_status GET /api/tasks/{id}/status Get the creation status of a task   update_annotations PUT /api/tasks/{id}/annotations/ Replace task annotations / Get annotation import status    jobs_partial_update_data_meta  jobs_partial_update_data_meta( id, patched_data_meta_write_request=None, **kwargs )" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/api_sdk/sdk/reference/apis/tasks-api/" /><meta property="article:section" content="docs" />
 
@@ -28,13 +28,13 @@
 
 <meta itemprop="name" content="TasksApi class reference">
 <meta itemprop="description" content="All URIs are relative to http://localhost
-   Method HTTP request Description     jobs_partial_update_data_meta PATCH /api/jobs/{id}/data/meta Method provides a meta information about media files which are related with the job   create POST /api/tasks Method creates a new task in a database without any attached images and videos   create_annotations POST /api/tasks/{id}/annotations/ Method allows to initialize the process of upload task annotations from a local or a cloud storage file   create_backup POST /api/tasks/backup/ Method recreates a task from an attached task backup file   create_data POST /api/tasks/{id}/data/ Method permanently attaches data (images, video, etc.">
+   Method HTTP request Description     jobs_partial_update_data_meta PATCH /api/jobs/{id}/data/meta Update metainformation for media files in a job   create POST /api/tasks Create a task   create_annotations POST /api/tasks/{id}/annotations/ Import annotations into a task   create_backup POST /api/tasks/backup/ Recreate a task from a backup   create_data POST /api/tasks/{id}/data/ Attach data to a task   destroy DELETE /api/tasks/{id} Delete a task   destroy_annotations DELETE /api/tasks/{id}/annotations/ Delete task annotations   list GET /api/tasks List tasks   partial_update PATCH /api/tasks/{id} Update a task   partial_update_annotations PATCH /api/tasks/{id}/annotations/ Update task annotations   partial_update_data_meta PATCH /api/tasks/{id}/data/meta Update metainformation for media files in a task   retrieve GET /api/tasks/{id} Get task details   retrieve_annotations GET /api/tasks/{id}/annotations/ Get task annotations   retrieve_backup GET /api/tasks/{id}/backup Back up a task   retrieve_data GET /api/tasks/{id}/data/ Get data of a task   retrieve_data_meta GET /api/tasks/{id}/data/meta Get metainformation for media files in a task   retrieve_dataset GET /api/tasks/{id}/dataset Export task as a dataset in a specific format   retrieve_preview GET /api/tasks/{id}/preview Get a preview image for a task   retrieve_status GET /api/tasks/{id}/status Get the creation status of a task   update_annotations PUT /api/tasks/{id}/annotations/ Replace task annotations / Get annotation import status    jobs_partial_update_data_meta  jobs_partial_update_data_meta( id, patched_data_meta_write_request=None, **kwargs )">
 
-<meta itemprop="wordCount" content="7372">
+<meta itemprop="wordCount" content="7189">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="TasksApi class reference"/>
 <meta name="twitter:description" content="All URIs are relative to http://localhost
-   Method HTTP request Description     jobs_partial_update_data_meta PATCH /api/jobs/{id}/data/meta Method provides a meta information about media files which are related with the job   create POST /api/tasks Method creates a new task in a database without any attached images and videos   create_annotations POST /api/tasks/{id}/annotations/ Method allows to initialize the process of upload task annotations from a local or a cloud storage file   create_backup POST /api/tasks/backup/ Method recreates a task from an attached task backup file   create_data POST /api/tasks/{id}/data/ Method permanently attaches data (images, video, etc."/>
+   Method HTTP request Description     jobs_partial_update_data_meta PATCH /api/jobs/{id}/data/meta Update metainformation for media files in a job   create POST /api/tasks Create a task   create_annotations POST /api/tasks/{id}/annotations/ Import annotations into a task   create_backup POST /api/tasks/backup/ Recreate a task from a backup   create_data POST /api/tasks/{id}/data/ Attach data to a task   destroy DELETE /api/tasks/{id} Delete a task   destroy_annotations DELETE /api/tasks/{id}/annotations/ Delete task annotations   list GET /api/tasks List tasks   partial_update PATCH /api/tasks/{id} Update a task   partial_update_annotations PATCH /api/tasks/{id}/annotations/ Update task annotations   partial_update_data_meta PATCH /api/tasks/{id}/data/meta Update metainformation for media files in a task   retrieve GET /api/tasks/{id} Get task details   retrieve_annotations GET /api/tasks/{id}/annotations/ Get task annotations   retrieve_backup GET /api/tasks/{id}/backup Back up a task   retrieve_data GET /api/tasks/{id}/data/ Get data of a task   retrieve_data_meta GET /api/tasks/{id}/data/meta Get metainformation for media files in a task   retrieve_dataset GET /api/tasks/{id}/dataset Export task as a dataset in a specific format   retrieve_preview GET /api/tasks/{id}/preview Get a preview image for a task   retrieve_status GET /api/tasks/{id}/status Get the creation status of a task   update_annotations PUT /api/tasks/{id}/annotations/ Replace task annotations / Get annotation import status    jobs_partial_update_data_meta  jobs_partial_update_data_meta( id, patched_data_meta_write_request=None, **kwargs )"/>
 
 
 
@@ -156,7 +156,7 @@
         <a class="dropdown-item" href="../../../../../../../v2.10.3/docs/api_sdk/sdk/reference/apis/tasks-api/">v2.10.3</a>
     
       
-        <a class="dropdown-item" href="../../../../../../../v2.11.2/docs/api_sdk/sdk/reference/apis/tasks-api/">v2.11.2</a>
+        <a class="dropdown-item" href="../../../../../../../v2.11.3/docs/api_sdk/sdk/reference/apis/tasks-api/">v2.11.3</a>
     
       
         <a class="dropdown-item" href="../../../../../../../v2.2.0/docs/api_sdk/sdk/reference/apis/tasks-api/">v2.2.0</a>
@@ -194,7 +194,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../../../../../offline-search-index.588d5be159fa387126396dff65e10193.json"
+  data-offline-search-index-json-src="../../../../../../offline-search-index.44973965ba3e8fdee8b0a046a2464c5b.json"
   data-offline-search-base-href="../../../../../../"
   data-offline-search-max-results="10"
 >
@@ -230,7 +230,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../../../../../offline-search-index.588d5be159fa387126396dff65e10193.json"
+  data-offline-search-index-json-src="../../../../../../offline-search-index.44973965ba3e8fdee8b0a046a2464c5b.json"
   data-offline-search-base-href="../../../../../../"
   data-offline-search-max-results="10"
 >
@@ -5971,82 +5971,82 @@
 <tr>
 <td><a href="../tasks-api#jobs_partial_update_data_meta"><strong>jobs_partial_update_data_meta</strong></a></td>
 <td><strong>PATCH</strong> /api/jobs/{id}/data/meta</td>
-<td>Method provides a meta information about media files which are related with the job</td>
+<td>Update metainformation for media files in a job</td>
 </tr>
 <tr>
 <td><a href="../tasks-api#create"><strong>create</strong></a></td>
 <td><strong>POST</strong> /api/tasks</td>
-<td>Method creates a new task in a database without any attached images and videos</td>
+<td>Create a task</td>
 </tr>
 <tr>
 <td><a href="../tasks-api#create_annotations"><strong>create_annotations</strong></a></td>
 <td><strong>POST</strong> /api/tasks/{id}/annotations/</td>
-<td>Method allows to initialize the  process of upload task annotations from a local or a cloud storage file</td>
+<td>Import annotations into a task</td>
 </tr>
 <tr>
 <td><a href="../tasks-api#create_backup"><strong>create_backup</strong></a></td>
 <td><strong>POST</strong> /api/tasks/backup/</td>
-<td>Method recreates a task from an attached task backup file</td>
+<td>Recreate a task from a backup</td>
 </tr>
 <tr>
 <td><a href="../tasks-api#create_data"><strong>create_data</strong></a></td>
 <td><strong>POST</strong> /api/tasks/{id}/data/</td>
-<td>Method permanently attaches data (images, video, etc.) to a task</td>
+<td>Attach data to a task</td>
 </tr>
 <tr>
 <td><a href="../tasks-api#destroy"><strong>destroy</strong></a></td>
 <td><strong>DELETE</strong> /api/tasks/{id}</td>
-<td>Method deletes a specific task, all attached jobs, annotations, and data</td>
+<td>Delete a task</td>
 </tr>
 <tr>
 <td><a href="../tasks-api#destroy_annotations"><strong>destroy_annotations</strong></a></td>
 <td><strong>DELETE</strong> /api/tasks/{id}/annotations/</td>
-<td>Method deletes all annotations for a specific task</td>
+<td>Delete task annotations</td>
 </tr>
 <tr>
 <td><a href="../tasks-api#list"><strong>list</strong></a></td>
 <td><strong>GET</strong> /api/tasks</td>
-<td>Returns a paginated list of tasks</td>
+<td>List tasks</td>
 </tr>
 <tr>
 <td><a href="../tasks-api#partial_update"><strong>partial_update</strong></a></td>
 <td><strong>PATCH</strong> /api/tasks/{id}</td>
-<td>Methods does a partial update of chosen fields in a task</td>
+<td>Update a task</td>
 </tr>
 <tr>
 <td><a href="../tasks-api#partial_update_annotations"><strong>partial_update_annotations</strong></a></td>
 <td><strong>PATCH</strong> /api/tasks/{id}/annotations/</td>
-<td>Method performs a partial update of annotations in a specific task</td>
+<td>Update task annotations</td>
 </tr>
 <tr>
 <td><a href="../tasks-api#partial_update_data_meta"><strong>partial_update_data_meta</strong></a></td>
 <td><strong>PATCH</strong> /api/tasks/{id}/data/meta</td>
-<td>Method provides a meta information about media files which are related with the task</td>
+<td>Update metainformation for media files in a task</td>
 </tr>
 <tr>
 <td><a href="../tasks-api#retrieve"><strong>retrieve</strong></a></td>
 <td><strong>GET</strong> /api/tasks/{id}</td>
-<td>Method returns details of a specific task</td>
+<td>Get task details</td>
 </tr>
 <tr>
 <td><a href="../tasks-api#retrieve_annotations"><strong>retrieve_annotations</strong></a></td>
 <td><strong>GET</strong> /api/tasks/{id}/annotations/</td>
-<td>Method allows to download task annotations</td>
+<td>Get task annotations</td>
 </tr>
 <tr>
 <td><a href="../tasks-api#retrieve_backup"><strong>retrieve_backup</strong></a></td>
 <td><strong>GET</strong> /api/tasks/{id}/backup</td>
-<td>Method backup a specified task</td>
+<td>Back up a task</td>
 </tr>
 <tr>
 <td><a href="../tasks-api#retrieve_data"><strong>retrieve_data</strong></a></td>
 <td><strong>GET</strong> /api/tasks/{id}/data/</td>
-<td>Method returns data for a specific task</td>
+<td>Get data of a task</td>
 </tr>
 <tr>
 <td><a href="../tasks-api#retrieve_data_meta"><strong>retrieve_data_meta</strong></a></td>
 <td><strong>GET</strong> /api/tasks/{id}/data/meta</td>
-<td>Method provides a meta information about media files which are related with the task</td>
+<td>Get metainformation for media files in a task</td>
 </tr>
 <tr>
 <td><a href="../tasks-api#retrieve_dataset"><strong>retrieve_dataset</strong></a></td>
@@ -6056,17 +6056,17 @@
 <tr>
 <td><a href="../tasks-api#retrieve_preview"><strong>retrieve_preview</strong></a></td>
 <td><strong>GET</strong> /api/tasks/{id}/preview</td>
-<td>Method returns a preview image for the task</td>
+<td>Get a preview image for a task</td>
 </tr>
 <tr>
 <td><a href="../tasks-api#retrieve_status"><strong>retrieve_status</strong></a></td>
 <td><strong>GET</strong> /api/tasks/{id}/status</td>
-<td>When task is being created the method returns information about a status of the creation process</td>
+<td>Get the creation status of a task</td>
 </tr>
 <tr>
 <td><a href="../tasks-api#update_annotations"><strong>update_annotations</strong></a></td>
 <td><strong>PUT</strong> /api/tasks/{id}/annotations/</td>
-<td>Method allows to upload task annotations or edit existing annotations</td>
+<td>Replace task annotations / Get annotation import status</td>
 </tr>
 </tbody>
 </table>
@@ -6078,7 +6078,7 @@ patched_data_meta_write_request=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Method provides a meta information about media files which are related with the job</p>
+<p>Update metainformation for media files in a job</p>
 <h3 id="example">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -6177,7 +6177,8 @@ org_id=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Method creates a new task in a database without any attached images and videos</p>
+<p>Create a task</p>
+<p>The new task will not have any attached images or videos. To attach them, use the /api/tasks/<id>/data endpoint.</p>
 <h3 id="example-1">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -6343,8 +6344,8 @@ task_annotations_write_request=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Method allows to initialize the  process of upload task annotations from a local or a cloud storage file</p>
-<p>The request POST /api/tasks/id/annotations will initiate file upload and will create the rq job on the server in which the process of annotations uploading from file will be carried out. Please, use the PUT /api/tasks/id/annotations endpoint for checking status of the process.</p>
+<p>Import annotations into a task</p>
+<p>The request POST /api/tasks/id/annotations will initiate the import and will create the rq job on the server in which the import will be carried out. Please, use the PUT /api/tasks/id/annotations endpoint for checking status of the process.</p>
 <h3 id="example-2">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -6492,7 +6493,7 @@ task_file_request=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Method recreates a task from an attached task backup file</p>
+<p>Recreate a task from a backup</p>
 <p>The backup import process is as follows:  The first request POST /api/tasks/backup will initiate file upload and will create the rq job on the server in which the process of a task creating from an uploaded backup will be carried out.  After initiating the backup upload, you will receive an rq_id parameter. Make sure to include this parameter as a query parameter in your subsequent requests to track the status of the task creation. Once the task has been successfully created, the server will return the id of the newly created task.</p>
 <h3 id="example-3">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
@@ -6643,8 +6644,8 @@ data_request=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Method permanently attaches data (images, video, etc.) to a task</p>
-<p>Allows to upload data to a task. Supports the TUS open file uploading protocol (<a href="https://tus.io/)">https://tus.io/)</a>.  Supports the following protocols:  1. A single Data request  and  2.1. An Upload-Start request 2.2.a. Regular TUS protocol requests (Upload-Length + Chunks) 2.2.b. Upload-Multiple requests 2.3. An Upload-Finish request  Requests: - Data - POST, no extra headers or &lsquo;Upload-Start&rsquo; + &lsquo;Upload-Finish&rsquo; headers.   Contains data in the body. - Upload-Start - POST, has an &lsquo;Upload-Start&rsquo; header. No body is expected. - Upload-Length - POST, has an &lsquo;Upload-Length&rsquo; header (see the TUS specification) - Chunk - HEAD/PATCH (see the TUS specification). Sent to /data/<file id> endpoints. - Upload-Finish - POST, has an &lsquo;Upload-Finish&rsquo; header. Can contain data in the body. - Upload-Multiple - POST, has an &lsquo;Upload-Multiple&rsquo; header. Contains data in the body.  The &lsquo;Upload-Finish&rsquo; request allows to specify the uploaded files should be ordered. This may be needed if the files can be sent unordered. To state that the input files are sent ordered, pass an empty list of files in the &lsquo;upload_file_order&rsquo; field. If the files are sent unordered, the ordered file list is expected in the &lsquo;upload_file_order&rsquo; field. It must be a list of string file paths, relative to the dataset root.  Example: files = [     &quot;cats/cat_1.jpg&quot;,     &quot;dogs/dog2.jpg&quot;,     &quot;image_3.png&quot;,     &hellip; ]  Independently of the file declaration field used (&lsquo;client_files&rsquo;, &lsquo;server_files&rsquo;, etc.), when the &lsquo;predefined&rsquo; sorting method is selected, the uploaded files will be ordered according to the &lsquo;.jsonl&rsquo; manifest file, if it is found in the list of files. For archives (e.g. &lsquo;.zip&rsquo;), a manifest file ('*.jsonl') is required when using the &lsquo;predefined&rsquo; file ordering. Such file must be provided next to the archive in the list of files. Read more about manifest files here: <a href="https://opencv.github.io/cvat/docs/manual/advanced/dataset_manifest/">https://opencv.github.io/cvat/docs/manual/advanced/dataset_manifest/</a>  After all data is sent, the operation status can be retrieved via the /status endpoint.</p>
+<p>Attach data to a task</p>
+<p>Allows to upload data (images, video, etc.) to a task. Supports the TUS open file uploading protocol (<a href="https://tus.io/)">https://tus.io/)</a>.  Supports the following protocols:  1. A single Data request  and  2.1. An Upload-Start request 2.2.a. Regular TUS protocol requests (Upload-Length + Chunks) 2.2.b. Upload-Multiple requests 2.3. An Upload-Finish request  Requests: - Data - POST, no extra headers or &lsquo;Upload-Start&rsquo; + &lsquo;Upload-Finish&rsquo; headers.   Contains data in the body. - Upload-Start - POST, has an &lsquo;Upload-Start&rsquo; header. No body is expected. - Upload-Length - POST, has an &lsquo;Upload-Length&rsquo; header (see the TUS specification) - Chunk - HEAD/PATCH (see the TUS specification). Sent to /data/<file id> endpoints. - Upload-Finish - POST, has an &lsquo;Upload-Finish&rsquo; header. Can contain data in the body. - Upload-Multiple - POST, has an &lsquo;Upload-Multiple&rsquo; header. Contains data in the body.  The &lsquo;Upload-Finish&rsquo; request allows to specify the uploaded files should be ordered. This may be needed if the files can be sent unordered. To state that the input files are sent ordered, pass an empty list of files in the &lsquo;upload_file_order&rsquo; field. If the files are sent unordered, the ordered file list is expected in the &lsquo;upload_file_order&rsquo; field. It must be a list of string file paths, relative to the dataset root.  Example: files = [     &quot;cats/cat_1.jpg&quot;,     &quot;dogs/dog2.jpg&quot;,     &quot;image_3.png&quot;,     &hellip; ]  Independently of the file declaration field used (&lsquo;client_files&rsquo;, &lsquo;server_files&rsquo;, etc.), when the &lsquo;predefined&rsquo; sorting method is selected, the uploaded files will be ordered according to the &lsquo;.jsonl&rsquo; manifest file, if it is found in the list of files. For archives (e.g. &lsquo;.zip&rsquo;), a manifest file ('*.jsonl') is required when using the &lsquo;predefined&rsquo; file ordering. Such file must be provided next to the archive in the list of files. Read more about manifest files here: <a href="https://opencv.github.io/cvat/docs/manual/advanced/dataset_manifest/">https://opencv.github.io/cvat/docs/manual/advanced/dataset_manifest/</a>  After all data is sent, the operation status can be retrieved via the /status endpoint.  Once data is attached to a task, it cannot be detached or replaced.</p>
 <h3 id="example-4">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -6666,13 +6667,10 @@ data_request=None,
     <span style="color:#000">upload_start</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#3465a4">True</span> <span style="color:#8f5902;font-style:italic"># bool | Initializes data upload. Optionally, can include upload metadata in the request body. (optional)</span>
     <span style="color:#000">data_request</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">DataRequest</span><span style="color:#000;font-weight:bold">(</span>
         <span style="color:#000">chunk_size</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">,</span>
-        <span style="color:#000">size</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">,</span>
         <span style="color:#000">image_quality</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">,</span>
         <span style="color:#000">start_frame</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">,</span>
         <span style="color:#000">stop_frame</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">,</span>
         <span style="color:#000">frame_filter</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;frame_filter_example&#34;</span><span style="color:#000;font-weight:bold">,</span>
-        <span style="color:#000">compressed_chunk_type</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#000">ChunkType</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;video&#34;</span><span style="color:#000;font-weight:bold">),</span>
-        <span style="color:#000">original_chunk_type</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#000">ChunkType</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;video&#34;</span><span style="color:#000;font-weight:bold">),</span>
         <span style="color:#000">client_files</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#000;font-weight:bold">[],</span>
         <span style="color:#000">server_files</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#000;font-weight:bold">[],</span>
         <span style="color:#000">remote_files</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#000;font-weight:bold">[],</span>
@@ -6788,7 +6786,8 @@ id,
 **kwargs
 )</p>
 </blockquote>
-<p>Method deletes a specific task, all attached jobs, annotations, and data</p>
+<p>Delete a task</p>
+<p>All attached jobs, annotations and data will be deleted as well.</p>
 <h3 id="example-5">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -6870,7 +6869,7 @@ id,
 **kwargs
 )</p>
 </blockquote>
-<p>Method deletes all annotations for a specific task</p>
+<p>Delete task annotations</p>
 <h3 id="example-6">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -6969,7 +6968,7 @@ tracker_link=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Returns a paginated list of tasks</p>
+<p>List tasks</p>
 <h3 id="example-7">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -7190,7 +7189,7 @@ patched_task_write_request=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Methods does a partial update of chosen fields in a task</p>
+<p>Update a task</p>
 <h3 id="example-8">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -7334,7 +7333,7 @@ patched_labeled_data_request=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Method performs a partial update of annotations in a specific task</p>
+<p>Update task annotations</p>
 <h3 id="example-9">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -7568,7 +7567,7 @@ patched_data_meta_write_request=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Method provides a meta information about media files which are related with the task</p>
+<p>Update metainformation for media files in a task</p>
 <h3 id="example-10">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -7664,7 +7663,7 @@ id,
 **kwargs
 )</p>
 </blockquote>
-<p>Method returns details of a specific task</p>
+<p>Get task details</p>
 <h3 id="example-11">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -7753,7 +7752,7 @@ use_default_location=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Method allows to download task annotations</p>
+<p>Get task annotations</p>
 <h3 id="example-12">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -7910,7 +7909,7 @@ use_default_location=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Method backup a specified task</p>
+<p>Back up a task</p>
 <h3 id="example-13">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -8051,7 +8050,7 @@ type=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Method returns data for a specific task</p>
+<p>Get data of a task</p>
 <h3 id="example-14">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -8158,7 +8157,7 @@ id,
 **kwargs
 )</p>
 </blockquote>
-<p>Method provides a meta information about media files which are related with the task</p>
+<p>Get metainformation for media files in a task</p>
 <h3 id="example-15">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -8399,7 +8398,7 @@ id,
 **kwargs
 )</p>
 </blockquote>
-<p>Method returns a preview image for the task</p>
+<p>Get a preview image for a task</p>
 <h3 id="example-17">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -8486,7 +8485,7 @@ id,
 **kwargs
 )</p>
 </blockquote>
-<p>When task is being created the method returns information about a status of the creation process</p>
+<p>Get the creation status of a task</p>
 <h3 id="example-18">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -8572,8 +8571,8 @@ task_annotations_update_request=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Method allows to upload task annotations or edit existing annotations</p>
-<p>To check the status of the process of uploading a task annotations from a file:  After initiating the annotations upload, you will receive an rq_id parameter. Make sure to include this parameter as a query parameter in your subsequent PUT /api/tasks/id/annotations requests to track the status of the annotations upload.</p>
+<p>Replace task annotations / Get annotation import status</p>
+<p>To check the status of an import request:  After initiating the annotation import, you will receive an rq_id parameter. Make sure to include this parameter as a query parameter in your subsequent PUT /api/tasks/id/annotations requests to track the status of the import.</p>
 <h3 id="example-19">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -8668,12 +8667,12 @@ and returned values <a href="https://opencv.github.io/cvat/docs/api_sdk/sdk/lowl
 <tbody>
 <tr>
 <td><strong>201</strong></td>
-<td>Uploading has finished</td>
+<td>Import has finished</td>
 <td>-</td>
 </tr>
 <tr>
 <td><strong>202</strong></td>
-<td>Uploading has been started</td>
+<td>Import is in progress</td>
 <td>-</td>
 </tr>
 <tr>

@@ -20,23 +20,35 @@
 
 <title>GuidesApi class reference | CVAT</title>
 <meta name="description" content="All URIs are relative to http://localhost
-Method HTTP request Description create POST /api/guides Method creates a new annotation guide binded to a project or to a task destroy DELETE /api/guides/{id} Method deletes a specific annotation guide and all attached assets partial_update PATCH /api/guides/{id} Methods does a partial update of chosen fields in an annotation guide retrieve GET /api/guides/{id} Method returns details of a specific annotation guide create create( annotation_guide_write_request=None, **kwargs )">
+Method HTTP request Description create POST /api/guides Create an annotation guide destroy DELETE /api/guides/{id} Delete an annotation guide partial_update PATCH /api/guides/{id} Update an annotation guide retrieve GET /api/guides/{id} Get annotation guide details create create( annotation_guide_write_request=None, **kwargs )
+Create an annotation guide
+The new guide will be bound either to a project or a task, depending on parameters.
+Example from pprint import pprint from cvat_sdk.api_client import Configuration, ApiClient, exceptions from cvat_sdk.">
 <meta property="og:title" content="GuidesApi class reference" />
 <meta property="og:description" content="All URIs are relative to http://localhost
-Method HTTP request Description create POST /api/guides Method creates a new annotation guide binded to a project or to a task destroy DELETE /api/guides/{id} Method deletes a specific annotation guide and all attached assets partial_update PATCH /api/guides/{id} Methods does a partial update of chosen fields in an annotation guide retrieve GET /api/guides/{id} Method returns details of a specific annotation guide create create( annotation_guide_write_request=None, **kwargs )" />
+Method HTTP request Description create POST /api/guides Create an annotation guide destroy DELETE /api/guides/{id} Delete an annotation guide partial_update PATCH /api/guides/{id} Update an annotation guide retrieve GET /api/guides/{id} Get annotation guide details create create( annotation_guide_write_request=None, **kwargs )
+Create an annotation guide
+The new guide will be bound either to a project or a task, depending on parameters.
+Example from pprint import pprint from cvat_sdk.api_client import Configuration, ApiClient, exceptions from cvat_sdk." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/api_sdk/sdk/reference/apis/guides-api/" /><meta property="article:section" content="docs" />
 
 <meta property="og:site_name" content="CVAT" />
 <meta itemprop="name" content="GuidesApi class reference">
 <meta itemprop="description" content="All URIs are relative to http://localhost
-Method HTTP request Description create POST /api/guides Method creates a new annotation guide binded to a project or to a task destroy DELETE /api/guides/{id} Method deletes a specific annotation guide and all attached assets partial_update PATCH /api/guides/{id} Methods does a partial update of chosen fields in an annotation guide retrieve GET /api/guides/{id} Method returns details of a specific annotation guide create create( annotation_guide_write_request=None, **kwargs )">
+Method HTTP request Description create POST /api/guides Create an annotation guide destroy DELETE /api/guides/{id} Delete an annotation guide partial_update PATCH /api/guides/{id} Update an annotation guide retrieve GET /api/guides/{id} Get annotation guide details create create( annotation_guide_write_request=None, **kwargs )
+Create an annotation guide
+The new guide will be bound either to a project or a task, depending on parameters.
+Example from pprint import pprint from cvat_sdk.api_client import Configuration, ApiClient, exceptions from cvat_sdk.">
 
-<meta itemprop="wordCount" content="921">
+<meta itemprop="wordCount" content="890">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="GuidesApi class reference"/>
 <meta name="twitter:description" content="All URIs are relative to http://localhost
-Method HTTP request Description create POST /api/guides Method creates a new annotation guide binded to a project or to a task destroy DELETE /api/guides/{id} Method deletes a specific annotation guide and all attached assets partial_update PATCH /api/guides/{id} Methods does a partial update of chosen fields in an annotation guide retrieve GET /api/guides/{id} Method returns details of a specific annotation guide create create( annotation_guide_write_request=None, **kwargs )"/>
+Method HTTP request Description create POST /api/guides Create an annotation guide destroy DELETE /api/guides/{id} Delete an annotation guide partial_update PATCH /api/guides/{id} Update an annotation guide retrieve GET /api/guides/{id} Get annotation guide details create create( annotation_guide_write_request=None, **kwargs )
+Create an annotation guide
+The new guide will be bound either to a project or a task, depending on parameters.
+Example from pprint import pprint from cvat_sdk.api_client import Configuration, ApiClient, exceptions from cvat_sdk."/>
 
 
 
@@ -85,7 +97,7 @@ Method HTTP request Description create POST /api/guides Method creates a new ann
     <li><a class="dropdown-item" href="../../../../../../../v2.0.0">v2.0.0</a></li>
     <li><a class="dropdown-item" href="../../../../../../../v2.1.0">v2.1.0</a></li>
     <li><a class="dropdown-item" href="../../../../../../../v2.10.3">v2.10.3</a></li>
-    <li><a class="dropdown-item" href="../../../../../../../v2.11.2">v2.11.2</a></li>
+    <li><a class="dropdown-item" href="../../../../../../../v2.11.3">v2.11.3</a></li>
     <li><a class="dropdown-item" href="../../../../../../../v2.2.0">v2.2.0</a></li>
     <li><a class="dropdown-item" href="../../../../../../../v2.3.0">v2.3.0</a></li>
     <li><a class="dropdown-item" href="../../../../../../../v2.4.9">v2.4.9</a></li>
@@ -108,7 +120,7 @@ Method HTTP request Description create POST /api/guides Method creates a new ann
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="../../../../../../offline-search-index.1db590f6e89296c0a6feea214bcd49d3.json"
+    data-offline-search-index-json-src="../../../../../../offline-search-index.6eaad6f4b8084a301e95f8a8fe35c156.json"
     data-offline-search-base-href="../../../../../../"
     data-offline-search-max-results="10"
   >
@@ -134,7 +146,7 @@ Method HTTP request Description create POST /api/guides Method creates a new ann
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="../../../../../../offline-search-index.1db590f6e89296c0a6feea214bcd49d3.json"
+    data-offline-search-index-json-src="../../../../../../offline-search-index.6eaad6f4b8084a301e95f8a8fe35c156.json"
     data-offline-search-base-href="../../../../../../"
     data-offline-search-max-results="10"
   >
@@ -750,22 +762,22 @@ Method HTTP request Description create POST /api/guides Method creates a new ann
 <tr>
 <td><a href="../guides-api#create"><strong>create</strong></a></td>
 <td><strong>POST</strong> /api/guides</td>
-<td>Method creates a new annotation guide binded to a project or to a task</td>
+<td>Create an annotation guide</td>
 </tr>
 <tr>
 <td><a href="../guides-api#destroy"><strong>destroy</strong></a></td>
 <td><strong>DELETE</strong> /api/guides/{id}</td>
-<td>Method deletes a specific annotation guide and all attached assets</td>
+<td>Delete an annotation guide</td>
 </tr>
 <tr>
 <td><a href="../guides-api#partial_update"><strong>partial_update</strong></a></td>
 <td><strong>PATCH</strong> /api/guides/{id}</td>
-<td>Methods does a partial update of chosen fields in an annotation guide</td>
+<td>Update an annotation guide</td>
 </tr>
 <tr>
 <td><a href="../guides-api#retrieve"><strong>retrieve</strong></a></td>
 <td><strong>GET</strong> /api/guides/{id}</td>
-<td>Method returns details of a specific annotation guide</td>
+<td>Get annotation guide details</td>
 </tr>
 </tbody>
 </table>
@@ -776,7 +788,8 @@ annotation_guide_write_request=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Method creates a new annotation guide binded to a project or to a task</p>
+<p>Create an annotation guide</p>
+<p>The new guide will be bound either to a project or a task, depending on parameters.</p>
 <h3 id="example">Example</h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 </span></span><span style="display:flex;"><span>
@@ -864,7 +877,8 @@ id,
 **kwargs
 )</p>
 </blockquote>
-<p>Method deletes a specific annotation guide and all attached assets</p>
+<p>Delete an annotation guide</p>
+<p>This also deletes all assets attached to the guide.</p>
 <h3 id="example-1">Example</h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 </span></span><span style="display:flex;"><span>
@@ -947,7 +961,7 @@ patched_annotation_guide_write_request=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Methods does a partial update of chosen fields in an annotation guide</p>
+<p>Update an annotation guide</p>
 <h3 id="example-2">Example</h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 </span></span><span style="display:flex;"><span>
@@ -1043,7 +1057,7 @@ id,
 **kwargs
 )</p>
 </blockquote>
-<p>Method returns details of a specific annotation guide</p>
+<p>Get annotation guide details</p>
 <h3 id="example-3">Example</h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 </span></span><span style="display:flex;"><span>

@@ -20,7 +20,7 @@
 <title>JobsApi class reference | CVAT</title>
 <meta name="description" content=""><meta property="og:title" content="JobsApi class reference" />
 <meta property="og:description" content="All URIs are relative to http://localhost
-   Method HTTP request Description     create POST /api/jobs Method creates a new job in the task   create_annotations POST /api/jobs/{id}/annotations/ Method allows to initialize the process of the job annotation upload from a local file or a cloud storage   destroy DELETE /api/jobs/{id} Method deletes a job and its related annotations   destroy_annotations DELETE /api/jobs/{id}/annotations/ Method deletes all annotations for a specific job   list GET /api/jobs Method returns a paginated list of jobs   partial_update PATCH /api/jobs/{id} Methods does a partial update of chosen fields in a job   partial_update_annotations PATCH /api/jobs/{id}/annotations/ Method performs a partial update of annotations in a specific job   retrieve GET /api/jobs/{id} Method returns details of a job   retrieve_annotations GET /api/jobs/{id}/annotations/ Method returns annotations for a specific job as a JSON document." />
+   Method HTTP request Description     create POST /api/jobs Create a job   create_annotations POST /api/jobs/{id}/annotations/ Import annotations into a job   destroy DELETE /api/jobs/{id} Delete a job   destroy_annotations DELETE /api/jobs/{id}/annotations/ Delete job annotations   list GET /api/jobs List jobs   partial_update PATCH /api/jobs/{id} Update a job   partial_update_annotations PATCH /api/jobs/{id}/annotations/ Update job annotations   retrieve GET /api/jobs/{id} Get job details   retrieve_annotations GET /api/jobs/{id}/annotations/ Get job annotations   retrieve_data GET /api/jobs/{id}/data Get data of a job   retrieve_data_meta GET /api/jobs/{id}/data/meta Get metainformation for media files in a job   retrieve_dataset GET /api/jobs/{id}/dataset Export job as a dataset in a specific format   retrieve_preview GET /api/jobs/{id}/preview Get a preview image for a job   update_annotations PUT /api/jobs/{id}/annotations/ Replace job annotations / Get annotation import status    create  create( job_write_request, **kwargs )" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/api_sdk/sdk/reference/apis/jobs-api/" /><meta property="article:section" content="docs" />
 
@@ -28,13 +28,13 @@
 
 <meta itemprop="name" content="JobsApi class reference">
 <meta itemprop="description" content="All URIs are relative to http://localhost
-   Method HTTP request Description     create POST /api/jobs Method creates a new job in the task   create_annotations POST /api/jobs/{id}/annotations/ Method allows to initialize the process of the job annotation upload from a local file or a cloud storage   destroy DELETE /api/jobs/{id} Method deletes a job and its related annotations   destroy_annotations DELETE /api/jobs/{id}/annotations/ Method deletes all annotations for a specific job   list GET /api/jobs Method returns a paginated list of jobs   partial_update PATCH /api/jobs/{id} Methods does a partial update of chosen fields in a job   partial_update_annotations PATCH /api/jobs/{id}/annotations/ Method performs a partial update of annotations in a specific job   retrieve GET /api/jobs/{id} Method returns details of a job   retrieve_annotations GET /api/jobs/{id}/annotations/ Method returns annotations for a specific job as a JSON document.">
+   Method HTTP request Description     create POST /api/jobs Create a job   create_annotations POST /api/jobs/{id}/annotations/ Import annotations into a job   destroy DELETE /api/jobs/{id} Delete a job   destroy_annotations DELETE /api/jobs/{id}/annotations/ Delete job annotations   list GET /api/jobs List jobs   partial_update PATCH /api/jobs/{id} Update a job   partial_update_annotations PATCH /api/jobs/{id}/annotations/ Update job annotations   retrieve GET /api/jobs/{id} Get job details   retrieve_annotations GET /api/jobs/{id}/annotations/ Get job annotations   retrieve_data GET /api/jobs/{id}/data Get data of a job   retrieve_data_meta GET /api/jobs/{id}/data/meta Get metainformation for media files in a job   retrieve_dataset GET /api/jobs/{id}/dataset Export job as a dataset in a specific format   retrieve_preview GET /api/jobs/{id}/preview Get a preview image for a job   update_annotations PUT /api/jobs/{id}/annotations/ Replace job annotations / Get annotation import status    create  create( job_write_request, **kwargs )">
 
-<meta itemprop="wordCount" content="4928">
+<meta itemprop="wordCount" content="4762">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="JobsApi class reference"/>
 <meta name="twitter:description" content="All URIs are relative to http://localhost
-   Method HTTP request Description     create POST /api/jobs Method creates a new job in the task   create_annotations POST /api/jobs/{id}/annotations/ Method allows to initialize the process of the job annotation upload from a local file or a cloud storage   destroy DELETE /api/jobs/{id} Method deletes a job and its related annotations   destroy_annotations DELETE /api/jobs/{id}/annotations/ Method deletes all annotations for a specific job   list GET /api/jobs Method returns a paginated list of jobs   partial_update PATCH /api/jobs/{id} Methods does a partial update of chosen fields in a job   partial_update_annotations PATCH /api/jobs/{id}/annotations/ Method performs a partial update of annotations in a specific job   retrieve GET /api/jobs/{id} Method returns details of a job   retrieve_annotations GET /api/jobs/{id}/annotations/ Method returns annotations for a specific job as a JSON document."/>
+   Method HTTP request Description     create POST /api/jobs Create a job   create_annotations POST /api/jobs/{id}/annotations/ Import annotations into a job   destroy DELETE /api/jobs/{id} Delete a job   destroy_annotations DELETE /api/jobs/{id}/annotations/ Delete job annotations   list GET /api/jobs List jobs   partial_update PATCH /api/jobs/{id} Update a job   partial_update_annotations PATCH /api/jobs/{id}/annotations/ Update job annotations   retrieve GET /api/jobs/{id} Get job details   retrieve_annotations GET /api/jobs/{id}/annotations/ Get job annotations   retrieve_data GET /api/jobs/{id}/data Get data of a job   retrieve_data_meta GET /api/jobs/{id}/data/meta Get metainformation for media files in a job   retrieve_dataset GET /api/jobs/{id}/dataset Export job as a dataset in a specific format   retrieve_preview GET /api/jobs/{id}/preview Get a preview image for a job   update_annotations PUT /api/jobs/{id}/annotations/ Replace job annotations / Get annotation import status    create  create( job_write_request, **kwargs )"/>
 
 
 
@@ -139,7 +139,7 @@
 	
 	<a class="dropdown-item" href="../../../../../../../v2.10.3">v2.10.3</a>
 	
-	<a class="dropdown-item" href="../../../../../../../v2.11.2">v2.11.2</a>
+	<a class="dropdown-item" href="../../../../../../../v2.11.3">v2.11.3</a>
 	
 	<a class="dropdown-item" href="../../../../../../../v2.2.0">v2.2.0</a>
 	
@@ -175,7 +175,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../../../../../offline-search-index.d8cf3af3c1b448bb78633f12608b0e12.json"
+  data-offline-search-index-json-src="../../../../../../offline-search-index.0385a873132b38c1950743d33891362a.json"
   data-offline-search-base-href="../../../../../../"
   data-offline-search-max-results="10"
 >
@@ -211,7 +211,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../../../../../offline-search-index.d8cf3af3c1b448bb78633f12608b0e12.json"
+  data-offline-search-index-json-src="../../../../../../offline-search-index.0385a873132b38c1950743d33891362a.json"
   data-offline-search-base-href="../../../../../../"
   data-offline-search-max-results="10"
 >
@@ -4162,57 +4162,57 @@
 <tr>
 <td><a href="../jobs-api#create"><strong>create</strong></a></td>
 <td><strong>POST</strong> /api/jobs</td>
-<td>Method creates a new job in the task</td>
+<td>Create a job</td>
 </tr>
 <tr>
 <td><a href="../jobs-api#create_annotations"><strong>create_annotations</strong></a></td>
 <td><strong>POST</strong> /api/jobs/{id}/annotations/</td>
-<td>Method allows to initialize the process of the job annotation upload from a local file or a cloud storage</td>
+<td>Import annotations into a job</td>
 </tr>
 <tr>
 <td><a href="../jobs-api#destroy"><strong>destroy</strong></a></td>
 <td><strong>DELETE</strong> /api/jobs/{id}</td>
-<td>Method deletes a job and its related annotations</td>
+<td>Delete a job</td>
 </tr>
 <tr>
 <td><a href="../jobs-api#destroy_annotations"><strong>destroy_annotations</strong></a></td>
 <td><strong>DELETE</strong> /api/jobs/{id}/annotations/</td>
-<td>Method deletes all annotations for a specific job</td>
+<td>Delete job annotations</td>
 </tr>
 <tr>
 <td><a href="../jobs-api#list"><strong>list</strong></a></td>
 <td><strong>GET</strong> /api/jobs</td>
-<td>Method returns a paginated list of jobs</td>
+<td>List jobs</td>
 </tr>
 <tr>
 <td><a href="../jobs-api#partial_update"><strong>partial_update</strong></a></td>
 <td><strong>PATCH</strong> /api/jobs/{id}</td>
-<td>Methods does a partial update of chosen fields in a job</td>
+<td>Update a job</td>
 </tr>
 <tr>
 <td><a href="../jobs-api#partial_update_annotations"><strong>partial_update_annotations</strong></a></td>
 <td><strong>PATCH</strong> /api/jobs/{id}/annotations/</td>
-<td>Method performs a partial update of annotations in a specific job</td>
+<td>Update job annotations</td>
 </tr>
 <tr>
 <td><a href="../jobs-api#retrieve"><strong>retrieve</strong></a></td>
 <td><strong>GET</strong> /api/jobs/{id}</td>
-<td>Method returns details of a job</td>
+<td>Get job details</td>
 </tr>
 <tr>
 <td><a href="../jobs-api#retrieve_annotations"><strong>retrieve_annotations</strong></a></td>
 <td><strong>GET</strong> /api/jobs/{id}/annotations/</td>
-<td>Method returns annotations for a specific job as a JSON document. If format is specified, a zip archive is returned.</td>
+<td>Get job annotations</td>
 </tr>
 <tr>
 <td><a href="../jobs-api#retrieve_data"><strong>retrieve_data</strong></a></td>
 <td><strong>GET</strong> /api/jobs/{id}/data</td>
-<td>Method returns data for a specific job</td>
+<td>Get data of a job</td>
 </tr>
 <tr>
 <td><a href="../jobs-api#retrieve_data_meta"><strong>retrieve_data_meta</strong></a></td>
 <td><strong>GET</strong> /api/jobs/{id}/data/meta</td>
-<td>Method provides a meta information about media files which are related with the job</td>
+<td>Get metainformation for media files in a job</td>
 </tr>
 <tr>
 <td><a href="../jobs-api#retrieve_dataset"><strong>retrieve_dataset</strong></a></td>
@@ -4222,12 +4222,12 @@
 <tr>
 <td><a href="../jobs-api#retrieve_preview"><strong>retrieve_preview</strong></a></td>
 <td><strong>GET</strong> /api/jobs/{id}/preview</td>
-<td>Method returns a preview image for the job</td>
+<td>Get a preview image for a job</td>
 </tr>
 <tr>
 <td><a href="../jobs-api#update_annotations"><strong>update_annotations</strong></a></td>
 <td><strong>PUT</strong> /api/jobs/{id}/annotations/</td>
-<td>Method performs an update of all annotations in a specific job or used for uploading annotations from a file</td>
+<td>Replace job annotations / Get annotation import status</td>
 </tr>
 </tbody>
 </table>
@@ -4238,7 +4238,7 @@ job_write_request,
 **kwargs
 )</p>
 </blockquote>
-<p>Method creates a new job in the task</p>
+<p>Create a job</p>
 <h3 id="example">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -4339,8 +4339,8 @@ annotation_file_request=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Method allows to initialize the process of the job annotation upload from a local file or a cloud storage</p>
-<p>The request POST /api/jobs/id/annotations will initiate file upload and will create the rq job on the server in which the process of annotations uploading from file will be carried out. Please, use the PUT /api/jobs/id/annotations endpoint for checking status of the process.</p>
+<p>Import annotations into a job</p>
+<p>The request POST /api/jobs/id/annotations will initiate the import and will create the rq job on the server in which the import will be carried out. Please, use the PUT /api/jobs/id/annotations endpoint for checking status of the process.</p>
 <h3 id="example-1">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -4483,8 +4483,8 @@ id,
 **kwargs
 )</p>
 </blockquote>
-<p>Method deletes a job and its related annotations</p>
-<p>Please note, that not every job can be removed. Currently, it is only available for Ground Truth jobs.</p>
+<p>Delete a job</p>
+<p>Related annotations will be deleted as well.  Please note, that not every job can be removed. Currently, it is only available for Ground Truth jobs.</p>
 <h3 id="example-2">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -4566,7 +4566,7 @@ id,
 **kwargs
 )</p>
 </blockquote>
-<p>Method deletes all annotations for a specific job</p>
+<p>Delete job annotations</p>
 <h3 id="example-3">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -4664,7 +4664,7 @@ type=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Method returns a paginated list of jobs</p>
+<p>List jobs</p>
 <h3 id="example-4">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -4877,7 +4877,7 @@ patched_job_write_request=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Methods does a partial update of chosen fields in a job</p>
+<p>Update a job</p>
 <h3 id="example-5">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -4975,7 +4975,7 @@ patched_labeled_data_request=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Method performs a partial update of annotations in a specific job</p>
+<p>Update job annotations</p>
 <h3 id="example-6">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -5207,7 +5207,7 @@ id,
 **kwargs
 )</p>
 </blockquote>
-<p>Method returns details of a job</p>
+<p>Get job details</p>
 <h3 id="example-7">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -5296,7 +5296,8 @@ use_default_location=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Method returns annotations for a specific job as a JSON document. If format is specified, a zip archive is returned.</p>
+<p>Get job annotations</p>
+<p>If format is specified, a ZIP archive will be returned. Otherwise, the annotations will be returned as a JSON document.</p>
 <h3 id="example-8">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -5446,7 +5447,7 @@ type=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Method returns data for a specific job</p>
+<p>Get data of a job</p>
 <h3 id="example-9">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -5554,7 +5555,7 @@ id,
 **kwargs
 )</p>
 </blockquote>
-<p>Method provides a meta information about media files which are related with the job</p>
+<p>Get metainformation for media files in a job</p>
 <h3 id="example-10">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -5790,7 +5791,7 @@ id,
 **kwargs
 )</p>
 </blockquote>
-<p>Method returns a preview image for the job</p>
+<p>Get a preview image for a job</p>
 <h3 id="example-12">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -5879,8 +5880,8 @@ job_annotations_update_request=None,
 **kwargs
 )</p>
 </blockquote>
-<p>Method performs an update of all annotations in a specific job or used for uploading annotations from a file</p>
-<p>To check the status of the process of uploading a job annotations from a file:  After initiating the annotations upload, you will receive an rq_id parameter. Make sure to include this parameter as a query parameter in your subsequent PUT /api/jobs/id/annotations requests to track the status of the annotations upload.</p>
+<p>Replace job annotations / Get annotation import status</p>
+<p>To check the status of an import request:  After initiating the annotation import, you will receive an rq_id parameter. Make sure to include this parameter as a query parameter in your subsequent PUT /api/jobs/id/annotations requests to track the status of the import.</p>
 <h3 id="example-13">Example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">pprint</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pprint</span>
 
@@ -6007,12 +6008,12 @@ and returned values <a href="https://opencv.github.io/cvat/docs/api_sdk/sdk/lowl
 <tbody>
 <tr>
 <td><strong>201</strong></td>
-<td>Uploading has finished</td>
+<td>Import has finished</td>
 <td>-</td>
 </tr>
 <tr>
 <td><strong>202</strong></td>
-<td>Uploading has been started</td>
+<td>Import is in progress</td>
 <td>-</td>
 </tr>
 <tr>
